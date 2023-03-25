@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+     font-family: "Nunito", "sans-serif";
+}
 main {
      color: #012532;
      color: #071b24;

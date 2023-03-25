@@ -23,6 +23,9 @@
      top: 45px;
      width: 100%;
      height: 80%;
+     font-family: "Dancing Script", "sans-serif";
+     font-size: 1.1rem;
+     font-weight: 700;
 }
 
 .cta{
@@ -40,4 +43,20 @@
 
 .name{
      font-family: "Dancing Script", "sans-serif";
+}
+
+.my_image{
+     top: 15px;
+     right: 18px;
+     width: 280px;
+}
+
+.arrow{
+     position: absolute;
+     right: 136px;
+}
+
+.arrow2 {
+     position: absolute;
+     left: 135px;
 }

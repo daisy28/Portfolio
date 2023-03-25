@@ -53,15 +53,14 @@ const Header = () => {
           />
           <img src={Img1} alt="" className={`${style.header_img} grayscale`} />
           <div
-            className={`${style.header_img2} bg-icons-bg text-orange flex justify-center px-4 pt-6 font-bold`}
+            className={`${style.header_img2} bg-icons-bg text-orange flex justify-center px-4 pt-6`}
           >
-            <p>
+            <div>
               <TextTransition springConfig={presets.default}>
                 &lt;&gt;&nbsp;
-                <p className={`text-icons`}>{TEXTS[index % TEXTS.length]}</p>
-                &nbsp;&lt;/&gt;
+                <p className={`text-icons font-["Nunito"] font-bold text-base`}>{TEXTS[index % TEXTS.length]}</p>&lt;/&gt;
               </TextTransition>
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -78,7 +77,7 @@ const Header = () => {
           </a>
           <div className={`${style.cta} relative my-8`}>
             <span
-              className={`${style.cta_text} absolute text-center text-header-background uppercase bg-orange p-1 font-bold`}
+              className={`${style.cta_text} absolute text-center text-header-background uppercase bg-orange p-1 font-bold font-["Nunito"]`}
             >
               follow &nbsp; me
             </span>
