@@ -1,17 +1,20 @@
 import React from "react";
-import Project from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
+import Header from "./components/Header";
+import Project from "./components/Projects";
+import Technologies from "./components/Technologies";
 
-
-function App() {
+const App = () => {
   return (
-    <div className="text-3xl font-bold underline bg-header-background">
+    <div className={``}>
+      <Header />
       <About />
-      <Project />
-      <Experience />
-      <Contact />
+      {/* <Project /> */}
+      {/* <Experience /> */}
+      {/* <Technologies /> */}
+      {/* <Contact /> */}
     </div>
   );
 }
