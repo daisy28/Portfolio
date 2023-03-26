@@ -46,17 +46,19 @@
 }
 
 .my_image{
-     top: 15px;
+     top: 20px;
      right: 18px;
-     width: 280px;
+     width: 290px;
 }
 
 .arrow{
      position: absolute;
-     right: 136px;
+     right: 133px;
+     top: 6px;
 }
 
 .arrow2 {
      position: absolute;
-     left: 135px;
+     left: 132.5px;
+     top: 5.5px;
 }
