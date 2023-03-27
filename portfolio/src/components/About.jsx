@@ -26,7 +26,7 @@ const About = () => {
           className={`${style.my_image} absolute rounded-full`}
         />
       </div>
-      <div className={`text-center`}>
+      <div className={``}>
         <h1 className={`text-about-header font-base text-xl mb-2`}>
           <span className={`font-bold text-4xl`}>H</span>i, my name is{" "}
           <span className={`font-bold text-xl`}>
@@ -40,7 +40,7 @@ const About = () => {
         </h1>
         <div>
           <h4
-            className={`text-body-text text-base font-semibold font-["Nunito"] text-center`}
+            className={`text-body-text text-base font-semibold font-["Nunito"] `}
           >
             I'm a Frontend Developer with 1+ year of experience. I define myself
             by the work I do. I build on-demand scalable, fully responsive
@@ -50,7 +50,7 @@ const About = () => {
             well as maintaining and managing code infrastructure.{" "}
           </h4>
           <div
-            className={`text-center text-about-header font-semibold text-xl mt-5`}
+            className={` text-about-header font-semibold text-xl mt-5`}
           >
             <h2 className={`flex justify-center items-center`}>
               Fun facts about me &nbsp;
@@ -67,7 +67,7 @@ const About = () => {
             >
               <Slider>
                 <Slide index={0}>
-                  <div className={`text-center text-body-text text-sm mt-5`}>
+                  <div className={` text-body-text text-sm mt-5`}>
                     <small>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis aliquam deserunt velit culpa. Dolor officia
@@ -78,7 +78,7 @@ const About = () => {
                   </div>
                 </Slide>
                 <Slide index={1}>
-                  <div className={`text-center text-body-text text-sm mt-5`}>
+                  <div className={` text-body-text text-sm mt-5`}>
                     <small>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis aliquam deserunt velit culpa. Dolor officia
@@ -89,7 +89,7 @@ const About = () => {
                   </div>
                 </Slide>
                 <Slide index={2}>
-                  <div className={`text-center text-body-text text-sm mt-5`}>
+                  <div className={` text-body-text text-sm mt-5`}>
                     <small>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis aliquam deserunt velit culpa. Dolor officia
