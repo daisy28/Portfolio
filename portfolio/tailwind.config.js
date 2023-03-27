@@ -20,6 +20,10 @@ module.exports = {
         "about-section": "#012630",
         "about-header": "#fcfcfc",
         "about-text": "#465b67",
+        "gradient1": "#0f3e4a",
+        "gradient2" : "#498a9e",
+        "gradient3" : "#37a3a9",
+        
       },
       fontFamily : {
         "sans": ("PT Sans", "Noto Sans Display", "Nunito", "sans-serif"),

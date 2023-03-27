@@ -11,7 +11,7 @@ const App = () => {
     <div className={``}>
       <Header />
       <About />
-      {/* <Project /> */}
+      <Project />
       {/* <Experience /> */}
       {/* <Technologies /> */}
       {/* <Contact /> */}

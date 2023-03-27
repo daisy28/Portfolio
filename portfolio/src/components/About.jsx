@@ -6,72 +6,122 @@ import { MdFmdGood } from "react-icons/md";
 import { MdOutlineChevronLeft } from "react-icons/md";
 import { MdOutlineChevronRight } from "react-icons/md";
 import { MdHotelClass } from "react-icons/md";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-
 const About = () => {
-     return (
-          <section className={`bg-about-section p-4 py-8`}>
-               <div className={`relative mb-8`}>
-                    <Md3DRotation className={`rotate-180 w-full h-full text-orange`} />
-                    <img src={Me} alt="" className={`${style.my_image} absolute rounded-full`} />
-               </div>
-               <div className={`text-center`}>
-                    <h1 className={`text-about-header font-base text-xl mb-2`}><span className={`font-bold text-4xl`}>H</span>i, my name is <span className={`font-bold text-xl`}><span className={`${style.name} font-extrabold text-orange text-4xl`}>G</span>LO:RIA.</span></h1>
-                    <div>
-                         <h4 className={`text-body-text text-base font-semibold font-["Nunito"] text-center`}>I'm a Frontend Developer with 1+ year of experience. I define myself by the work I do. I build on-demand scalable, fully responsive custom designed web applications. I have a diverse set of skills acquired overtime to stand out from the ordinary. I've an extensive programming experience and comfortable developing on the frontend as well as maintaining and managing code infrastructure. </h4>
-                         <div className={`text-center text-about-header font-semibold text-xl mt-5`}>
-                              <h2 className={`flex justify-center items-center`}>Fun facts about me &nbsp;<MdHotelClass />
-                              </h2>
-                              <CarouselProvider
-                                   naturalSlideWidth={80}
-                                   totalSlides={3}
-                                   touchEnabled={true}
-                                   infinite={true}
-                                   isIntrinsicHeight={true}
-                                   interval={5000}
-                                   isPlaying={true}
-                              >
-                                   <Slider>
-                                        <Slide index={0}>
-                                             <div className={`text-center text-body-text text-sm mt-5`}>
-                                                  <small>
-                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquam deserunt velit culpa. Dolor officia cupiditate illo ipsa, minima possimus obcaecati. Quo, earum accusantium explicabo ipsam necessitatibus corporis dolorem incidunt.
-                                                  </small>
-                                             </div>
-                                        </Slide>
-                                        <Slide index={1}>
-                                             <div className={`text-center text-body-text text-sm mt-5`}>
-                                                  <small>
-                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquam deserunt velit culpa. Dolor officia cupiditate illo ipsa, minima possimus obcaecati. Quo, earum accusantium explicabo ipsam necessitatibus corporis dolorem incidunt.
-                                                  </small>
-                                             </div>
-                                        </Slide>
-                                        <Slide index={2}>
-                                             <div className={`text-center text-body-text text-sm mt-5`}>
-                                                  <small>
-                                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquam deserunt velit culpa. Dolor officia cupiditate illo ipsa, minima possimus obcaecati. Quo, earum accusantium explicabo ipsam necessitatibus corporis dolorem incidunt.
-                                                  </small>
-                                             </div>
-                                        </Slide>
-                                   </Slider>
-                                   <div className={`w-40 mx-auto flex justify-between items-center text-orange relative my-4 cursor-pointer`}>
-                                        <ButtonNext className={`w-8`}>
-                                             <MdFmdGood className={`-rotate-90 text-4xl w-8 h-8`} />
-                                             <MdOutlineChevronLeft className={`${style.arrow} text-about-section relative w-8`} />
-                                        </ButtonNext>
-                                        <ButtonBack className={`w-8`}>
-                                             <MdFmdGood className={`rotate-90 text-4xl w-8 h-8`} />
-                                             <MdOutlineChevronRight className={`${style.arrow2} text-about-section relative w-8`} />
-                                        </ButtonBack>
-                                   </div>
-                              </CarouselProvider>
-                         </div>
-                    </div>
-               </div>
-          </section>
-     )
-}
+  return (
+    <section className={`bg-about-section p-4 py-8`}>
+      <div className={`relative mb-8`}>
+        <Md3DRotation className={`rotate-180 w-full h-full text-orange`} />
+        <img
+          src={Me}
+          alt=""
+          className={`${style.my_image} absolute rounded-full`}
+        />
+      </div>
+      <div className={`text-center`}>
+        <h1 className={`text-about-header font-base text-xl mb-2`}>
+          <span className={`font-bold text-4xl`}>H</span>i, my name is{" "}
+          <span className={`font-bold text-xl`}>
+            <span
+              className={`${style.name} font-extrabold text-orange text-4xl`}
+            >
+              G
+            </span>
+            LO:RIA.
+          </span>
+        </h1>
+        <div>
+          <h4
+            className={`text-body-text text-base font-semibold font-["Nunito"] text-center`}
+          >
+            I'm a Frontend Developer with 1+ year of experience. I define myself
+            by the work I do. I build on-demand scalable, fully responsive
+            custom designed web applications. I have a diverse set of skills
+            acquired overtime to stand out from the ordinary. I've an extensive
+            programming experience and comfortable developing on the frontend as
+            well as maintaining and managing code infrastructure.{" "}
+          </h4>
+          <div
+            className={`text-center text-about-header font-semibold text-xl mt-5`}
+          >
+            <h2 className={`flex justify-center items-center`}>
+              Fun facts about me &nbsp;
+              <MdHotelClass />
+            </h2>
+            <CarouselProvider
+              naturalSlideWidth={80}
+              totalSlides={3}
+              touchEnabled={true}
+              infinite={true}
+              isIntrinsicHeight={true}
+              interval={3000}
+              isPlaying={true}
+            >
+              <Slider>
+                <Slide index={0}>
+                  <div className={`text-center text-body-text text-sm mt-5`}>
+                    <small>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Blanditiis aliquam deserunt velit culpa. Dolor officia
+                      cupiditate illo ipsa, minima possimus obcaecati. Quo,
+                      earum accusantium explicabo ipsam necessitatibus corporis
+                      dolorem incidunt.
+                    </small>
+                  </div>
+                </Slide>
+                <Slide index={1}>
+                  <div className={`text-center text-body-text text-sm mt-5`}>
+                    <small>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Blanditiis aliquam deserunt velit culpa. Dolor officia
+                      cupiditate illo ipsa, minima possimus obcaecati. Quo,
+                      earum accusantium explicabo ipsam necessitatibus corporis
+                      dolorem incidunt.
+                    </small>
+                  </div>
+                </Slide>
+                <Slide index={2}>
+                  <div className={`text-center text-body-text text-sm mt-5`}>
+                    <small>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Blanditiis aliquam deserunt velit culpa. Dolor officia
+                      cupiditate illo ipsa, minima possimus obcaecati. Quo,
+                      earum accusantium explicabo ipsam necessitatibus corporis
+                      dolorem incidunt.
+                    </small>
+                  </div>
+                </Slide>
+              </Slider>
+              <div
+                className={`w-40 mx-auto flex justify-between items-center text-orange relative my-4 cursor-pointer`}
+              >
+                <ButtonNext className={`w-8`}>
+                  <MdFmdGood className={`-rotate-90 text-4xl w-8 h-8`} />
+                  <MdOutlineChevronLeft
+                    className={`${style.arrow} text-about-section relative w-8`}
+                  />
+                </ButtonNext>
+                <ButtonBack className={`w-8`}>
+                  <MdFmdGood className={`rotate-90 text-4xl w-8 h-8`} />
+                  <MdOutlineChevronRight
+                    className={`${style.arrow2} text-about-section relative w-8`}
+                  />
+                </ButtonBack>
+              </div>
+            </CarouselProvider>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default About;
