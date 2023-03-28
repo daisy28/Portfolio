@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { MdEqualizer } from "react-icons/md";
 import { MdCodeOff } from "react-icons/md";
+import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { TbChevronsUpLeft } from "react-icons/tb";
+import { VscChevronLeft  } from "react-icons/vsc";
 import Img1 from "../Img/images (5).jpeg";
+import Logo from "../Img/Logo.png";
 import style from "./style.module.css";
 import TextTransition, { presets } from "react-text-transition";
 
@@ -27,12 +29,12 @@ const Header = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <section className={`bg-header-background`}>
+    <section className={`${style.header}`}>
       <nav
-        className={`text-header-text text-xs flex justify-between items-center px-4 py-8 font-bold font-['Nunito']`}
+        className={`text-header-text text-xs flex justify-between items-center px-4 py-4 font-bold font-['Nunito']`}
       >
         <div>
-          <MdCodeOff className={`bg-transparent text-orange text-5xl`} />
+          <img src={Logo} alt="" className={`h-20 w-20 rounded-full`} />
         </div>
         <div className={`hidden`}>
           <a href="#About">About</a>
@@ -48,8 +50,8 @@ const Header = () => {
       </nav>
       <header className={`flex justify-between p-4 mt-4`}>
         <div className={`${style.header_div} mb-8 relative`}>
-          <TbChevronsUpLeft
-            className={`${style.header_icon} text-icons-bg w-full h-full relative`}
+          <VscChevronLeft 
+            className={`${style.header_icon} text-icons-bg w-full h-full relative rotate-45`}
           />
           <img src={Img1} alt="" className={`${style.header_img} grayscale`} />
           <div
@@ -57,14 +59,15 @@ const Header = () => {
           >
             <div>
               <TextTransition springConfig={presets.default}>
-                &lt;&gt;&nbsp;
-                <p className={`text-icons font-["Nunito"] font-bold text-base`}>{TEXTS[index % TEXTS.length]}</p>&lt;/&gt;
+                <MdCode />
+                <p className={`text-icons font-["Nunito"] font-bold text-base`}>{TEXTS[index % TEXTS.length]}</p>
+                <MdCodeOff />
               </TextTransition>
             </div>
           </div>
         </div>
         <div
-          className={`bg-icons-bg text-icons w-12 h-40 relative flex justify-start items-center flex-col`}
+          className={`bg-icons-bg text-icons w-20 h-40 relative flex justify-start items-center flex-col`}
         >
           <a href="#.">
             <FaGithub className={`mb-6 mt-4`} />
