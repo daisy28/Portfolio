@@ -68,3 +68,19 @@
      top: -110px;
      left: -110px;
 }
+
+.project_div{
+    position: relative;
+    animation: mymove 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+     0% {
+          transform: translate(300px, 0);
+     }
+     100% {
+          transform: translateX(0, 0);
+     }
+}
