@@ -17,7 +17,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const About = () => {
   return (
-    <section className={`bg-about-section p-4 py-8`}>
+    <section className={`${style.about_section} bg-about-section p-4 py-8`} id="About">
       <div className={`relative mb-8`}>
         <Md3DRotation className={`rotate-180 w-full h-full text-orange`} />
         <img
@@ -64,6 +64,7 @@ const About = () => {
               isIntrinsicHeight={true}
               interval={3000}
               isPlaying={true}
+              lockOnWindowScroll={true}
             >
               <Slider>
                 <Slide index={0}>

@@ -29,7 +29,7 @@ const Header = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <section className={`${style.header}`}>
+    <section className={`${style.header}`} id="Header">
       <nav
         className={`text-header-text text-xs flex justify-between items-center px-4 py-4 font-bold font-['Nunito']`}
       >

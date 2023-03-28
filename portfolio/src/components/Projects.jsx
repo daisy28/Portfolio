@@ -23,7 +23,7 @@ const Projects = () => {
      }
     
  return (
-      <section className={`bg-about-section border-none p-4`}>
+      <section className={`${style.project_section} border-none p-4`} id="Projects">
            <div className={`relative z-10`}>
                     <div className={`relative`}>
                          <h2 className={`text-about-header font-bold text-3xl`}>

@@ -1,6 +1,11 @@
 .header {
      position: relative;
-     /* background: #071b24; */
+     background: url("../Img/background.png") #071b24;
+     background-size: cover;
+     background-blend-mode: multiply;
+}
+
+.project_section{
      background: url("../Img/background.png") #071b24;
      background-size: cover;
      background-blend-mode: multiply;
@@ -38,7 +43,7 @@
 
 .cta{
      position: relative;
-     left: 13px;
+     left: 15px;
      top: -35px;
 }
 
@@ -80,16 +85,33 @@
 
 .project_div{
     position: relative;
-    animation: mymove 0.5s;
+    animation: project 0.2s;
     animation-timing-function: linear;
-    animation-direction: alternate;
+    overflow: hidden;
 }
 
-@keyframes mymove {
+@keyframes project {
      0% {
-          transform: translate(300px, 0);
+          transform: translate(500px, 0);
      }
      100% {
-          transform: translateX(0, 0);
+          transform: translate(0, 0);
+     }
+}
+
+.technology_div{
+     position: relative;
+     animation: technology 10s infinite;
+     animation-timing-function: linear !important;
+     animation-iteration-count: infinite;
+}
+
+@keyframes technology {
+     0% {
+          transform: translate(500%, 0);
+     }
+
+     100% {
+          transform: translate(-350%, 0);
      }
 }
