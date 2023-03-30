@@ -99,19 +99,23 @@
      }
 }
 
+
 .technology_div{
      position: relative;
-     animation: technology 10s infinite;
-     animation-timing-function: linear !important;
+     animation: technology 10s;
+     animation-timing-function: linear;
      animation-iteration-count: infinite;
+     width: 10rem !important;
 }
 
 @keyframes technology {
      0% {
-          transform: translate(500%, 0);
+     width: 10rem !important;
+          transform: translate(300%, 0);
      }
 
      100% {
+     width: 10rem !important;
           transform: translate(-350%, 0);
      }
 }

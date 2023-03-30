@@ -25,7 +25,7 @@ const Technologies = () => {
                                    </span>
                          </h2>
                </div>
-               <div className={`flex items-center justify-center pt-8 overflow-hidden mb-4`}>
+               <div className={`${style.tech_container} flex items-center justify-center pt-8 overflow-hidden mb-4`}>
                      <div className={`${style.technology_div} border border-dashed border-t-orange border-r-orange border-l-light-blue2 border-b-light-blue2 w-40 h-40 p-4 flex justify-center items-center rounded-tr-3xl mr-4`}>
                          <div  className={`text-lg font-bold text-about-header text-center`}>
                               <h1>01</h1>
