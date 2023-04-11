@@ -6,21 +6,23 @@ import { BsEnvelopeAtFill } from "react-icons/bs";
 import { BsGeoAltFill } from "react-icons/bs";
 import { BsEnvelope } from "react-icons/bs";
 import { BsPerson } from "react-icons/bs";
+import Frame from "../Img/Group 3.svg"
 import Tippy from "@tippyjs/react";
 
 const Contact = () => {
-     const [visible, setVisible] = useState(true);
-     const show = () => setVisible(prev => !prev);
-     const hide = () => setVisible(false);
+     // const [visible, setVisible] = useState(true);
+     const [displayPhone, setDisplayPhone] = useState(false);
+     const [displayEmail, setDisplayEmail] = useState(false);
+     const [displayLocation, setDisplayLocation] = useState(false);
+
 
      return (
-          <section className={`bg-about-section p-4 relative`} id="Contact">
+          <section className={`bg-about-section relative`} id="Contact">
                <div>
-                    <div className={`flex items-start justify-start w-20 h-20 relative -left-7 -top-10`}>
-                         <BsGripVertical className={`text-about-header w-24 h-24`} />
-                         <BsGripVertical className={`text-orange w-24 h-24 relative -left-6`} />
-                    </div>
-                    <div className={`mt-3`}>
+                    {/* <div className={`relative left-0 top-0 `}>
+                         <img src={Frame} alt="" className={`h-24 w-24 relative`} />
+                    </div> */}
+                    <div className={`py-5 p-4`}>
                     <div className={`mb-5`}>
                     <h2 className={`text-about-header font-bold text-3xl`}>
                               <span className={`font-bold text-xl`}>
@@ -33,29 +35,13 @@ const Contact = () => {
                                    </span>
                          </h2>
                     </div>
-                    <div className={`flex flex-col justify-between items-start text-about-header font-bold text-3xl h-40 py-4 mb-4`}>
-                         <Tippy content="+2349026115866" visible={visible} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -bottom-11 left-10 w-64`}>
-                              <button onClick={show}>
-                              <BsFillTelephoneFill />
-                              </button>
-                         </Tippy>
-                          <Tippy content="ubahgloria16@gmail.com" visible={visible} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -bottom-11 left-10 w-64`}>
-                              <button onClick={show}>
-                                   <BsEnvelopeAtFill className={``} />
-                              </button>
-                         </Tippy>
-                         <Tippy content="Lagos, Nigeria" visible={visible} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -bottom-11 left-10 w-64`}>
-                              <button onClick={show}>
-                                   <BsGeoAltFill className={``} />
-                              </button>
-                         </Tippy>
-                    </div>
+                    
                     <div className={``}>
                          <form className="mb-4" action="">
                 <div className={`mb-4`}>
                   <div className={`${style._input_div} relative mt-3 mb-6`}>
                   <input
-                    className={`${style._input_element} bg-transparent relative w-full border-0 bg-light-blue2 rounded-lg p-2 pl-10 text-about-header outline-none`}
+                    className={`${style._input_element} relative w-full border-0 bg-light-blue2 rounded-lg p-2 pl-10 text-about-header outline-none`}
                     type="text"
                     id="name"
                     placeholder=" "
@@ -73,7 +59,7 @@ const Contact = () => {
                   </div>
                   <div className={`${style._input_div} relative mb-6`}>
                   <input
-                    className={`${style._input_element} bg-transparent relative w-full border-0 bg-light-blue2 rounded-lg p-2 pl-10 text-about-header outline-none`}
+                    className={`${style._input_element} relative w-full border-0 bg-light-blue2 rounded-lg p-2 pl-10 text-about-header outline-none`}
                     type="email"
                     id="email"
                     placeholder=" "
@@ -88,6 +74,26 @@ const Contact = () => {
                     Email
                   </label>
                   </div>
+
+                  <div className={`${style._input_div} relative mb-6`}>
+                  <textarea
+                  className={`${style._input_element} relative w-full border-0 bg-light-blue2 rounded-lg p-2 pl-10 text-about-header outline-none h-[200px]`}
+                  name="" 
+                  id="message" 
+                  placeholder=" "
+                  >
+                    
+                  </textarea>
+                    <BsEnvelope
+                      className={`${style._input_icon} absolute text-about-header`}
+                    />
+                         <label
+                          htmlFor="message"
+                          className={`${style._input_text} text-about-header `}
+                          tabIndex={1}>
+                    Message
+                  </label>
+                  </div>
                   
                 </div>
                 <div className={`${style._btn_div} relative mb-5 mt-4`}>
@@ -97,12 +103,28 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-                         </div>
-                         </div>
-                    <div className={`flex items-end justify-end w-20 h-20 relative -right-7 -bottom-8 ml-auto`}>
-                         <BsGripVertical className={`text-orange w-24 h-24 relative -right-6`} />
-                         <BsGripVertical className={`text-about-header w-24 h-24`} />
+              <div className={`w-[60%] mx-auto flex justify-between items-start text-about-header font-bold text-3xl h-40 py-4 my-4`}>
+                         <Tippy content="+2349026115866" visible={displayPhone} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -top-[40px] -left-[70px]`}>
+                              <button onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
+                              <BsFillTelephoneFill />
+                              </button>
+                         </Tippy>
+                          <Tippy content="ubahgloria16@gmail.com" visible={displayEmail} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -top-[40px] -left-[100px]`}>
+                              <button onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
+                                   <BsEnvelopeAtFill className={``} />
+                              </button>
+                         </Tippy>
+                         <Tippy content="Lagos,Nigeria" visible={displayLocation} className={`${style.tooltip} bg-light-blue2 p-2 px-4 text-about-header rounded-lg absolute -top-[40px] -left-[70px] mb-2`}>
+                              <button onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
+                                   <BsGeoAltFill className={``} />
+                              </button>
+                         </Tippy>
                     </div>
+                         </div>
+                         </div>
+                    {/* <div className={`relative right-0 bottom-0 `}>
+                         <img src={Frame} alt="" className={`h-24 w-24 relative ml-auto`} />
+                    </div> */}
                </div>
           </section>
      )

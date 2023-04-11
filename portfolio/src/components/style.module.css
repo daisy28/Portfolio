@@ -61,8 +61,8 @@
 
 .my_image{
      top: 20px;
-     right: 18px;
-     width: 290px;
+     right: 22px;
+     width: 280px;
 }
 
 .arrow{
@@ -88,6 +88,24 @@
     animation: project 0.2s;
     animation-timing-function: linear;
     overflow: hidden;
+    border-left-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #37a3a9, #498a9e, #0f3e4a) 1 100%;
+}
+
+.project_icon{
+     transform: rotate(225deg);
+     position: relative;
+     bottom: 223px;
+     right: -113px;
+     z-index: -99;
+}
+
+.border_gradient{
+     border-bottom-width: 4px;
+     border-style: solid;
+     border-image-source: linear-gradient(to left, #0f3e4a, #498a9e, #37a3a9);
+     border-image-slice: 1;
 }
 
 @keyframes project {
@@ -99,25 +117,9 @@
      }
 }
 
-
-.technology_div{
-     position: relative;
-     animation: technology 10s;
-     animation-timing-function: linear;
-     animation-iteration-count: infinite;
-}
-
-@keyframes technology {
-     0% {
+/* .tech_container div{
      width: 10rem !important;
-          transform: translate(300%, 0);
-     }
-
-     100% {
-     width: 10rem !important;
-          transform: translate(-350%, 0);
-     }
-}
+} */
 
 .tooltip::before{
      content: "";
@@ -126,8 +128,8 @@
      transform: rotate(45deg);
      background-color: #498a9e;
      position: absolute;
-     left: -4px;
-     top: 15px;
+     left: 50%;
+     bottom: -5px;
 }
 
 ._input_icon {
@@ -147,7 +149,7 @@
 ._input_element:focus~._input_text,
 ._input_element:not(:placeholder-shown)~._input_text {
      transform: translateX(-15px) translateY(-15px) !important;
-     padding: 0 0.4rem;
+     padding: 0 0.8rem;
      background-color: #002431;
      transition: 0.7s;
      border-radius: 10px;

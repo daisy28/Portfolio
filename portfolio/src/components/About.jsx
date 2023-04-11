@@ -6,6 +6,7 @@ import { MdFmdGood } from "react-icons/md";
 import { MdOutlineChevronLeft } from "react-icons/md";
 import { MdOutlineChevronRight } from "react-icons/md";
 import { MdHotelClass } from "react-icons/md";
+import Frame from "../Img/Group 6.svg"
 import {
   CarouselProvider,
   Slider,
@@ -19,7 +20,7 @@ const About = () => {
   return (
     <section className={`${style.about_section} bg-about-section p-4 py-8`} id="About">
       <div className={`relative mb-8`}>
-        <Md3DRotation className={`rotate-180 w-full h-full text-orange`} />
+        <img src={Frame} alt="" className={`w-full h-full`} />
         <img
           src={Me}
           alt=""

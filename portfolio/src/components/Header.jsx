@@ -5,7 +5,7 @@ import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { VscChevronLeft  } from "react-icons/vsc";
+import Frame from "../Img/Group 7.svg"
 import Img1 from "../Img/images (5).jpeg";
 import Logo from "../Img/Logo.png";
 import style from "./style.module.css";
@@ -50,9 +50,7 @@ const Header = () => {
       </nav>
       <header className={`flex justify-between p-4 mt-4`}>
         <div className={`${style.header_div} mb-8 relative`}>
-          <VscChevronLeft 
-            className={`${style.header_icon} text-icons-bg w-full h-full relative rotate-45`}
-          />
+          <img src={Frame} alt="" />
           <img src={Img1} alt="" className={`${style.header_img} grayscale`} />
           <div
             className={`${style.header_img2} bg-icons-bg text-orange flex justify-center px-4 pt-6`}
