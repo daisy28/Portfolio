@@ -1,13 +1,20 @@
 import React from "react";
 import style from "./style.module.css";
 import { DiJavascript } from "react-icons/di";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3} from "react-icons/di";
 import { DiBootstrap } from "react-icons/di";
+import { DiWordpress } from "react-icons/di";
+import { DiMaterializecss } from "react-icons/di";
+import { SiSlack } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 import { DiReact } from "react-icons/di";
+import { FiFigma } from "react-icons/fi";
 import { RiNetflixLine } from "react-icons/ri";
-import { SiJquery } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { SiShopify } from "react-icons/si";
+import { SiWebflow } from "react-icons/si";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./style.css";
@@ -39,7 +46,7 @@ const Technologies = () => {
      [carousel]);
      
      return (
-          <section className={`bg-about-section p-4 relative`} id="Technology">
+          <section className={`bg-about-section p-6 py-10 relative overflow-hidden border-b-2 border-icons`} id="Technology">
                <div className={`mb-5`}>
                     <h2 className={`text-about-header font-bold text-3xl`}>
                               <span className={`font-bold text-xl`}>
@@ -53,82 +60,84 @@ const Technologies = () => {
                          </h2>
                </div>
 
-               <div className={`wrapper flex justify-center mb-5`}>
+               <div className={`wrapper flex justify-center mb-5 py-[4rem]`}>
                <div className={`scene`}>
                <div className={`carousel keen-slider pt-8 mb-4`} ref={sliderRef}>
                      <div className={`bg-white carousel__cell  flex justify-center items-center number-slide1`}>
                          <div>
-                              <DiJavascript className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
+                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <DiHtml5 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <DiCss3 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <DiJavascript className={`w-8 h-8 bg-orange text-about-section`} />
+                              </div>
+                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>01</h1>
+                              <p>Html</p>
+                              <p>Css</p>
                               <p>Javascript</p>
                          </div>   
                          </div>
                      </div>
                      
-                     <div className={`bg-red-400 carousel__cell  flex justify-center items-center number-slide2`}>
+                     <div className={`bg-blue-400 carousel__cell  flex justify-center items-center number-slide2`}>
                          <div>
-                              <SiTypescript className={`w-8 h-8 bg-about-section absolute -top-4 text-orange left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
+                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <SiTypescript className={`w-8 h-8 bg-about-section text-orange mr-2`} />
+                              <DiReact className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <RiNetflixLine className={`w-8 h-8 bg-orange text-about-section`} />
+                              </div>
+                              <div  className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>02</h1>
                               <p>Typescript</p>
+                              <p>React</p>
+                              <p>Next Js</p>
                          </div>   
                          </div>
                      </div>
                      
-                     <div className={`bg-lime-400 carousel__cell  flex justify-center items-center number-slide3`}>
+                     <div className={`bg-green-400 carousel__cell  flex justify-center items-center number-slide3`}>
                          <div>
-                              <DiReact className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
+                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <DiGit className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <FiFigma className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <SiSlack className={`w-8 h-8 bg-orange text-about-section`} />
+                              </div>
+                              <div  className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>03</h1>
-                              <p>React</p>
+                              <p>Git & Github</p>
+                              <p>Figma</p>
+                              <p>Slack</p>
                          </div>   
                          </div>
                               </div>
                               
                      <div className={`bg-red-400 carousel__cell  flex justify-center items-center number-slide4`}>
                          <div>
-                              <RiNetflixLine className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
+                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <DiWordpress className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <SiWebflow className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <SiShopify className={`w-8 h-8 bg-orange text-about-section`} />
+                              </div>
+                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>04</h1>
-                              <p>Next Js</p>
+                              <p>Wordpress</p>
+                              <p>Webflow</p>
+                              <p>Shopify</p>
                          </div>   
                          </div>
                               </div>
-                              
-                     <div className={`bg-teal-400 carousel__cell  flex justify-center items-center number-slide5`}>
-                         <div>
-                              <SiJquery className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
-                              <h1>05</h1>
-                              <p>JQuery</p>
-                         </div>   
-                         </div>
-                     </div>
                      <div className={`bg-yellow-400 carousel__cell  flex justify-center items-center number-slide6`}>
                          <div>
-                              <DiGit className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
-                              <h1>06</h1>
-                              <p>Git & Github</p>
-                         </div>   
-                         </div>
-                     </div>
-                     <div className={`bg-blue-400 carousel__cell  flex justify-center items-center number-slide7`}>
-                         <div>
-                              <SiTailwindcss className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
-                              <h1>07</h1>
+                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <SiTailwindcss className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <DiBootstrap className={`w-8 h-8 bg-orange text-about-section mr-2`} />
+                              <DiMaterializecss className={`w-8 h-8 bg-orange text-about-section`} />
+                              </div>
+                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
+                              <h1>05</h1>
                               <p>Tailwind</p>
-                         </div>   
-                         </div>
-                     </div>
-                     <div className={`bg-green-400 carousel__cell  flex justify-center items-center number-slide8`}>
-                         <div>
-                              <DiBootstrap className={`w-8 h-8 bg-orange absolute -top-4 text-about-section left-7 z-10`} />
-                              <div  className={`text-lg font-bold text-about-section text-center`}>
-                              <h1>08</h1>
                               <p>Bootstrap</p>
+                              <p>Materilaize</p>
                          </div>   
                          </div>
                      </div>

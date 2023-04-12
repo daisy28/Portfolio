@@ -5,7 +5,7 @@ import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import Frame from "../Img/Group 7.svg"
+import Frame from "../Img/Group 7.svg";
 import Img1 from "../Img/images (5).jpeg";
 import Logo from "../Img/Logo.png";
 import style from "./style.module.css";
@@ -29,37 +29,39 @@ const Header = () => {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <section className={`${style.header}`} id="Header">
+    <section className={`${style.header} border-b-2 border-icons`} id="Header">
       <nav
-        className={`text-header-text text-xs flex justify-between items-center px-4 py-4 font-bold font-['Nunito']`}
+        className={`text-icons text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10`}
       >
         <div>
           <img src={Logo} alt="" className={`h-20 w-20 rounded-full`} />
         </div>
-        <div className={`hidden`}>
-          <a href="#About">About</a>
-          <a href="#Projects">Projects</a>
-          <a href="#Experience">Experience</a>
-          <a href="#Technology">Technology</a>
-          <a href="#Contact">Contact</a>
+        <div className={`hidden md:flex justify-between items-center md:w-[60%] text-lg`}>
+          <a href="#About" className={`hover:text-orange`}>About</a>
+          <a href="#Projects" className={`hover:text-orange`}>Projects</a>
+          <a href="#Experience" className={`hover:text-orange`}>Experience</a>
+          <a href="#Technology" className={`hover:text-orange`}>Technology</a>
         </div>
 
-        <div>
+        <div className={`md:hidden`}>
           <MdEqualizer className={`bg-transparent text-orange text-5xl`} />
         </div>
+        <div className={`hidden md:flex w-[60px] h-[60px] rounded-full border border-orange justify-center items-center cursor-pointer`}>
+          <a href="#Contact" className={`hover:text-orange text-orange`}>Contact</a>
+        </div>
       </nav>
-      <header className={`flex justify-between p-4 mt-4`}>
-        <div className={`${style.header_div} mb-8 relative`}>
+      <header className={`flex justify-between p-6 mt-4 md:p-10`}>
+        <div className={`${style.header_div} w-[50%] h-[300px] mb-8 relative md:h-[400px] md:w-[70%]`}>
           <img src={Frame} alt="" />
           <img src={Img1} alt="" className={`${style.header_img} grayscale`} />
           <div
-            className={`${style.header_img2} bg-icons-bg text-orange flex justify-center px-4 pt-6`}
+            className={`${style.header_img2} bg-icons-bg text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[55px] md:left-[55px] md:items-center md:pt-0`}
           >
             <div>
               <TextTransition springConfig={presets.default}>
-                <MdCode />
-                <p className={`text-icons font-["Nunito"] font-bold text-base`}>{TEXTS[index % TEXTS.length]}</p>
-                <MdCodeOff />
+                <MdCode className={`md:text-2xl`} />
+                <p className={`text-icons font-["Nunito"] font-bold text-base md:text-2xl`}>{TEXTS[index % TEXTS.length]}</p>
+                <MdCodeOff className={`md:text-2xl`} />
               </TextTransition>
             </div>
           </div>
@@ -67,13 +69,13 @@ const Header = () => {
         <div
           className={`bg-icons-bg text-icons w-20 h-40 relative flex justify-start items-center flex-col`}
         >
-          <a href="#.">
+          <a href="#." className={`hover:text-orange md:text-lg`}>
             <FaGithub className={`mb-6 mt-4`} />
           </a>
-          <a href="#.">
+          <a href="#." className={`hover:text-orange md:text-lg`}>
             <FaTwitter className={`mb-6`} />
           </a>
-          <a href="#.">
+          <a href="#." className={`hover:text-orange md:text-lg`}>
             <FaLinkedinIn className={`mb-6`} />
           </a>
           <div className={`${style.cta} relative my-8`}>
