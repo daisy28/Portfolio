@@ -46,12 +46,12 @@ const Technologies = () => {
      [carousel]);
      
      return (
-          <section className={`bg-about-section p-6 py-10 relative overflow-hidden border-b-2 border-icons`} id="Technology">
+          <section className={`bg-about-section p-6 py-10 relative overflow-hidden border-b-2 border-icons xl:px-14`} id="Technology">
                <div className={`mb-5`}>
-                    <h2 className={`text-about-header font-bold text-3xl`}>
-                              <span className={`font-bold text-xl`}>
+                    <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+                              <span className={`font-bold text-xl md:text-3xl`}>
                                    <span
-                                   className={`${style.name} font-extrabold text-orange text-4xl`}
+                                   className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
                                    >
                                    T
                                    </span>
@@ -63,9 +63,9 @@ const Technologies = () => {
                <div className={`wrapper flex justify-center mb-5 py-[4rem]`}>
                <div className={`scene`}>
                <div className={`carousel keen-slider pt-8 mb-4`} ref={sliderRef}>
-                     <div className={`bg-white carousel__cell  flex justify-center items-center number-slide1`}>
+                     <div className={`bg-white carousel__cell flex justify-center items-center number-slide1`}>
                          <div>
-                              <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
+                              <div className={`absolute -top-4 left-7 z-10 flex justify-between`}>
                               <DiHtml5 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
                               <DiCss3 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
                               <DiJavascript className={`w-8 h-8 bg-orange text-about-section`} />

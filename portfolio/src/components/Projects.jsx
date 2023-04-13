@@ -3,7 +3,7 @@ import { VscChevronLeft } from "react-icons/vsc";
 import style from "./style.module.css";
 import Data from "../data/project";
 import Img from "../Img/images (5).jpeg";
-import Frame1 from "../Img/Group 7.svg";
+import Frame1 from "../Img/Group 7 (1).svg";
 
 const Projects = () => {
      const [displayData, setDisplayData] = useState(Data);
@@ -28,10 +28,10 @@ const Projects = () => {
       <section className={`${style.project_section}  border-b-2 border-icons p-4 md:p-0 relative`} id="Projects">
            <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
            <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem]`}>
-                         <h2 className={`text-about-header font-bold text-3xl`}>
-                              <span className={`font-bold text-xl`}>
+                         <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+                              <span className={`font-bold text-xl md:text-3xl`}>
                                    <span
-                                   className={`${style.name} font-extrabold text-orange text-4xl`}
+                                   className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
                                    >
                                    P
                                    </span>
@@ -39,8 +39,8 @@ const Projects = () => {
                                    </span>
                          </h2>
                     </div>
-           <div className={`p-[2rem] md:flex justify-between items-center md:px-[4rem] md:py-[6rem]`}>
-           <div className={`relative z-10 md:w-[70%]`}>
+           <div className={`p-[2rem] md:flex justify-between items-center md:px-[4rem] md:py-[6rem]xl:w-[1000px] xl:mx-auto xl:pb-[9rem]`}>
+           <div className={`relative z-10 md:w-[70%] xl:w-[60%]`}>
                 {data.map(info => {
                         return (<div className={`${style.project_div} my-8 px-4 md:px-8 md:my-0`} key={info.id}> 
                              <h3 className={`font-semibold text-lg text-about-header`}>{info.title}</h3>

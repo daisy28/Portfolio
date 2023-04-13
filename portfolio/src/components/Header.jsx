@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MdEqualizer } from "react-icons/md";
+import { BsArrowUpRight } from "react-icons/bs";
 import { MdCodeOff } from "react-icons/md";
 import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
@@ -10,6 +11,7 @@ import Img1 from "../Img/images (5).jpeg";
 import Logo from "../Img/Logo.png";
 import style from "./style.module.css";
 import TextTransition, { presets } from "react-text-transition";
+import ReactCurvedText from 'react-curved-text';
 
 const Header = () => {
   const TEXTS = [
@@ -28,34 +30,55 @@ const Header = () => {
     }, 4000);
     return () => clearTimeout(intervalId);
   }, []);
+
   return (
     <section className={`${style.header} border-b-2 border-icons`} id="Header">
       <nav
-        className={`text-icons text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10`}
+        className={`text-icons text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10 xl:px-14`}
       >
         <div>
           <img src={Logo} alt="" className={`h-20 w-20 rounded-full`} />
         </div>
-        <div className={`hidden md:flex justify-between items-center md:w-[60%] text-lg`}>
+        <div className={`hidden md:flex justify-between items-center md:w-[60%] text-lg xl:w-[40%]`}>
+          <a href="#Header" className={`hover:text-orange`}>Home</a>
           <a href="#About" className={`hover:text-orange`}>About</a>
           <a href="#Projects" className={`hover:text-orange`}>Projects</a>
           <a href="#Experience" className={`hover:text-orange`}>Experience</a>
           <a href="#Technology" className={`hover:text-orange`}>Technology</a>
+          {/* <button className={`border border-icons-bg py-1 px-4`}>My <span className={`bg-icons-bg`}>CV</span></button> */}
         </div>
 
         <div className={`md:hidden`}>
           <MdEqualizer className={`bg-transparent text-orange text-5xl`} />
         </div>
-        <div className={`hidden md:flex w-[60px] h-[60px] rounded-full border border-orange justify-center items-center cursor-pointer`}>
-          <a href="#Contact" className={`hover:text-orange text-orange`}>Contact</a>
-        </div>
+        <div className={`relative cursor-pointer hidden md:block`}>
+        <ReactCurvedText
+        className={`text-orange`}
+            width={80}
+            height={80}
+            cx={40}
+            cy={40}
+            rx={30}
+            ry={30}
+            startOffset={0}
+            reversed={true}
+            text="contact me . contact me ."
+            textProps={{ style: { fontSize: 16} }}
+            textPathProps={{ "fill": "#b51f06"}}
+            tspanProps={null}
+            ellipseProps={null}
+            svgProps={null}
+          />
+          <a href="#Contact"><BsArrowUpRight className={`absolute font-bold text-xl text-orange top-[30px] left-[30px]`} /></a>
+          </div>
+        
       </nav>
-      <header className={`flex justify-between p-6 mt-4 md:p-10`}>
+      <header className={`flex justify-between p-6 mt-4 md:p-10 xl:px-14`}>
         <div className={`${style.header_div} w-[50%] h-[300px] mb-8 relative md:h-[400px] md:w-[70%]`}>
           <img src={Frame} alt="" />
           <img src={Img1} alt="" className={`${style.header_img} grayscale`} />
           <div
-            className={`${style.header_img2} bg-icons-bg text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[55px] md:left-[55px] md:items-center md:pt-0`}
+            className={`${style.header_img2} bg-icons-bg text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[55px] md:left-[55px] xl:left-[65px] md:items-center md:pt-0`}
           >
             <div>
               <TextTransition springConfig={presets.default}>

@@ -16,6 +16,14 @@
      /* height: 280px; */
 }
 
+.svg_text{
+     fill: currentColor;
+     height: auto;
+     max-width: 66vmin;
+     transform-origin: center;
+     width: 66%;
+}
+
 .header_icon{
      top: -111px;
      left: -53px;
@@ -82,7 +90,7 @@
 
 .project_div{
     position: relative;
-    animation: project 0.2s;
+    animation: project 0.5s;
     animation-timing-function: linear;
     overflow: hidden;
     border-left-width: 4px;
@@ -106,12 +114,12 @@
 }
 
 @keyframes project {
-     0% {
-          transform: translate(500px, 0);
-     }
-     100% {
-          transform: translate(0, 0);
-     }
+   0% {
+     transform: perspective(900px) rotateY(0);
+   }
+  100% {
+   transform: perspective(900px) rotateY(-90deg);
+    }
 }
 
 /* .tech_container div{

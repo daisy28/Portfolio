@@ -16,7 +16,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const About = () => {
   return (
-    <section className={`${style.about_section} border-b-2 border-icons bg-about-section p-6 py-8 md:px-10`} id="About">
+    <section className={`${style.about_section} border-b-2 border-icons bg-about-section p-6 py-8 md:px-10 xl:px-14`} id="About">
       <div className={`md:flex justify-between items-center`}>
       <div className={`relative mb-8 md:w-[45%]`}>
         <img src={Frame} alt="" className={`w-full h-full `} />

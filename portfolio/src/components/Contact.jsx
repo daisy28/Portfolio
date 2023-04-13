@@ -21,12 +21,12 @@ const Contact = () => {
                     {/* <div className={`relative left-0 top-0 `}>
                          <img src={Frame} alt="" className={`h-24 w-24 relative`} />
                     </div> */}
-                    <div className={`py-8 p-6 md:p-10`}>
+                    <div className={`py-8 p-6 md:p-10 xl:px-14`}>
                     <div className={`mb-5`}>
-                    <h2 className={`text-about-header font-bold text-3xl`}>
-                              <span className={`font-bold text-xl`}>
+                    <h2 className={`text-about-header font-bold text-3x md:text-6xl`}>
+                              <span className={`font-bold text-xl md:text-3xl`}>
                                    <span
-                                   className={`${style.name} font-extrabold text-orange text-4xl`}
+                                   className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
                                    >
                                    C
                                    </span>
