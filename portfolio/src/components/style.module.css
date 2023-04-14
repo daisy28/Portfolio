@@ -70,18 +70,6 @@
      width: 280px;
 }
 
-.arrow{
-     position: absolute;
-     right: 133px;
-     top: 6.1px;
-}
-
-.arrow2 {
-     position: absolute;
-     left: 132.5px;
-     top: 5.5px;
-}
-
 .project_border{
      position: absolute;
      top: -90px;
@@ -161,4 +149,8 @@
      color: #b51f06;
      font-size: .7rem;
      font-weight: 700;
+}
+
+._input_element:focus~._input_icon{
+     color: #b51f06;
 }

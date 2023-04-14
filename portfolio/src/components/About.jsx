@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./style.module.css";
 import { MdFmdGood } from "react-icons/md";
-import { MdOutlineChevronLeft } from "react-icons/md";
-import { MdOutlineChevronRight } from "react-icons/md";
+import { AiFillCaretLeft } from "react-icons/ai";
+import { AiFillCaretRight } from "react-icons/ai";
 import { MdHotelClass } from "react-icons/md";
 import Frame from "../Img/Group 8.svg"
 import {
@@ -37,12 +37,10 @@ const About = () => {
           <h4
             className={`text-body-text text-base font-semibold font-["Nunito"] md:text-2xl text-jleft`}
           >
-            I'm a Frontend Developer with 1+ year of experience. I define myself
-            by the work I do. I build on-demand scalable, fully responsive
+            I'm a Frontend Developer with 2+ years of experience. I build on-demand, scalable, fully responsive and 
             custom designed web applications. I have a diverse set of skills
             acquired overtime to stand out from the ordinary. I've an extensive
-            programming experience and comfortable developing on the frontend as
-            well as maintaining and managing code infrastructure.{" "}
+            programming experience especially on the frontend. I'm sensitive and pay attention to the littlest details which makes it easy for me to build & implement functional web applications.{" "}
           </h4>
           <div
             className={` text-about-header font-semibold text-xl mt-5 md:font-bold`}
@@ -53,7 +51,7 @@ const About = () => {
             </h2>
             <CarouselProvider
               naturalSlideWidth={80}
-              totalSlides={3}
+              totalSlides={4}
               touchEnabled={true}
               infinite={true}
               isIntrinsicHeight={true}
@@ -65,24 +63,28 @@ const About = () => {
                 <Slide index={0}>
                   <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
                     <small>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Blanditiis aliquam deserunt velit culpa.
+                      I find that I write bugs first before I actually start coding which surprisingly makes my work easier. 😅
                     </small>
                   </div>
                 </Slide>
                 <Slide index={1}>
                   <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
                     <small>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Blanditiis aliquam deserunt velit culpa.
+                      I spend more time trying to get a libray/framework to work exactly the way I want it before reading the documentation. Very inefficient! 😞
                     </small>
                   </div>
                 </Slide>
                 <Slide index={2}>
                   <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
                     <small>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Blanditiis aliquam deserunt velit culpa.
+                      My slogan: While there's <span className={`line-through`}>life</span> <span className={`text-orange text-base`}>(CODE)</span> there's <span className={`line-through text-base`}>hope</span> <span className={`text-orange`}>(BUG).</span>
+                    </small>
+                  </div>
+                </Slide>
+                <Slide index={3}>
+                  <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
+                    <small>
+                      Thanks for reading this not so fun facts about me, You've proven to be the CSS to my HTML. 😄
                     </small>
                   </div>
                 </Slide>
@@ -91,15 +93,13 @@ const About = () => {
                 className={`w-40 mx-auto flex justify-between items-center text-orange relative my-4 cursor-pointer`}
               >
                 <ButtonNext className={`w-8`}>
-                  <MdFmdGood className={`-rotate-90 text-4xl w-8 h-8`} />
-                  <MdOutlineChevronLeft
-                    className={`${style.arrow} text-about-section relative w-8`}
+                  <AiFillCaretLeft
+                    className={`${style.arrow}  relative w-8`}
                   />
                 </ButtonNext>
                 <ButtonBack className={`w-8`}>
-                  <MdFmdGood className={`rotate-90 text-4xl w-8 h-8`} />
-                  <MdOutlineChevronRight
-                    className={`${style.arrow2} text-about-section relative w-8`}
+                  <AiFillCaretRight
+                    className={`${style.arrow2}  relative w-8`}
                   />
                 </ButtonBack>
               </div>

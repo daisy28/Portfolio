@@ -66,9 +66,9 @@ const Technologies = () => {
                      <div className={`bg-white carousel__cell flex justify-center items-center number-slide1`}>
                          <div>
                               <div className={`absolute -top-4 left-7 z-10 flex justify-between`}>
-                              <DiHtml5 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <DiCss3 className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <DiJavascript className={`w-8 h-8 bg-orange text-about-section`} />
+                              <DiHtml5 className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <DiCss3 className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <DiJavascript className={`w-8 h-8 bg-orange text-black`} />
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>01</h1>
@@ -82,9 +82,9 @@ const Technologies = () => {
                      <div className={`bg-blue-400 carousel__cell  flex justify-center items-center number-slide2`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
-                              <SiTypescript className={`w-8 h-8 bg-about-section text-orange mr-2`} />
-                              <DiReact className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <RiNetflixLine className={`w-8 h-8 bg-orange text-about-section`} />
+                              <SiTypescript className={`w-8 h-8 bg-black text-orange mr-2`} />
+                              <DiReact className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <RiNetflixLine className={`w-8 h-8 bg-orange text-black`} />
                               </div>
                               <div  className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>02</h1>
@@ -98,9 +98,9 @@ const Technologies = () => {
                      <div className={`bg-green-400 carousel__cell  flex justify-center items-center number-slide3`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
-                              <DiGit className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <FiFigma className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <SiSlack className={`w-8 h-8 bg-orange text-about-section`} />
+                              <DiGit className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <FiFigma className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <SiSlack className={`w-8 h-8 bg-orange text-black`} />
                               </div>
                               <div  className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>03</h1>
@@ -114,9 +114,9 @@ const Technologies = () => {
                      <div className={`bg-red-400 carousel__cell  flex justify-center items-center number-slide4`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
-                              <DiWordpress className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <SiWebflow className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <SiShopify className={`w-8 h-8 bg-orange text-about-section`} />
+                              <DiWordpress className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <SiWebflow className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <SiShopify className={`w-8 h-8 bg-orange text-black`} />
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>04</h1>
@@ -129,9 +129,9 @@ const Technologies = () => {
                      <div className={`bg-yellow-400 carousel__cell  flex justify-center items-center number-slide6`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
-                              <SiTailwindcss className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <DiBootstrap className={`w-8 h-8 bg-orange text-about-section mr-2`} />
-                              <DiMaterializecss className={`w-8 h-8 bg-orange text-about-section`} />
+                              <SiTailwindcss className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <DiBootstrap className={`w-8 h-8 bg-orange text-black mr-2`} />
+                              <DiMaterializecss className={`w-8 h-8 bg-orange text-black`} />
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
                               <h1>05</h1>

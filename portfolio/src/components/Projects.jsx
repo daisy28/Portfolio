@@ -2,7 +2,6 @@ import React, {useState } from "react";
 import { VscChevronLeft } from "react-icons/vsc";
 import style from "./style.module.css";
 import Data from "../data/project";
-import Img from "../Img/images (5).jpeg";
 import Frame1 from "../Img/Group 7 (1).svg";
 
 const Projects = () => {
@@ -40,12 +39,12 @@ const Projects = () => {
                          </h2>
                     </div>
            <div className={`p-[2rem] md:flex justify-between items-center md:px-[4rem] md:py-[6rem]xl:w-[1000px] xl:mx-auto xl:pb-[9rem]`}>
-           <div className={`relative z-10 md:w-[70%] xl:w-[60%]`}>
+           <div className={`relative z-10 md:w-[70%] xl:w-[650px]`}>
                 {data.map(info => {
                         return (<div className={`${style.project_div} my-8 px-4 md:px-8 md:my-0`} key={info.id}> 
-                             <h3 className={`font-semibold text-lg text-about-header`}>{info.title}</h3>
+                             <h3 className={`font-semibold text-2xl text-about-header`}>{info.title}</h3>
                              <div className={`relative my-4`}>
-                                  <img src={Img} alt="" className={`w-full h-full`} />
+                                  <img src={info.img} alt="" className={`w-full h-full`} />
                              </div>
                          <p className={`text-body-text text-base font-semibold font-["Nunito"] text-left py-4`}>{info.description}</p>
                          <div className={`flex justify-start items-center`}>

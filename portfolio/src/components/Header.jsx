@@ -16,10 +16,10 @@ import ReactCurvedText from 'react-curved-text';
 const Header = () => {
   const TEXTS = [
     `Hello World.`,
-    `I develop web applications`,
-    `With consistent Layout and Readability,`,
-    `Dynamic code structure & Responsive Web Designs,`,
-    `Collaborate with teams to build scalable apps,`,
+    `I develop web applications,`,
+    `with cutting-edge, beautiful interfaces and intuitively implemented UX.`,
+    `Passionate about dynamic code structure & Responsive Web Designs.`,
+    `Collaborate with teams to build SEO optimized & scalable apps,`,
     `Integrate third party Libraries and`,
     `Ensure the automated processing of Documents by using Semantic Elements.`,
   ];
@@ -45,7 +45,6 @@ const Header = () => {
           <a href="#Projects" className={`hover:text-orange`}>Projects</a>
           <a href="#Experience" className={`hover:text-orange`}>Experience</a>
           <a href="#Technology" className={`hover:text-orange`}>Technology</a>
-          {/* <button className={`border border-icons-bg py-1 px-4`}>My <span className={`bg-icons-bg`}>CV</span></button> */}
         </div>
 
         <div className={`md:hidden`}>
