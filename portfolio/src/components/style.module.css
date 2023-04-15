@@ -1,3 +1,11 @@
+.nav {
+     box-shadow: 0 0 2px 0 #498a9e;
+}
+
+.footer {
+     box-shadow: 0 0 2px 0 #498a9e;
+}
+
 .header {
      position: relative;
      background: url("../Img/background.png") #071b24;
@@ -11,10 +19,10 @@
      background-blend-mode: multiply;
 }
 
-.header_div{
-     /* width: 50%; */
-     /* height: 280px; */
-}
+/* .header_div{
+     width: 50%;
+     height: 280px;
+} */
 
 .svg_text{
      fill: currentColor;
@@ -153,4 +161,14 @@
 
 ._input_element:focus~._input_icon{
      color: #b51f06;
+}
+
+@media screen and (max-height: 600px){
+     .home_page,
+     .technology_page{
+          margin-top: 7rem;
+     }
+     .about_page{
+          margin-top: 10rem;
+     }
 }

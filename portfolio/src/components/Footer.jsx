@@ -1,11 +1,15 @@
 import React from "react";
+import style from "./style.module.css";
+import Frame from "../Img/Group 3.svg";
 
 const Footer = () => {
      return (
-          <section className={`bg-header-background p-4`}>
-               <div className={`flex justify-center items-center text-about-header font-semibold`}>
-                    <p>&copy;2023 - Gloria <span className={`text-orange font-extrabold text-2xl`}>|</span> All rights reserved</p>
+          <section className={`${style.footer} bg-header-background relative`}>
+               
+               <div className={`flex justify-center items-center text-about-header font-semibold text-center p-4`}>
+                    <p>&copy;2023 - Gloria <span className={`text-orange font-extrabold text-2xl`}>&nbsp;|&nbsp;</span> All rights reserved</p>
                </div>
+               
           </section>
      )
 }

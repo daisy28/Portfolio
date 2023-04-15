@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style.module.css";
-import { MdFmdGood } from "react-icons/md";
 import { AiFillCaretLeft } from "react-icons/ai";
 import { AiFillCaretRight } from "react-icons/ai";
 import { MdHotelClass } from "react-icons/md";
@@ -16,10 +15,11 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const About = () => {
   return (
-    <section className={`${style.about_section} border-b-2 border-icons bg-about-section p-6 py-8 md:px-10 xl:px-14`} id="About">
+    <section className={`${style.about_section} bg-about-section  p-6 pt-6 md:px-10 xl:px-14`} id="About">
+      <div className={`${style.about_page} flex flex-col justify-center h-[100vh] my-[10rem] mt-[16rem] md:my-0 lg:my-[7rem]`}>
       <div className={`md:flex justify-between items-center`}>
       <div className={`relative mb-8 md:w-[45%]`}>
-        <img src={Frame} alt="" className={`w-full h-full `} />
+            <img src={Frame} alt="" className={`w-full h-full `} />
       </div>
       <div className={`md:w-[50%]`}>
         <h1 className={`text-about-header font-base text-xl mb-2 md:text-3xl md:mb-4`}>
@@ -77,14 +77,14 @@ const About = () => {
                 <Slide index={2}>
                   <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
                     <small>
-                      My slogan: While there's <span className={`line-through`}>life</span> <span className={`text-orange text-base`}>(CODE)</span> there's <span className={`line-through text-base`}>hope</span> <span className={`text-orange`}>(BUG).</span>
+                      My slogan: While there's <span className={`line-through text-base`}>life</span> <span className={`text-orange text-base`}>(CODE)</span> there's <span className={`line-through text-base`}>hope</span> <span className={`text-orange text-base`}>(BUG).</span>
                     </small>
                   </div>
                 </Slide>
                 <Slide index={3}>
                   <div className={` text-body-text text-sm mt-5 text-center md:text-lg`}>
                     <small>
-                      Thanks for reading this not so fun facts about me, You've proven to be the CSS to my HTML. 😄
+                      Thanks for reading this not so fun facts about me, You've proven to be the <span className={`text-about-header font-bold`}>CSS</span> to my <span className={`text-about-header font-bold`}>HTML</span>. 😄
                     </small>
                   </div>
                 </Slide>
@@ -108,6 +108,7 @@ const About = () => {
         </div>
       </div>
       </div>
+    </div>
     </section>
   );
 };

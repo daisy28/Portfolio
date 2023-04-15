@@ -46,7 +46,8 @@ const Technologies = () => {
      [carousel]);
      
      return (
-          <section className={`bg-about-section p-6 py-10 relative overflow-hidden border-b-2 border-icons xl:px-14`} id="Technology">
+          <section className={`bg-about-section p-6 py-10 relative overflow-hidden xl:px-14`} id="Technology">
+               <div className={`${style.technology_page} flex flex-col justify-center h-[100vh]`}>
                <div className={`mb-5`}>
                     <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
                               <span className={`font-bold text-xl md:text-3xl`}>
@@ -144,6 +145,7 @@ const Technologies = () => {
 
                </div>
                </div> 
+               </div>
                </div>
           </section>
      )

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-// import { BsGripVertical } from "react-icons/bs";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { BsGeoAltFill } from "react-icons/bs";
 import { BsEnvelope } from "react-icons/bs";
 import { BsPerson } from "react-icons/bs";
 import { FiEdit3 } from "react-icons/fi";
-// import Frame from "../Img/Group 3.svg"
 
 const Contact = () => {
      const [displayLocation, setDisplayLocation] = useState(false);
@@ -16,11 +14,8 @@ const Contact = () => {
 
 
      return (
-          <section className={`bg-about-section relative border-b-2 border-icons`} id="Contact">
+          <section className={`bg-about-section relative mt-[8rem]`} id="Contact">
                <div>
-                    {/* <div className={`relative left-0 top-0 `}>
-                         <img src={Frame} alt="" className={`h-24 w-24 relative`} />
-                    </div> */}
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
                     <div className={`mb-8`}>
                     <h2 className={`text-about-header font-bold text-3x md:text-6xl`}>
@@ -37,10 +32,10 @@ const Contact = () => {
 
                    
                     
-                         <div className={`md:flex justify-between flex-row-reverse my-[2rem]`}>
+                         <div className={`md:flex justify-between flex-row my-[4rem]`}>
                                <div className={`md:w-[45%]`}>
                <div className={`mb-2`}>
-                         <h1 className={`text-icons text-3xl font-bold`}>Love to hear from you, Get in touch.</h1>
+                         <h1 className={`text-icons text-3xl font-bold`}>Love to hear from you, Get in touch 👋</h1>
                     </div>
               <div className={`mx-auto flex justify-between items-start text-about-header font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
                <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer  hover:bg-[#034355] hover:rounded-xl`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
