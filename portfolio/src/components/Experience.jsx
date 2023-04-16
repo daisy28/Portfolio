@@ -34,7 +34,9 @@ const Experience = () => {
               Sololearn.
             </p>
             <a
-              href="#."
+              href="https://drive.google.com/file/d/1JMH_NetIQNbxRb55nxmkGq1CuzS7qXlI/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
             >
               Access Certificate
@@ -53,7 +55,9 @@ const Experience = () => {
               Microsoft.
             </p>
             <a
-              href="#."
+              href="https://drive.google.com/file/d/1JJw8wtUiOhX6k1Qt_gtTGcW8NDOoRiry/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
             >
               Access Certificate
@@ -67,12 +71,14 @@ const Experience = () => {
               I4GxZuri &#123;2021&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
-              Participated in an intensive training in Fullstack development
+              Participated in an intensive 3 months training in Fullstack development
               program sponsored by I4GxZuri. Collaborated in teams to build and
               deploy projects.
             </p>
             <a
-              href="#."
+              href="https://drive.google.com/file/d/10-NmffnavC7I0GUaJ40GbnGPnkdNtqhn/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
             >
               Access Certificate
@@ -83,15 +89,15 @@ const Experience = () => {
           <img src={Frame1} alt="" className={`absolute h-[185px] right-0`} />
           <div className={`mr-8`}>
             <h1 className={`text-about-header font-bold text-lg mb-2`}>
-              HNG &#123;2022&#125;
+              HNG Internship &#123;2022&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
-              Successfully completed a 2-week Bootcamp training in software
-              development with the Women Techsters in collaboration with
-              Microsoft.
+              Enrolled and successfully completed the HNG Internship program. A remote, large scale, fast-paced virtual internship that improves skills by working on a real world project.
             </p>
             <a
               href="#."
+              target="_blank"
+              rel="noopener noreferrer"
               className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
             >
               Access Certificate
@@ -127,7 +133,9 @@ const Experience = () => {
                   Sololearn.
                 </p>
                 <a
-                  href="#."
+                  href="https://drive.google.com/file/d/1JMH_NetIQNbxRb55nxmkGq1CuzS7qXlI/view?usp=drivesdk" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
                 >
                   Access Certificate
@@ -144,12 +152,14 @@ const Experience = () => {
                   I4GxZuri
                 </h1>
                 <p className={`text-body-text mb-4`}>
-                  Participated in an intensive training in Fullstack development
-                  program sponsored by I4GxZuri. Collaborated in teams to build
-                  and deploy projects.
+                  Participated in an intensive 3 months training in Fullstack development
+              program sponsored by I4GxZuri. Collaborated in teams to build and
+              deploy projects.
                 </p>
                 <a
-                  href="#."
+                  href="https://drive.google.com/file/d/10-NmffnavC7I0GUaJ40GbnGPnkdNtqhn/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
                 >
                   Access Certificate
@@ -208,7 +218,9 @@ const Experience = () => {
                   Microsoft.
                 </p>
                 <a
-                  href="#."
+                  href="https://drive.google.com/file/d/1JJw8wtUiOhX6k1Qt_gtTGcW8NDOoRiry/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
                 >
                   Access Certificate
@@ -222,15 +234,15 @@ const Experience = () => {
               <img src={Frame1} alt="" className={`absolute h-[250px]`} />
               <div className={`ml-8 w-[200px]`}>
                 <h1 className={`text-about-header font-bold text-lg mb-2`}>
-                  HNG
+                  HNG Internship
                 </h1>
                 <p className={`text-body-text mb-4`}>
-                  Successfully completed a 2-week Bootcamp training in software
-                  development with the Women Techsters in collaboration with
-                  Microsoft.
+                  Enrolled and successfully completed the HNG Internship program. A remote, large scale, fast-paced virtual internship that improves skills by working on a real world project.
                 </p>
                 <a
                   href="#."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
                 >
                   Access Certificate

@@ -1,9 +1,8 @@
 import React from "react";
 import style from "./style.module.css";
-import { AiFillCaretLeft } from "react-icons/ai";
-import { AiFillCaretRight } from "react-icons/ai";
+import { BsFillEggFill } from "react-icons/bs";
 import { MdHotelClass } from "react-icons/md";
-import Frame from "../Img/Group 8.svg"
+import Frame from "../Img/Group 8 (1).svg"
 import {
   CarouselProvider,
   Slider,
@@ -93,13 +92,13 @@ const About = () => {
                 className={`w-40 mx-auto flex justify-between items-center text-orange relative my-4 cursor-pointer`}
               >
                 <ButtonNext className={`w-8`}>
-                  <AiFillCaretLeft
-                    className={`${style.arrow}  relative w-8`}
+                  <BsFillEggFill
+                    className={`${style.arrow} relative w-8 rotate-[90deg]`}
                   />
                 </ButtonNext>
                 <ButtonBack className={`w-8`}>
-                  <AiFillCaretRight
-                    className={`${style.arrow2}  relative w-8`}
+                  <BsFillEggFill
+                    className={`${style.arrow2} relative w-8 -rotate-[90deg]`}
                   />
                 </ButtonBack>
               </div>

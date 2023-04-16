@@ -49,13 +49,13 @@ const Header = () => {
         <div
           className={`bg-icons-bg text-icons w-20 h-40 relative flex justify-start items-center flex-col`}
         >
-          <a href="#." className={`hover:text-orange md:text-lg`}>
+          <a href="https://github.com/daisy28" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaGithub className={`mb-6 mt-4`} />
           </a>
-          <a href="#." className={`hover:text-orange md:text-lg`}>
+          <a href="https://twitter.com/gloriah_CU?s=09" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaTwitter className={`mb-6`} />
           </a>
-          <a href="#." className={`hover:text-orange md:text-lg`}>
+          <a href="https://www.linkedin.com/in/gloria-ubah-a74446156" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaLinkedinIn className={`mb-6`} />
           </a>
           <div className={`${style.cta} relative my-8`}>

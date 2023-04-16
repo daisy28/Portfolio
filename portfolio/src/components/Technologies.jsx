@@ -64,7 +64,7 @@ const Technologies = () => {
                <div className={`wrapper flex justify-center mb-5 py-[4rem]`}>
                <div className={`scene`}>
                <div className={`carousel keen-slider pt-8 mb-4`} ref={sliderRef}>
-                     <div className={`bg-white carousel__cell flex justify-center items-center number-slide1`}>
+                     <div className={`bg-white carousel__cell flex justify-center items-center number-slide1 rounded`}>
                          <div>
                               <div className={`absolute -top-4 left-7 z-10 flex justify-between`}>
                               <DiHtml5 className={`w-8 h-8 bg-orange text-black mr-2`} />
@@ -80,7 +80,7 @@ const Technologies = () => {
                          </div>
                      </div>
                      
-                     <div className={`bg-blue-400 carousel__cell  flex justify-center items-center number-slide2`}>
+                     <div className={`bg-blue-400 carousel__cell  flex justify-center items-center number-slide2 rounded`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
                               <SiTypescript className={`w-8 h-8 bg-black text-orange mr-2`} />
@@ -96,7 +96,7 @@ const Technologies = () => {
                          </div>
                      </div>
                      
-                     <div className={`bg-green-400 carousel__cell  flex justify-center items-center number-slide3`}>
+                     <div className={`bg-green-400 carousel__cell  flex justify-center items-center number-slide3 rounded`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
                               <DiGit className={`w-8 h-8 bg-orange text-black mr-2`} />
@@ -112,7 +112,7 @@ const Technologies = () => {
                          </div>
                               </div>
                               
-                     <div className={`bg-red-400 carousel__cell  flex justify-center items-center number-slide4`}>
+                     <div className={`bg-red-400 carousel__cell  flex justify-center items-center number-slide4 rounded`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
                               <DiWordpress className={`w-8 h-8 bg-orange text-black mr-2`} />
@@ -127,7 +127,7 @@ const Technologies = () => {
                          </div>   
                          </div>
                               </div>
-                     <div className={`bg-yellow-400 carousel__cell  flex justify-center items-center number-slide6`}>
+                     <div className={`bg-yellow-400 carousel__cell  flex justify-center items-center number-slide6 rounded`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
                               <SiTailwindcss className={`w-8 h-8 bg-orange text-black mr-2`} />

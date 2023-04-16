@@ -74,7 +74,7 @@ const Projects = () => {
                   >
                     Visit Site
                   </a>
-                  {/* <a href={info.github} className={`${style.border_gradient}  text-about-header font-semibold pb-2 ml-8 animate-pulse`}>Github</a>   */}
+                  <a href={info.github} className={`${style.border_gradient}  text-about-header font-semibold pb-2 ml-8 animate-pulse`}>Github</a>  
                 </div>
               </div>
             );

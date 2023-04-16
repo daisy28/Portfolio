@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { BsEnvelopeAtFill } from "react-icons/bs";
-import { BsGeoAltFill } from "react-icons/bs";
-import { BsEnvelope } from "react-icons/bs";
-import { BsPerson } from "react-icons/bs";
+import { BsFillPhoneVibrateFill } from "react-icons/bs";
+import { BiMailSend } from "react-icons/bi";
+import { BiCurrentLocation } from "react-icons/bi";
+import { RxPerson } from "react-icons/rx";
 import { FiEdit3 } from "react-icons/fi";
 
 const Contact = () => {
@@ -39,15 +38,15 @@ const Contact = () => {
                     </div>
               <div className={`mx-auto flex justify-between items-start text-about-header font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
                <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer  hover:bg-[#034355] hover:rounded-xl`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
-                    <BsGeoAltFill className={`md:mb-0 ${displayLocation ? `mb-4` : `mb-0`}`} />
+                    <BiCurrentLocation className={`md:mb-0 ${displayLocation ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayLocation ? `block` : `hidden`}`}>Lagos, Nigeria</p>
                </div>
                <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer  hover:bg-[#034355] hover:rounded-xl`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
-                    <BsFillTelephoneFill className={`md:mb-0 ${displayPhone ? `mb-4` : `mb-0`}`} />
+                    <BsFillPhoneVibrateFill className={`md:mb-0 ${displayPhone ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayPhone ? `block` : `hidden`}`}>+2349026115866</p>
                </div>
                <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer  hover:bg-[#034355] hover:rounded-xl`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
-                    <BsEnvelopeAtFill className={`md:mb-0 ${displayEmail ? `mb-4` : `mb-0`}`} />
+                    <BiMailSend className={`md:mb-0 ${displayEmail ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayEmail ? `block` : `hidden`}`}>ubahgloria16@gmail.com</p>
                </div>
                     </div>
@@ -63,7 +62,7 @@ const Contact = () => {
                     placeholder=" "
                     // onChange={(e) => setPassword(e.target.value)}
                   />
-                    <BsPerson
+                    <RxPerson
                       className={`${style._input_icon} absolute text-about-header`}
                     />
                   <label 
@@ -80,7 +79,7 @@ const Contact = () => {
                     id="email"
                     placeholder=" "
                   />
-                    <BsEnvelope
+                    <BiMailSend
                       className={`${style._input_icon} absolute text-about-header`}
                     />
                          <label
