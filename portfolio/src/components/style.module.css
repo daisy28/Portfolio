@@ -1,28 +1,29 @@
-.nav {
-     box-shadow: 0 0 2px 0 #498a9e;
-}
-
-.footer {
-     box-shadow: 0 0 2px 0 #498a9e;
-}
-
 .header {
      position: relative;
-     background: url("../Img/background.png") #071b24;
+     background: url("../Img/background.png") #011e27;
      background-size: cover;
      background-blend-mode: multiply;
+}
+
+.links{
+     position: relative;
+}
+
+.links::after {
+     content: "";
+     width: 50%;
+     height: 2px;
+     background-color: #b51f06;
+     position: absolute !important;
+     bottom: -4px;
+     left: 0px;
 }
 
 .project_section{
-     background: url("../Img/background.png") #071b24;
+     background: url("../Img/background.png") #011e27;
      background-size: cover;
      background-blend-mode: multiply;
 }
-
-/* .header_div{
-     width: 50%;
-     height: 280px;
-} */
 
 .svg_text{
      fill: currentColor;

@@ -5,6 +5,7 @@ import { BiMailSend } from "react-icons/bi";
 import { BiCurrentLocation } from "react-icons/bi";
 import { RxPerson } from "react-icons/rx";
 import { FiEdit3 } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Contact = () => {
      const [displayLocation, setDisplayLocation] = useState(false);
@@ -12,7 +13,14 @@ const Contact = () => {
      const [displayPhone, setDisplayPhone] = useState(false);
 
 
-     return (
+  return (
+        <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
           <section className={`bg-about-section relative mt-[8rem]`} id="Contact">
                <div>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
@@ -121,11 +129,9 @@ const Contact = () => {
               
                          </div>
                          </div>
-                    {/* <div className={`relative right-0 bottom-0 `}>
-                         <img src={Frame} alt="" className={`h-24 w-24 relative ml-auto`} />
-                    </div> */}
                </div>
-          </section>
+      </section>
+      </motion.main>
      )
 }
 

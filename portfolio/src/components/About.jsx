@@ -10,10 +10,18 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
+import { motion } from "framer-motion";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const About = () => {
   return (
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
     <section className={`${style.about_section} bg-about-section  p-6 pt-6 md:px-10 xl:px-14`} id="About">
       <div className={`${style.about_page} flex flex-col justify-center h-[100vh] my-[10rem] mt-[16rem] md:my-0 lg:my-[7rem]`}>
       <div className={`md:flex justify-between items-center`}>
@@ -108,7 +116,8 @@ const About = () => {
       </div>
       </div>
     </div>
-    </section>
+  </section>
+  </motion.main>
   );
 };
 

@@ -8,6 +8,7 @@ import Frame from "../Img/Group 7.svg";
 import Img1 from "../Img/images (5).jpeg";
 import style from "./style.module.css";
 import TextTransition, { presets } from "react-text-transition";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const TEXTS = [
@@ -28,6 +29,13 @@ const Header = () => {
   }, []);
 
   return (
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
     <section className={`${style.header} pt-[4rem] md:pt-0 bg-header-background`} id="Header">
       <div className={`${style.home_page} flex flex-col justify-center h-[100vh]`}>
       <header className={`flex justify-between px-6 md:px-10 xl:px-14`}>
@@ -69,6 +77,7 @@ const Header = () => {
       </header>
       </div>
     </section>
+    </motion.main>
   );
 };
 

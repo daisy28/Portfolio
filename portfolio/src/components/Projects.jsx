@@ -3,6 +3,7 @@ import { VscChevronLeft } from "react-icons/vsc";
 import style from "./style.module.css";
 import Data from "../data/project";
 import Frame1 from "../Img/Group 7 (1).svg";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [displayData, setDisplayData] = useState(Data);
@@ -25,6 +26,13 @@ const Projects = () => {
   };
 
   return (
+    <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
     <section
       className={`${style.project_section} p-4 md:p-0 relative mt-[8rem]`}
       id="Projects"
@@ -59,7 +67,7 @@ const Projects = () => {
                   <img
                     src={info.img}
                     alt=""
-                    className={`w-full h-full md:h-[340px] object-contain`}
+                    className={`w-full h-full md:h-[340px] object-cover`}
                   />
                 </div>
                 <p
@@ -121,6 +129,7 @@ const Projects = () => {
         className={`absolute bottom-0 right-0 rotate-180`}
       />
     </section>
+    </motion.main>
   );
 };
 

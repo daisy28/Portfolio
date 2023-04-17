@@ -2,9 +2,17 @@ import React from "react";
 import Frame1 from "../Img/Group 9.svg";
 import Frame2 from "../Img/Group 12.svg";
 import style from "./style.module.css";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
+     <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
     <section
       className={`bg-about-section p-6 mt-[8rem] pt-[4rem] md"pb-[2rem]`}
       id="Experience"
@@ -253,6 +261,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+  </motion.main>
   );
 };
 

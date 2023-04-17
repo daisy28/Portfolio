@@ -4,6 +4,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
@@ -56,10 +57,11 @@ const router = createBrowserRouter([
   }
 ])
 
-
 const App = () => {
   return (
-    <RouterProvider router={router} />
+    <AnimatePresence mode="wait">
+      <RouterProvider router={router} />
+    </AnimatePresence>
   );
 }
 

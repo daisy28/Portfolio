@@ -18,6 +18,7 @@ import { SiWebflow } from "react-icons/si";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./style.css";
+import { motion } from "framer-motion";
 
 const Technologies = () => {
 
@@ -46,6 +47,13 @@ const Technologies = () => {
      [carousel]);
      
      return (
+          <motion.main
+      className="main__container"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%", opacity: "0" }}
+      transition={{duration: 2}}
+    >
           <section className={`bg-about-section p-6 py-10 relative overflow-hidden xl:px-14`} id="Technology">
                <div className={`${style.technology_page} flex flex-col justify-center h-[100vh]`}>
                <div className={`mb-5`}>
@@ -147,7 +155,8 @@ const Technologies = () => {
                </div> 
                </div>
                </div>
-          </section>
+               </section>
+               </motion.main>
      )
 }
 
