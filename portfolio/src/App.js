@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,14 +13,18 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Project from "./components/Projects";
 import Technologies from "./components/Technologies";
-
+export const ThemeContext = createContext(null);
 const Layout = () => {
+  const [lightTheme, setLightTheme] = useState(false);
+  const toggleTheme = () => {
+    setLightTheme(prevTheme => !prevTheme)
+  }
   return (
-    <>
-      <Nav />
+    <ThemeContext.Provider value={lightTheme}>
+      <Nav toggleTheme={toggleTheme} />
       <Outlet />
       <Footer />
-    </>
+    </ThemeContext.Provider>
   )
 }
 
@@ -55,7 +59,8 @@ const router = createBrowserRouter([
       },
     ]
   }
-])
+]);
+
 
 const App = () => {
   return (

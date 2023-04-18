@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
 import Frame1 from "../Img/Group 9.svg";
 import Frame2 from "../Img/Group 12.svg";
 import style from "./style.module.css";
 import { motion } from "framer-motion";
 
 const Experience = () => {
+  const theme = useContext(ThemeContext);
   return (
      <motion.main
       className="main__container"
@@ -14,12 +16,12 @@ const Experience = () => {
       transition={{duration: 2}}
     >
     <section
-      className={`bg-about-section p-6 mt-[8rem] pt-[4rem] md"pb-[2rem]`}
+      className={` p-6 mt-[8rem] pt-[4rem] md"pb-[2rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`}
       id="Experience"
     >
       <div className={`md:hidden`}>
         <div className={`mb-10`}>
-          <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+          <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
             <span className={`font-bold text-xl md:text-3xl`}>
               <span
                 className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
@@ -33,7 +35,7 @@ const Experience = () => {
         <div className={`relative mb-10`}>
           <img src={Frame1} alt="" className={`absolute h-[185px]`} />
           <div className={`ml-8`}>
-            <h1 className={`text-about-header font-bold text-lg mb-2`}>
+            <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               Sololearn &#123;2021&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
@@ -45,7 +47,7 @@ const Experience = () => {
               href="https://drive.google.com/file/d/1JMH_NetIQNbxRb55nxmkGq1CuzS7qXlI/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
-              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
             >
               Access Certificate
             </a>
@@ -54,7 +56,7 @@ const Experience = () => {
         <div className={`relative mb-10 text-right`}>
           <img src={Frame1} alt="" className={`absolute h-[185px] right-0`} />
           <div className={`mr-8`}>
-            <h1 className={`text-about-header font-bold text-lg mb-2`}>
+            <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               Women Techsters &#123;2021&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
@@ -66,7 +68,7 @@ const Experience = () => {
               href="https://drive.google.com/file/d/1JJw8wtUiOhX6k1Qt_gtTGcW8NDOoRiry/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
-              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
             >
               Access Certificate
             </a>
@@ -75,7 +77,7 @@ const Experience = () => {
         <div className={`relative mb-10`}>
           <img src={Frame1} alt="" className={`absolute h-[185px]`} />
           <div className={`ml-8`}>
-            <h1 className={`text-about-header font-bold text-lg mb-2`}>
+            <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               I4GxZuri &#123;2021&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
@@ -87,7 +89,7 @@ const Experience = () => {
               href="https://drive.google.com/file/d/10-NmffnavC7I0GUaJ40GbnGPnkdNtqhn/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
-              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
             >
               Access Certificate
             </a>
@@ -96,7 +98,7 @@ const Experience = () => {
         <div className={`relative mb-10 text-right`}>
           <img src={Frame1} alt="" className={`absolute h-[185px] right-0`} />
           <div className={`mr-8`}>
-            <h1 className={`text-about-header font-bold text-lg mb-2`}>
+            <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               HNG Internship &#123;2022&#125;
             </h1>
             <p className={`text-body-text mb-4`}>
@@ -106,7 +108,7 @@ const Experience = () => {
               href="#."
               target="_blank"
               rel="noopener noreferrer"
-              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+              className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
             >
               Access Certificate
             </a>
@@ -116,7 +118,7 @@ const Experience = () => {
 
       <div className={`hidden md:block lg:px-[4rem] xl:px-14`}>
         <div className={`mb-10`}>
-          <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+          <h2 className={` font-bold text-3xl md:text-6xl  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
             <span className={`font-bold text-xl md:text-3xl`}>
               <span
                 className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
@@ -132,7 +134,7 @@ const Experience = () => {
             <div className={`relative mb-10`}>
               <img src={Frame1} alt="" className={`absolute h-[250px]`} />
               <div className={`ml-8 w-[200px]`}>
-                <h1 className={`text-about-header font-bold text-lg mb-2`}>
+                <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   Sololearn
                 </h1>
                 <p className={`text-body-text mb-4`}>
@@ -144,7 +146,7 @@ const Experience = () => {
                   href="https://drive.google.com/file/d/1JMH_NetIQNbxRb55nxmkGq1CuzS7qXlI/view?usp=drivesdk" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg  ${theme ? `text-[#071e1e]` : `text-about-header`}`}
                 >
                   Access Certificate
                 </a>
@@ -156,7 +158,7 @@ const Experience = () => {
             >
               <img src={Frame1} alt="" className={`absolute h-[250px]`} />
               <div className={`ml-8 w-[200px]`}>
-                <h1 className={`text-about-header font-bold text-lg mb-2`}>
+                <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   I4GxZuri
                 </h1>
                 <p className={`text-body-text mb-4`}>
@@ -168,7 +170,7 @@ const Experience = () => {
                   href="https://drive.google.com/file/d/10-NmffnavC7I0GUaJ40GbnGPnkdNtqhn/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
                 >
                   Access Certificate
                 </a>
@@ -217,7 +219,7 @@ const Experience = () => {
             <div className={`relative mb-10`}>
               <img src={Frame1} alt="" className={`absolute h-[250px]`} />
               <div className={`ml-8 w-[200px]`}>
-                <h1 className={`text-about-header font-bold text-lg mb-2`}>
+                <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   Women Techsters
                 </h1>
                 <p className={`text-body-text mb-4`}>
@@ -229,7 +231,7 @@ const Experience = () => {
                   href="https://drive.google.com/file/d/1JJw8wtUiOhX6k1Qt_gtTGcW8NDOoRiry/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
                 >
                   Access Certificate
                 </a>
@@ -241,7 +243,7 @@ const Experience = () => {
             >
               <img src={Frame1} alt="" className={`absolute h-[250px]`} />
               <div className={`ml-8 w-[200px]`}>
-                <h1 className={`text-about-header font-bold text-lg mb-2`}>
+                <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   HNG Internship
                 </h1>
                 <p className={`text-body-text mb-4`}>
@@ -251,7 +253,7 @@ const Experience = () => {
                   href="#."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg`}
+                  className={`rounded p-2 bg-gradient-to-r from-orange to-yellow-400 hover:bg-gradient-to-r hover:from-orange hover:to-yellow-700 font-bold text-lg ${theme ? `text-[#071e1e]` : `text-about-header`}`}
                 >
                   Access Certificate
                 </a>

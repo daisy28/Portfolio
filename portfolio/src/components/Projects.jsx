@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "../App";
 import { VscChevronLeft } from "react-icons/vsc";
 import style from "./style.module.css";
 import Data from "../data/project";
@@ -25,6 +26,8 @@ const Projects = () => {
     setIndex((fourthIndex) => (fourthIndex = 3));
   };
 
+  const theme = useContext(ThemeContext);
+
   return (
     <motion.main
       className="main__container"
@@ -34,12 +37,12 @@ const Projects = () => {
       transition={{duration: 2}}
     >
     <section
-      className={`${style.project_section} p-4 md:p-0 relative mt-[8rem]`}
+      className={`p-4 md:p-0 relative mt-[8rem] ${theme ? `${style.project_section_light}` : `${style.project_section}`}`}
       id="Projects"
     >
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
       <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem]`}>
-        <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+        <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
           <span className={`font-bold text-xl md:text-3xl`}>
             <span
               className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
@@ -60,14 +63,14 @@ const Projects = () => {
                 className={`${style.project_div} my-8 px-4 md:px-8 md:my-0`}
                 key={info.id}
               >
-                <h3 className={`font-semibold text-2xl text-about-header`}>
+                <h3 className={`font-semibold text-2xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   {info.title}
                 </h3>
                 <div className={`relative my-4`}>
                   <img
                     src={info.img}
                     alt=""
-                    className={`w-full h-full md:h-[340px] object-cover`}
+                    className={`w-full h-full`}
                   />
                 </div>
                 <p
@@ -78,11 +81,11 @@ const Projects = () => {
                 <div className={`flex justify-start items-center`}>
                   <a
                     href={info.url}
-                    className={`${style.border_gradient}  text-about-header font-semibold pb-2 animate-pulse`}
+                    className={`${style.border_gradient} font-semibold pb-2 animate-pulse ${theme ? `text-[#071e1e]` : `text-about-header`}`}
                   >
                     Visit Site
                   </a>
-                  <a href={info.github} className={`${style.border_gradient}  text-about-header font-semibold pb-2 ml-8 animate-pulse`}>Github</a>  
+                  <a href={info.github} className={`${style.border_gradient}   font-semibold pb-2 ml-8 animate-pulse ${theme ? `text-[#071e1e]` : `text-about-header`}`}>Github</a>  
                 </div>
               </div>
             );
@@ -97,25 +100,25 @@ const Projects = () => {
           </div>
           <div className={`flex flex-col items-start p-4`}>
             <button
-              className={`${style.border_gradient} z-10  text-about-header font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none`}
+              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#071e1e]` : `text-about-header`}`}
               onClick={firstProject}
             >
               T&Cs Generator
             </button>
             <button
-              className={`${style.border_gradient} z-10  text-about-header font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none `}
+              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#071e1e]` : `text-about-header`}`}
               onClick={secondProject}
             >
               TempKit
             </button>
             <button
-              className={`${style.border_gradient} z-10  text-about-header font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none`}
+              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#071e1e]` : `text-about-header`}`}
               onClick={thirdProject}
             >
               Speak Better
             </button>
             <button
-              className={`${style.border_gradient} z-10  text-about-header font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none`}
+              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#071e1e]` : `text-about-header`}`}
               onClick={fourthProject}
             >
               AgroLearn

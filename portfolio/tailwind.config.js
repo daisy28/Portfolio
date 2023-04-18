@@ -12,7 +12,7 @@ module.exports = {
         "contact-bg": "rgba(41, 16, 3, 255)",
         "header-text": "#506e75",
         "icons": "#84a4b5",
-        "icons-bg": "#002733",
+        "icons-bg": "#0133429a",
         "body-text": "#607482",
         "orange": "#b51f06",
         "light-blue": "#37a3a9",

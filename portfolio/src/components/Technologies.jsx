@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../App";
 import style from "./style.module.css";
 import { DiJavascript } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
@@ -45,6 +46,8 @@ const Technologies = () => {
           selector: ".carousel__cell",
      },
      [carousel]);
+
+     const theme = useContext(ThemeContext);
      
      return (
           <motion.main
@@ -54,10 +57,10 @@ const Technologies = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`bg-about-section p-6 py-10 relative overflow-hidden xl:px-14`} id="Technology">
+          <section className={`p-6 py-10 relative overflow-hidden xl:px-14 ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Technology">
                <div className={`${style.technology_page} flex flex-col justify-center h-[100vh]`}>
                <div className={`mb-5`}>
-                    <h2 className={`text-about-header font-bold text-3xl md:text-6xl`}>
+                    <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                               <span className={`font-bold text-xl md:text-3xl`}>
                                    <span
                                    className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
@@ -79,12 +82,17 @@ const Technologies = () => {
                               <DiCss3 className={`w-8 h-8 bg-orange text-black mr-2`} />
                               <DiJavascript className={`w-8 h-8 bg-orange text-black`} />
                               </div>
-                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
-                              <h1>01</h1>
-                              <p>Html</p>
-                              <p>Css</p>
-                              <p>Javascript</p>
-                         </div>   
+                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl relative`}>
+                                   <div className={`bg-[#d26552] backdrop-blur-[20px] w-[70px] h-[70px] rounded-full absolute -top-[80px] flex justify-center items-center`}>
+                                        <p>Html</p>
+                                   </div>
+                                   <div className={`bg-[#7dd8f1] w-[50px] h-[50px] rounded-full absolute flex justify-center items-center -top-[70px] -left-[70px]`}>
+                                        <p>Css</p>
+                                   </div>
+                                   <div className={`bg-[#498a9e] w-[120px] h-[120px] rounded-full absolute flex justify-center items-center -top-[20px] -left-[80px]`}>
+                                        <p>Javascript</p>
+                                   </div>
+                              </div>   
                          </div>
                      </div>
                      
@@ -95,12 +103,17 @@ const Technologies = () => {
                               <DiReact className={`w-8 h-8 bg-orange text-black mr-2`} />
                               <RiNetflixLine className={`w-8 h-8 bg-orange text-black`} />
                               </div>
-                              <div  className={`text-lg font-bold text-about-section text-center md:text-2xl`}>
-                              <h1>02</h1>
-                              <p>Typescript</p>
-                              <p>React</p>
-                              <p>Next Js</p>
-                         </div>   
+                              <div className={`text-lg font-bold text-about-section text-center md:text-2xl relative`}>
+                                   <div className={`bg-[#d17a6b] backdrop-blur-[20px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center`}>
+                                        <p>Typescript</p>
+                                   </div>
+                                   <div className={`bg-[#98d3e3] w-[80px] h-[80px] rounded-full absolute flex justify-center items-center top-[15px] -left-[50px]`}>
+                                        <p>React</p>
+                                   </div>
+                                   <div className={`bg-[#549eb5] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px]`}>
+                                        <p>Nextjs</p>
+                                   </div>
+                         </div>    
                          </div>
                      </div>
                      
