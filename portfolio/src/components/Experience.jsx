@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 import Frame1 from "../Img/Group 9.svg";
 import Frame2 from "../Img/Group 12.svg";
-import style from "./style.module.css";
+import style from "../styles/style.module.css";
 import { motion } from "framer-motion";
 
 const Experience = () => {

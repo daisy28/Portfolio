@@ -12,7 +12,7 @@ import { BiMoon } from "react-icons/bi";
 import { BiSun } from "react-icons/bi";
 import Logo from "../Img/Logo.png";
 import ReactCurvedText from "react-curved-text";
-import style from "./style.module.css";
+import style from "../styles/style.module.css";
 import navStyle from "../styles/nav.module.css";
 
 const Nav = ({toggleTheme}) => {

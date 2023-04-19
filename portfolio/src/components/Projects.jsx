@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../App";
 import { VscChevronLeft } from "react-icons/vsc";
-import style from "./style.module.css";
+import style from "../styles/style.module.css";
 import Data from "../data/project";
 import Frame1 from "../Img/Group 7 (1).svg";
 import { motion } from "framer-motion";

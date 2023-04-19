@@ -14,6 +14,7 @@ import Home from "./components/Home";
 import Project from "./components/Projects";
 import Technologies from "./components/Technologies";
 export const ThemeContext = createContext(null);
+
 const Layout = () => {
   const [lightTheme, setLightTheme] = useState(false);
   const toggleTheme = () => {

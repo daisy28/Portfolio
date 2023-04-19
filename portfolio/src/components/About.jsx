@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
-import style from "./style.module.css";
+import style from "../styles/style.module.css";
 import { BsFillEggFill } from "react-icons/bs";
 import { MdHotelClass } from "react-icons/md";
 import Frame from "../Img/Group 8 (1).svg"

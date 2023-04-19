@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../App";
-import style from "./style.module.css";
+import style from "../styles/style.module.css";
 import { BsFillPhoneVibrateFill } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 import { BiCurrentLocation } from "react-icons/bi";
