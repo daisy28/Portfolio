@@ -24,10 +24,11 @@ const Contact = () => {
       transition={{duration: 2}}
     >
           <section className={`relative mt-[8rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Contact">
+            <div className={`md:${style.technology_page} md:flex flex-col justify-center md:h-[100vh] md:my-0 lg:my-[7rem]`}>
                <div>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
                     <div className={`mb-8`}>
-                    <h2 className={`font-bold text-3x md:text-6xl  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
+                    <h2 className={`font-bold text-3x md:text-6xl  ${theme ? `text-[#283535]` : `text-about-header`}`}>
                               <span className={`font-bold text-xl md:text-3xl`}>
                                    <span
                                    className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
@@ -130,6 +131,7 @@ const Contact = () => {
               
                          </div>
                          </div>
+               </div>
                </div>
       </section>
       </motion.main>

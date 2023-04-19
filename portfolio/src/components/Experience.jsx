@@ -114,8 +114,9 @@ const Experience = () => {
             </a>
           </div>
         </div>
-      </div>
-
+        </div>
+        
+      <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] my-[10rem] mt-[16rem] md:my-0 lg:my-[7rem]`}>
       <div className={`hidden md:block lg:px-[4rem] xl:px-14`}>
         <div className={`mb-10`}>
           <h2 className={` font-bold text-3xl md:text-6xl  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
@@ -260,6 +261,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

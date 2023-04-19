@@ -13,12 +13,6 @@ const Footer = () => {
           : `bg-[#041b25] text-about-header`
       }`}
     >
-      <div className={`relative flex space-between`}>
-        <img
-          src={Frame}
-          alt=""
-          className={`relative left-0 h-14 rotate-180 w-14 top-0 bottom-0`}
-        />
         <div
           className={`flex justify-center items-center font-semibold text-center w-full`}
         >
@@ -30,12 +24,6 @@ const Footer = () => {
             All rights reserved
           </p>
         </div>
-        <img
-          src={Frame}
-          alt=""
-          className={`relative right-0 h-14 w-14 top-0 bottom-0`}
-        />
-      </div>
     </section>
   );
 };

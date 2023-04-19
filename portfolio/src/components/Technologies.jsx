@@ -83,13 +83,13 @@ const Technologies = () => {
                               <DiJavascript className={`w-8 h-8  text-black`} /> */}
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center  relative`}>
-                                   <div className={`bg-[rgba(79,38,30,0.1)] backdrop-blur-[80px] w-[70px] h-[70px] rounded-full absolute -top-[50px] flex justify-center items-center shadow-md`}>
+                                   <div className={`bg-[rgba(79,38,30,0.1)] backdrop-blur[40px] w-[70px] h-[70px] rounded-full absolute -top-[50px] flex justify-center items-center shadow-md`}>
                                         <p>Html</p>
                                    </div>
-                                   <div className={`bg-[rgba(25,57,67,0.1)] backdrop-blur-[80px] w-[50px] h-[50px] rounded-full absolute flex justify-center items-center -top-[50px] -left-[40px] shadow-md`}>
+                                   <div className={`bg-[rgba(25,57,67,0.1)] backdrop-blur[40px] w-[50px] h-[50px] rounded-full absolute flex justify-center items-center -top-[50px] -left-[40px] shadow-md`}>
                                         <p>Css</p>
                                    </div>
-                                   <div className={`bg-[rgba(58,65,25,0.1)] backdrop-blur-[80px] w-[120px] h-[120px] rounded-full absolute flex justify-center items-center -top-[20px] -left-[80px] shadow-md `}>
+                                   <div className={`bg-[rgba(58,65,25,0.1)] backdrop-blur[40px] w-[120px] h-[120px] rounded-full absolute flex justify-center items-center -top-[20px] -left-[80px] shadow-md `}>
                                         <p>Javascript</p>
                                    </div>
                               </div>   
@@ -104,13 +104,13 @@ const Technologies = () => {
                               <RiNetflixLine className={`w-8 h-8  text-black`} /> */}
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center  relative`}>
-                                   <div className={`bg-[rgba(61,23,46,0.1)] backdrop-blur-[80px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
+                                   <div className={`bg-[rgba(61,23,46,0.1)] backdrop-blur[40px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
                                         <p>Typescript</p>
                                    </div>
-                                   <div className={`bg-[rgba(28,65,26,0.1)] backdrop-blur-[80px] w-[80px] h-[80px] rounded-full absolute flex justify-center items-center top-[15px] -left-[70px] shadow-md`}>
+                                   <div className={`bg-[rgba(28,65,26,0.1)] backdrop-blur[40px] w-[80px] h-[80px] rounded-full absolute flex justify-center items-center top-[15px] -left-[70px] shadow-md`}>
                                         <p>React</p>
                                    </div>
-                                   <div className={`bg-[rgba(24,24,60,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur-[80px] shadow-md`}>
+                                   <div className={`bg-[rgba(24,24,60,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur[40px] shadow-md`}>
                                         <p>Nextjs</p>
                                    </div>
                               </div>    
@@ -125,15 +125,15 @@ const Technologies = () => {
                               <SiSlack className={`w-8 h-8  text-black`} /> */}
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center  relative`}>
-                                   <div className={`bg-[rgba(34,71,31,0.1)] backdrop-blur-[80px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center flex-col shadow-md `}>
+                                   <div className={`bg-[rgba(34,71,31,0.1)] backdrop-blur[40px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center flex-col shadow-md `}>
                                         <p>Git</p>
                                         <p>&</p>
                                         <p>Github</p>
                                    </div>
-                                   <div className={`bg-[rgba(190,111,111,0.1)] backdrop-blur-[80px] w-[80px] h-[80px] rounded-full absolute flex justify-center items-center top-[15px] -left-[70px] shadow-md`}>
+                                   <div className={`bg-[rgba(190,111,111,0.1)] backdrop-blur[40px] w-[80px] h-[80px] rounded-full absolute flex justify-center items-center top-[15px] -left-[70px] shadow-md`}>
                                         <p>Figma</p>
                                    </div>
-                                   <div className={`bg-[rgba(202,118,207,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur-[80px] shadow-md`}>
+                                   <div className={`bg-[rgba(202,118,207,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur[40px] shadow-md`}>
                                         <p>Slack</p>
                                    </div>
                               </div>     
@@ -148,13 +148,13 @@ const Technologies = () => {
                               <SiShopify className={`w-8 h-8  text-black`} /> */}
                               </div>
                               <div className={`text-lg font-bold text-about-section text-center  relative`}>
-                                   <div className={`bg-[rgba(59,112,153,0.1)] backdrop-blur-[80px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
+                                   <div className={`bg-[rgba(59,112,153,0.1)] backdrop-blur[40px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
                                         <p>Wordpress</p>
                                    </div>
-                                   <div className={`bg-[rgba(188,85,114,0.1)] backdrop-blur-[80px] w-[90px] h-[90px] rounded-full absolute flex justify-center items-center top-[10px] -left-[70px] shadow-md`}>
+                                   <div className={`bg-[rgba(188,85,114,0.1)] backdrop-blur[40px] w-[90px] h-[90px] rounded-full absolute flex justify-center items-center top-[10px] -left-[70px] shadow-md`}>
                                         <p>Webflow</p>
                                    </div>
-                                   <div className={`bg-[rgba(220,83,83,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur-[80px] shadow-md`}>
+                                   <div className={`bg-[rgba(220,83,83,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur[40px] shadow-md`}>
                                         <p>Shopify</p>
                                    </div>
                               </div>   
@@ -168,13 +168,13 @@ const Technologies = () => {
                               <DiMaterializecss className={`w-8 h-8  text-black`} /> */}
                               </div>
                                <div className={`text-lg font-bold text-about-section text-center  relative`}>
-                                   <div className={`bg-[rgba(95,92,241,0.1)] backdrop-blur-[80px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
+                                   <div className={`bg-[rgba(95,92,241,0.1)] backdrop-blur[40px] w-[120px] h-[120px] rounded-full absolute -top-[30px] -left-[10px] flex justify-center items-center shadow-md `}>
                                         <p>Tailwind</p>
                                    </div>
-                                   <div className={`bg-[rgba(91,61,113,0.1)] backdrop-blur-[80px] w-[90px] h-[90px] rounded-full absolute flex justify-center items-center top-[8px] -left-[70px] shadow-md`}>
+                                   <div className={`bg-[rgba(91,61,113,0.1)] backdrop-blur[40px] w-[90px] h-[90px] rounded-full absolute flex justify-center items-center top-[8px] -left-[70px] shadow-md`}>
                                         <p>Bootstrap</p>
                                    </div>
-                                   <div className={`bg-[rgba(141,51,111,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur-[80px] shadow-md`}>
+                                   <div className={`bg-[rgba(141,51,111,0.1)] w-[100px] h-[100px] rounded-full absolute flex justify-center items-center -top-[80px] -left-[80px] backdrop-blur[40px] shadow-md`}>
                                         <p>Materialize</p>
                                    </div>
                               </div>    

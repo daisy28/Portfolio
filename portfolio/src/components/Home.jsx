@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Frame from "../Img/Group 7.svg";
 import Frame2 from "../Img/Group 7 (2).svg";
-import Img1 from "../Img/IMG-20230416-WA0005.jpg";
+import Img1 from "../Img/Gloria.jpg";
 import style from "../styles/style.module.css";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
@@ -47,7 +47,7 @@ const Header = () => {
           {theme ? <img src={Frame2} className={``} alt="" /> : <img src={Frame} className={``} alt="" />}
           <img src={Img1} alt="" className={`${style.header_img} backdrop-blur-[60px] shadow-lg w-100-h-100 object-cover`} />
           <div
-            className={`${style.header_img2}  text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[52px] md:left-[75px] lg:left-[95px] xl:left-[105px] shadow-md backdrop-blur-[100px] md:items-center md:pt-0 ${theme ? `bg-[rgba(226,240,242,0.1)] shadow-sm` : `bg-[rgba(1,51,66,0.44)]`}`}
+            className={`${style.header_img2}  text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[52px] md:left-[75px] lg:left-[95px] xl:left-[105px] shadow-md backdrop-blur-[30px] md:items-center md:pt-0 ${theme ? `bg-[rgba(226,240,242,0.05)] shadow-md` : `bg-[rgba(1,51,66,0.44)]`}`}
           >
             <div className={`z-10`}>
               <TextTransition springConfig={presets.default}>
