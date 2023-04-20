@@ -35,7 +35,7 @@ const Nav = ({toggleTheme}) => {
         <Link to="/"><img src={Logo} alt="" className={`h-full w-full rounded-full `} /></Link>
       </div>
       <div
-        className={`hidden md:flex justify-between items-center md:w-[60%] text-lg lg:w-[50%] xl:w-[38%]`}
+        className={`hidden md:flex justify-between items-center md:w-[40%]`}
       >
         <Link to="/" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `` ? `${style.links} text-orange` : ``}`}>
           Home

@@ -7,7 +7,7 @@
 
 .header_light{
      position: relative;
-     background-color: #f4ddce;
+     background: url("../Img/background.png") #f4ddce;
      background-size: cover;
      background-blend-mode: multiply;
 }

@@ -23,21 +23,21 @@ const Contact = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`relative lg:mt-[8rem] lg:py-[8rem] xl:py-[4rem] ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`} id="Contact">
-            <div className={`md:${style.technology_page} md:flex flex-col justify-center md:h-[100vh] md:my-0 lg:my-[7rem]`}>
-               <div>
+          <section className={`relative lg:py-[8rem] xl:py-[4rem] ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`} id="Contact">
+            <div className={`md:${style.technology_page} md:flex flex-col mt-[8rem] lg:mt-0 md:h-[100vh] xl:mt-[4rem]`}>
+               <div className={`md:mt-[4rem] lg:mt-0`}>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
                     <div className={`mb-8`}>
-                    <h2 className={`font-bold text-3x md:text-6xl  ${theme ? `text-[#283535]` : `text-about-header`}`}>
-                              <span className={`font-bold text-xl md:text-3xl`}>
-                                   <span
-                                   className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
-                                   >
-                                   C
-                                   </span>
-                                   ON:TACT.
-                                   </span>
-                         </h2>
+                    <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
+          <span className={`font-bold text-xl`}>
+            <span
+              className={`${style.name} font-extrabold text-orange text-7xl md:text-9xl`}
+            >
+              C
+            </span>
+            ON:TACT.
+          </span>
+        </h1>
                     </div>
 
                    
