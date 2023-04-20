@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../App";
-import style from "../styles/style.module.css";
+import { ThemeContext } from "../../App";
+import style from "../../styles/style.module.css";
 // import { DiJavascript } from "react-icons/di";
 // import { DiHtml5 } from "react-icons/di";
 // import { DiCss3} from "react-icons/di";
@@ -18,7 +18,7 @@ import style from "../styles/style.module.css";
 // import { SiWebflow } from "react-icons/si";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import "../styles/style.css";
+import "../../styles/style.css";
 import { motion } from "framer-motion";
 
 const Technologies = () => {
@@ -57,19 +57,18 @@ const Technologies = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`p-6 py-10 relative overflow-hidden xl:px-14 ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Technology">
-               <div className={`${style.technology_page} flex flex-col justify-center h-[100vh]`}>
+          <section className={`p-6 py-10 pt-[10rem] relative overflow-hidden xl:px-14 ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`} id="Technology">
                <div className={`mb-5`}>
-                    <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
-                              <span className={`font-bold text-xl md:text-3xl`}>
-                                   <span
-                                   className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
-                                   >
-                                   T
-                                   </span>
-                                   ECH:NOLOGY.
-                                   </span>
-                         </h2>
+                    <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
+          <span className={`font-bold text-xl`}>
+            <span
+              className={`${style.name} font-extrabold text-orange text-7xl md:text-9xl`}
+            >
+              T
+            </span>
+            ECH:NOLOGOY.
+          </span>
+        </h1>
                </div>
 
                <div className={`wrapper flex justify-center mb-5 py-[4rem]`}>
@@ -183,7 +182,6 @@ const Technologies = () => {
 
                </div>
                </div> 
-               </div>
                </div>
                </section>
                </motion.main>

@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../App";
+import { ThemeContext } from "../../App";
 import { MdCodeOff } from "react-icons/md";
 import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import Frame from "../Img/Group 7.svg";
-import Frame2 from "../Img/Group 7 (2).svg";
-import Img1 from "../Img/Gloria.jpg";
-import style from "../styles/style.module.css";
+import Frame from "../../Img/Group 7.svg";
+import Frame2 from "../../Img/Group 7 (2).svg";
+import Img1 from "../../Img/Gloria.jpg";
+import style from "../../styles/style.module.css";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 
@@ -40,26 +40,25 @@ const Header = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-    <section className={`pt-[4rem] md:pt-0  ${theme ? `${style.header_light}` : `${style.header}`}`} id="Header">
-      <div className={`${style.home_page} flex flex-col justify-center h-[100vh]`}>
+    <section className={`pt-[14rem] ${theme ? `${style.header_light}` : `${style.header}`}`} id="Header">
       <header className={`flex justify-between px-6 md:px-10 xl:px-14`}>
         <div className={`${style.header_div} w-[50%] h-[300px] mb-8 relative md:h-[400px] md:w-[70%]`}>
           {theme ? <img src={Frame2} className={``} alt="" /> : <img src={Frame} className={``} alt="" />}
-          <img src={Img1} alt="" className={`${style.header_img} backdrop-blur-[60px] shadow-lg w-100-h-100 object-cover`} />
+          <img src={Img1} alt="" className={`${style.header_img} grayscale w-100-h-100 object-cover`} />
           <div
-            className={`${style.header_img2}  text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[52px] md:left-[75px] lg:left-[95px] xl:left-[105px] shadow-md backdrop-blur-[30px] md:items-center md:pt-0 ${theme ? `bg-[rgba(226,240,242,0.05)] shadow-md` : `bg-[rgba(1,51,66,0.44)]`}`}
+            className={`${style.header_img2}  text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[52px] md:left-[75px] lg:left-[95px] xl:left-[105px] shadow-md backdrop-blur-[5px] md:items-center md:pt-0 ${theme ? `bg-[rgba(226,240,242,0.05)] shadow-md` : `bg-[rgba(1,51,66,0.44)]`}`}
           >
-            <div className={`z-10`}>
+            <div className={`z-10 md:relative md:-top-[60px]`}>
               <TextTransition springConfig={presets.default}>
                 <MdCode className={`md:text-2xl`} />
-                <p className={` font-["Nunito"] font-bold text-base md:text-2xl ${theme ? `text-[#162729] ` : `text-icons`}`}>{TEXTS[index % TEXTS.length]}</p>
+                <p className={` font-["Nunito"] font-bold text-base md:text-4xl ${theme ? `text-[#162729] ` : `text-icons`}`}>{TEXTS[index % TEXTS.length]}</p>
                 <MdCodeOff className={`md:text-2xl`} />
               </TextTransition>
             </div>
           </div>
         </div>
         <div
-          className={`w-20 h-40 relative flex justify-start items-center flex-col ${theme ? `bg-[#e2f0f2] text-[#354f52] shadow-sm` : `bg-icons-bg text-icons`}`}
+          className={`w-20 h-40 relative flex justify-start items-center flex-col ${theme ? `bg-[#edc9b2] text-[#354f52] shadow-sm` : `bg-icons-bg text-icons`}`}
         >
           <a href="https://github.com/daisy28" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaGithub className={`mb-6 mt-4`} />
@@ -79,7 +78,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      </div>
         </section>
     </motion.main>
   );

@@ -29,7 +29,7 @@ const Nav = ({toggleTheme}) => {
   return (
     <div>
     <nav
-      className={`${style.nav} text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10 xl:px-14 fixed z-20 right-0 left-0 top-0 ${theme ? `bg-[#fafafa] shadow-md text-[#002733]` : `bg-[#041b25] text-icons`}`}
+      className={`${style.nav} text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10 xl:px-14 fixed z-20 right-0 left-0 top-0 ${theme ? `bg-[#edc9b2] shadow-md text-[#002733]` : `bg-[#041b25] text-icons`}`}
     >
       <div className={`w-[100px] h-[80px] ${toggle ? `hidden` : `block`}`}>
         <Link to="/"><img src={Logo} alt="" className={`h-full w-full rounded-full `} /></Link>
@@ -40,16 +40,10 @@ const Nav = ({toggleTheme}) => {
         <Link to="/" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `` ? `${style.links} text-orange` : ``}`}>
           Home
         </Link>
-        <Link to="/about" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "about" ? `${style.links} text-orange` : ``}`}>
-          About
-        </Link>
         <Link to="/projects" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "projects" ? `${style.links} text-orange` : ``}`}>
           Projects
         </Link>
-        <Link to="/experience" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "experience" ? `${style.links} text-orange` : ``}`}>
-          Experience
-        </Link>
-        <Link to="/technologies" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "technologies" ? `${style.links} text-orange` : ""}`}>
+        <Link to="/technology" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "technologies" ? `${style.links} text-orange` : ""}`}>
           Technology
           </Link>
       </div>
@@ -59,20 +53,13 @@ const Nav = ({toggleTheme}) => {
         </button>
       </div>
       {
-            <nav className={`md:hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${toggle ? `${navStyle.navigation_active}` : `${navStyle.navigation}`} ${theme ? `hover:bg-[#e2f0f2]` : `hover:bg-[#012630]` }`} onClick={handleToggle}>
+            <nav className={`md:hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${toggle ? `${navStyle.navigation_active}` : `${navStyle.navigation}`} ${theme ? `hover:bg-[#edc9b2]` : `hover:bg-[#012630]` }`} onClick={handleToggle}>
               <span 
                 className={`${toggle ? `${navStyle.nav_span_active} rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span}`} ${theme ? `bg-[#041b25] ${navStyle.nav_span_active_light}` : `bg-[#84a4b5]`}`}
                 style={{"--i":"0","--x":"-1","--y":"-1"}}>
                   <HiHome className={`${splitLocation[1] === "" ? `text-[#2dfc52]` : ``}`} />
                   <Link to="/" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
           Home
-        </Link></span>
-              <span 
-                className={`${toggle ? `${navStyle.nav_span_active} bg-white rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span}`} ${theme ? `bg-[#041b25] ${navStyle.nav_span_active_light}` : `bg-[#84a4b5]`}`}
-              style={{ "--i": "1", "--x": "-1", "--y": "0" }}>
-                <HiInformationCircle className={`${splitLocation[1] === "about" ? `text-[#2dfc52]` : ``}`} />
-              <Link to="/about" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "about" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
-          About
         </Link></span>
               <span
                 className={`${toggle ? `${navStyle.nav_span_active} bg-white rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span}`} ${theme ? `bg-[#041b25] ${navStyle.nav_span_active_light}` : `bg-[#84a4b5]`}`} 
@@ -81,17 +68,10 @@ const Nav = ({toggleTheme}) => {
               <Link to="/projects" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "projects" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
           Projects
         </Link></span>
-              <span 
-                className={`${toggle ? `${navStyle.nav_span_active} bg-white rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span}`} ${theme ? `bg-[#041b25] ${navStyle.nav_span_active_light}` : `bg-[#84a4b5]`}`}
-                style={{ "--i": "3", "--x": "1", "--y": "-1" }}>
-                <TbTimeline className={`${splitLocation[1] === "experience" ? `text-[#2dfc52]` : ``}`} />
-                  <Link to="/experience" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "experience" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
-          Experience
-        </Link></span>
               <span
               className={`${toggle ? `${navStyle.nav_span_active} bg-white rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span}`} ${theme ? `bg-[#041b25] ${navStyle.nav_span_active_light}` : `bg-[#84a4b5]`}`} style={{ "--i": "4", "--x": "1", "--y": "0" }}>
               <RiMiniProgramFill className={`${splitLocation[1] === "technologies" ? `text-[#2dfc52]` : ``}`} />
-              <Link to="/technologies" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "technologies" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
+              <Link to="/technology" className={`hover:text-[#2dfc52]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "technologies" ? `${navStyle.mobile_links} text-[#2dfc52]` : ``}`}>
           Technology
         </Link></span>
               <span 

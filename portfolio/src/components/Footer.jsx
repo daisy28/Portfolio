@@ -9,12 +9,12 @@ const Footer = () => {
     <section
       className={`${style.footer} relative ${
         theme
-          ? `bg-[#fafafa] shadow-md text-[#002733]`
+          ? `bg-[#edc9b2] shadow-md text-[#002733]`
           : `bg-[#041b25] text-about-header`
       }`}
     >
         <div
-          className={`flex justify-center items-center font-semibold text-center w-full`}
+          className={`flex justify-center items-center font-semibold text-center w-full py-6 px-4`}
         >
           <p>
             &copy; 2023 - Gloria{" "}

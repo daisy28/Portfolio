@@ -5,14 +5,12 @@ import {
   Outlet
 } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import About from "./components/About";
+import Home from "./section/home/Home";
+import Technology from "./section/technology/Technology";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import Project from "./components/Projects";
-import Technologies from "./components/Technologies";
 export const ThemeContext = createContext(null);
 
 const Layout = () => {
@@ -39,20 +37,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/about",
-        element: <About />
+        path: "/technology",
+        element: <Technology />
       },
       {
         path: "/projects",
         element: <Project />
-      },
-      {
-        path: "/experience",
-        element: <Experience />
-      },
-      {
-        path: "/technologies",
-        element: <Technologies />
       },
       {
         path: "/contact",

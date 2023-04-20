@@ -40,9 +40,9 @@ const Projects = () => {
       className={`p-4 md:p-0 relative mt-[8rem] ${theme ? `${style.project_section_light}` : `${style.project_section}`}`}
       id="Projects"
       >
-        <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] mt-[4rem] md:my-0 lg:my-[7rem]`}>
+        <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] mt-[13rem] md:my-0 lg:my-[7rem]`}>
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
-      <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem] top-[40px]`}>
+      <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem]`}>
          <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
           <span className={`font-bold text-xl`}>
             <span

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../App";
-import Frame1 from "../Img/Group 9.svg";
-import Frame2 from "../Img/Group 12.svg";
-import style from "../styles/style.module.css";
+import { ThemeContext } from "../../App";
+import Frame1 from "../../Img/Group 9.svg";
+import Frame2 from "../../Img/Group 12.svg";
+import style from "../../styles/style.module.css";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -16,24 +16,24 @@ const Experience = () => {
       transition={{duration: 2}}
     >
     <section
-      className={` p-6 mt-[8rem] pt-[4rem] md"pb-[2rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`}
+      className={`p-6 pt-[4rem] md"pb-[2rem] ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`}
       id="Experience"
     >
-      <div className={`md:hidden`}>
-        <div className={`mb-10`}>
-          <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
-            <span className={`font-bold text-xl md:text-3xl`}>
-              <span
-                className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
-              >
-                E
-              </span>
-              X:PERIENCE.
+      <div className={`mb-10`}>
+           <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header text-right`}`}>
+          <span className={`font-bold text-xl`}>
+            <span
+              className={`${style.name} font-extrabold text-orange text-7xl md:text-9xl`}
+            >
+              E
             </span>
-          </h2>
+            X:PERIENCE.
+          </span>
+        </h1>
         </div>
-        <div className={`relative mb-10`}>
-          <img src={Frame1} alt="" className={`absolute h-[185px]`} />
+      <div className={`md:hidden`}>
+        <div className={`relative mb-10 flex`}>
+          <img src={Frame1} alt="" className={``} />
           <div className={`ml-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               Sololearn &#123;2021&#125;
@@ -53,8 +53,8 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative mb-10 text-right`}>
-          <img src={Frame1} alt="" className={`absolute h-[185px] right-0`} />
+        <div className={`relative mb-10 text-right flex flex-row-reverse`}>
+          <img src={Frame1} alt="" className={``} />
           <div className={`mr-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               Women Techsters &#123;2021&#125;
@@ -74,8 +74,8 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative mb-10`}>
-          <img src={Frame1} alt="" className={`absolute h-[185px]`} />
+        <div className={`relative mb-10 flex`}>
+          <img src={Frame1} alt="" className={``} />
           <div className={`ml-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               I4GxZuri &#123;2021&#125;
@@ -95,8 +95,8 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative mb-10 text-right`}>
-          <img src={Frame1} alt="" className={`absolute h-[185px] right-0`} />
+        <div className={`relative mb-10 text-right flex flex-row-reverse`}>
+          <img src={Frame1} alt="" className={``} />
           <div className={`mr-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
               HNG Internship &#123;2022&#125;
@@ -116,24 +116,11 @@ const Experience = () => {
         </div>
         </div>
         
-      <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] my-[10rem] mt-[16rem] md:my-0 lg:my-[7rem]`}>
       <div className={`hidden md:block lg:px-[4rem] xl:px-14`}>
-        <div className={`mb-10`}>
-          <h2 className={` font-bold text-3xl md:text-6xl  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
-            <span className={`font-bold text-xl md:text-3xl`}>
-              <span
-                className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
-              >
-                E
-              </span>
-              X:PERIENCE.
-            </span>
-          </h2>
-        </div>
         <div className={`relative`}>
-          <div className={`flex items-center w-[80%] xl:w-[90%] xl:ml-auto`}>
-            <div className={`relative mb-10`}>
-              <img src={Frame1} alt="" className={`absolute h-[250px]`} />
+          <div className={`flex items-end w-[80%] xl:w-[90%] xl:ml-auto`}>
+            <div className={`relative mb-10 flex`}>
+              <img src={Frame1} alt="" className={``} />
               <div className={`ml-8 w-[200px]`}>
                 <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   Sololearn
@@ -155,9 +142,9 @@ const Experience = () => {
             </div>
 
             <div
-              className={`relative mb-10 ml-[8rem] lg:ml-[12rem] xl:ml-[14rem]`}
+              className={`relative flex mb-10 ml-[8rem] lg:ml-[12rem] xl:ml-[14rem]`}
             >
-              <img src={Frame1} alt="" className={`absolute h-[250px]`} />
+              <img src={Frame1} alt="" className={``} />
               <div className={`ml-8 w-[200px]`}>
                 <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   I4GxZuri
@@ -215,10 +202,10 @@ const Experience = () => {
           </div>
 
           <div
-            className={`flex items-center w-[75%] left-[180px] ml-auto xl:w-[70%]`}
+            className={`flex items-end w-[75%] left-[180px] ml-auto xl:w-[70%]`}
           >
-            <div className={`relative mb-10`}>
-              <img src={Frame1} alt="" className={`absolute h-[250px]`} />
+            <div className={`relative mb-10 flex`}>
+              <img src={Frame1} alt="" className={``} />
               <div className={`ml-8 w-[200px]`}>
                 <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   Women Techsters
@@ -240,9 +227,9 @@ const Experience = () => {
             </div>
 
             <div
-              className={`relative mb-10 ml-[6rem] lg:ml-[11rem] xl:ml-[13rem]`}
+              className={`relative flex mb-10 ml-[6rem] lg:ml-[11rem] xl:ml-[13rem]`}
             >
-              <img src={Frame1} alt="" className={`absolute h-[250px]`} />
+              <img src={Frame1} alt="" className={``} />
               <div className={`ml-8 w-[200px]`}>
                 <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
                   HNG Internship
@@ -263,7 +250,6 @@ const Experience = () => {
           </div>
         </div>
         </div>
-      </div>
     </section>
   </motion.main>
   );

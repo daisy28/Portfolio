@@ -23,7 +23,7 @@ const Contact = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`relative lg:mt-[8rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Contact">
+          <section className={`relative lg:mt-[8rem] lg:py-[8rem] xl:py-[4rem] ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`} id="Contact">
             <div className={`md:${style.technology_page} md:flex flex-col justify-center md:h-[100vh] md:my-0 lg:my-[7rem]`}>
                <div>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
@@ -48,15 +48,15 @@ const Contact = () => {
                          <h1 className={`text-3xl font-bold ${theme ? `text-[#354f52]` : `text-icons`}`}>Love to hear from you, Get in touch 👋</h1>
                     </div>
               <div className={`mx-auto flex justify-between items-start text-about-header font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
-               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#5a969e]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
+               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#edc9b2]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
                     <BiCurrentLocation className={`md:mb-0 ${displayLocation ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayLocation ? `block` : `hidden`}`}>Lagos, Nigeria</p>
                </div>
-               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#5a969e]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
+               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#edc9b2]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
                     <BsFillPhoneVibrateFill className={`md:mb-0 ${displayPhone ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayPhone ? `block` : `hidden`}`}>+2349026115866</p>
                </div>
-               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#5a969e]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
+               <div className={`bg-orange p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl ${theme ? `hover:bg-[#edc9b2]` : `hover:bg-[#034355]`}`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
                     <BiMailSend className={`md:mb-0 ${displayEmail ? `mb-4` : `mb-0`}`} />
                     <p className={`text-base font-semibold text-white md:block md:ml-4 ${displayEmail ? `block` : `hidden`}`}>ubahgloria16@gmail.com</p>
                </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 <div className={`mb-4`}>
                   <div className={`${style._input_div} relative mt-3 mb-6`}>
                   <input
-                    className={`${style._input_element} relative w-full border-0  rounded-lg p-2 pl-10 outline-none ${theme ? `bg-[#5a969e] text-[#034355] shadow` : `bg-[#034355] text-about-header`}`}
+                    className={`${style._input_element} relative w-full border-0  rounded-lg p-2 pl-10 outline-none ${theme ? `bg-[#edc9b2] text-[#034355] shadow` : `bg-[#034355] text-about-header`}`}
                     type="text"
                     id="name"
                     placeholder=" "
@@ -84,7 +84,7 @@ const Contact = () => {
                   </div>
                   <div className={`${style._input_div} relative mb-6`}>
                   <input
-                    className={`${style._input_element} relative w-full border-0 rounded-lg p-2 pl-10 text-about-header outline-none ${theme ? `bg-[#5a969e] shadow` : `bg-[#034355]`}`}
+                    className={`${style._input_element} relative w-full border-0 rounded-lg p-2 pl-10 text-about-header outline-none ${theme ? `bg-[#edc9b2] shadow` : `bg-[#034355]`}`}
                     type="email"
                     id="email"
                     placeholder=" "
@@ -102,7 +102,7 @@ const Contact = () => {
 
                   <div className={`${style._input_div} relative mb-6`}>
                   <textarea
-                  className={`${style._input_element} relative w-full border-0 rounded-lg p-2 pl-10 text-about-header outline-none h-[200px] ${theme ? `bg-[#5a969e] shadow` : `bg-[#034355]`}`}
+                  className={`${style._input_element} relative w-full border-0 rounded-lg p-2 pl-10 text-about-header outline-none h-[200px] ${theme ? `bg-[#edc9b2] shadow` : `bg-[#034355]`}`}
                   name="" 
                   id="message" 
                   placeholder=" "
