@@ -40,19 +40,19 @@ const Projects = () => {
       className={`p-4 md:p-0 relative mt-[8rem] ${theme ? `${style.project_section_light}` : `${style.project_section}`}`}
       id="Projects"
       >
-        <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] my-[10rem] mt-[16rem] md:my-0 lg:my-[7rem]`}>
+        <div className={`${style.technology_page} flex flex-col justify-center h-[100vh] mt-[4rem] md:my-0 lg:my-[7rem]`}>
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
-      <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem]`}>
-        <h2 className={`font-bold text-3xl md:text-6xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
-          <span className={`font-bold text-xl md:text-3xl`}>
+      <div className={`relative p-[2rem] md:pt-[4rem] md:pl-[4rem] top-[40px]`}>
+         <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
+          <span className={`font-bold text-xl`}>
             <span
-              className={`${style.name} font-extrabold text-orange text-4xl md:text-9xl`}
+              className={`${style.name} font-extrabold text-orange text-7xl md:text-9xl`}
             >
               P
             </span>
-            RO:JECTS.
+            RO:JECT.
           </span>
-        </h2>
+        </h1>
       </div>
       <div
         className={`p-[2rem] md:flex justify-between items-center md:px-[4rem] md:py-[6rem]xl:w-[1000px] xl:mx-auto xl:pb-[9rem]`}
