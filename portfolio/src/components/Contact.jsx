@@ -23,7 +23,7 @@ const Contact = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`relative mt-[8rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Contact">
+          <section className={`relative lg:mt-[8rem] ${theme ? `bg-[#f3f8f8]` : `bg-about-section`}`} id="Contact">
             <div className={`md:${style.technology_page} md:flex flex-col justify-center md:h-[100vh] md:my-0 lg:my-[7rem]`}>
                <div>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
