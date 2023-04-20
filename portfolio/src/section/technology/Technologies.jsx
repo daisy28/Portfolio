@@ -57,12 +57,12 @@ const Technologies = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`p-6 py-10 pt-[10rem] relative overflow-hidden xl:px-14 ${theme ? `bg-[#f4ddce]` : `bg-about-section`}`} id="Technology">
+          <section className={`p-6 w-[80%] h-[80vh] overflow-y-auto relative z-20 top-[150px] bottom-[150px] mx-auto xl:px-14 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Technology">
                <div className={`mb-5`}>
-                    <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-about-header`}`}>
+                    <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-xl`}>
             <span
-              className={`${style.name} font-extrabold text-orange text-7xl md:text-9xl`}
+              className={`${style.name} font-extrabold text-[#701b15] text-7xl md:text-9xl`}
             >
               T
             </span>
@@ -74,7 +74,7 @@ const Technologies = () => {
                <div className={`wrapper flex justify-center mb-5 py-[4rem]`}>
                <div className={`scene`}>
                <div className={`carousel keen-slider pt-8 mb-4`} ref={sliderRef}>
-                     <div className={`bg-orange carousel__cell flex justify-center items-center number-slide1 rounded`}>
+                     <div className={`bg-[#701b15] carousel__cell flex justify-center items-center number-slide1 rounded`}>
                          <div>
                               <div className={`absolute -top-4 left-7 z-10 flex justify-between`}>
                               {/* <DiHtml5 className={`w-8 h-8  text-black mr-2`} />
@@ -98,7 +98,7 @@ const Technologies = () => {
                      <div className={`bg-blue-900 carousel__cell  flex justify-center items-center number-slide2 rounded`}>
                          <div>
                               <div className={`absolute -top-4  left-7 z-10 flex justify-between`}>
-                              {/* <SiTypescript className={`w-8 h-8 bg-black text-orange mr-2`} />
+                              {/* <SiTypescript className={`w-8 h-8 bg-black text-[#701b15] mr-2`} />
                               <DiReact className={`w-8 h-8  text-black mr-2`} />
                               <RiNetflixLine className={`w-8 h-8  text-black`} /> */}
                               </div>

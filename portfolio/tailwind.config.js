@@ -14,7 +14,7 @@ module.exports = {
         "icons": "#84a4b5",
         "icons-bg": "#0133429a",
         "body-text": "#607482",
-        "orange": "#b51f06",
+        "orange": "#5b3828",
         "light-blue": "#37a3a9",
         "light-blue2": "#498a9e",
         "about-section": "#012630",

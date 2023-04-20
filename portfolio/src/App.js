@@ -5,8 +5,11 @@ import {
   Outlet
 } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import style from "./styles/style.module.css"
 import Home from "./section/home/Home";
-import Technology from "./section/technology/Technology";
+import About from "./section/home/About";
+import Technology from "./section/technology/Technologies"
+import Experience from "./section/technology/Experience";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -37,12 +40,20 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: "/about",
+        element: <About />
+      },
+      {
         path: "/technology",
         element: <Technology />
       },
       {
         path: "/projects",
         element: <Project />
+      },
+      {
+        path: "/experience",
+        element: <Experience />
       },
       {
         path: "/contact",
@@ -56,7 +67,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <AnimatePresence mode="wait">
-      <RouterProvider router={router} />
+      <div className={`${style.home} fixed top-0 right-0 left-0 bottom-0`}>
+        <RouterProvider router={router} />
+      </div>
     </AnimatePresence>
   );
 }

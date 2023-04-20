@@ -10,7 +10,7 @@ import { BsFillPhoneVibrateFill } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
 import { BiMoon } from "react-icons/bi";
 import { BiSun } from "react-icons/bi";
-import Logo from "../Img/Logo.png";
+import Logo from "../Img/Typography_Initial_Letter_Brand_Logo__2_-removebg-preview.png";
 import ReactCurvedText from "react-curved-text";
 import style from "../styles/style.module.css";
 import navStyle from "../styles/nav.module.css";
@@ -29,27 +29,33 @@ const Nav = ({toggleTheme}) => {
   return (
     <div>
     <nav
-      className={`${style.nav} text-xs flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10 xl:px-14 fixed z-20 right-0 left-0 top-0 ${theme ? `bg-[#edc9b2] shadow-md text-[#002733]` : `bg-[#041b25] text-icons`}`}
+      className={`${style.nav} text-base flex justify-between items-center p-6 font-bold font-['Nunito'] md:px-10 xl:px-14 fixed z-20 right-0 left-0 top-0 ${theme ? `shadow-md text-[#f4ddce]` : `text-[#fcfcfc]`}`}
     >
-      <div className={`w-[100px] h-[80px] ${toggle ? `hidden` : `block`}`}>
+      <div className={`w-[80px] h-[80px] ${toggle ? `hidden` : `block`}`}>
         <Link to="/"><img src={Logo} alt="" className={`h-full w-full rounded-full `} /></Link>
       </div>
       <div
-        className={`hidden md:flex justify-between items-center md:w-[40%]`}
+        className={`hidden md:flex justify-between items-center md:w-[60%] xl:w-[40%]`}
       >
-        <Link to="/" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `` ? `${style.links} text-orange` : ``}`}>
+        <Link to="/" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `` ? `${style.links} text-[#701b15]` : ``}`}>
           Home
         </Link>
-        <Link to="/projects" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "projects" ? `${style.links} text-orange` : ``}`}>
+         <Link to="/about" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `about` ? `${style.links} text-[#701b15]` : ``}`}>
+          About
+        </Link>
+        <Link to="/projects" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "projects" ? `${style.links} text-[#701b15]` : ``}`}>
           Projects
         </Link>
-        <Link to="/technology" className={`hover:text-orange transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "technologies" ? `${style.links} text-orange` : ""}`}>
+        <Link to="/technology" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === "technology" ? `${style.links} text-[#701b15]` : ""}`}>
           Technology
-          </Link>
+        </Link>
+        <Link to="/experience" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `experience` ? `${style.links} text-[#701b15]` : ``}`}>
+          Experience
+        </Link>
       </div>
       <div className={`w-[20px] h-[20px] absolute right-[100px] md:right-[130px] lg:right-[150px]`}>
         <button onClick={toggleTheme} className={`outline-none text-lg`}>
-            { theme ? <BiMoon className={`${theme ? `text-[#002733]` : `text-icons`}`} /> : <BiSun className={`${theme ? `text-[#002733]` : `text-icons`}`} />}
+            { theme ? <BiMoon className={`${theme ? `text-[#f4ddce]` : `text-icons`}`} /> : <BiSun className={`${theme ? `text-[#f4ddce]` : `text-icons`}`} />}
         </button>
       </div>
       {
@@ -85,7 +91,7 @@ const Nav = ({toggleTheme}) => {
       }
       <div className={`relative cursor-pointer hidden md:block`}>
         <ReactCurvedText
-          className={`text-orange`}
+          className={`text-[#701b15]`}
           width={80}
           height={80}
           cx={40}
@@ -96,14 +102,14 @@ const Nav = ({toggleTheme}) => {
           reversed={true}
           text="contact me . contact me ."
           textProps={{ style: { fontSize: 16 } }}
-          textPathProps={{ fill: "#b51f06" }}
+          textPathProps={{ fill: "#701b15" }}
           tspanProps={null}
           ellipseProps={null}
           svgProps={null}
         />
         <Link to="/contact">
           <FiArrowUpRight
-            className={`absolute font-bold text-xl text-orange top-[30px] left-[30px]`}
+            className={`absolute font-bold text-xl text-[#701b15] top-[30px] left-[30px]`}
           />
         </Link>
       </div>

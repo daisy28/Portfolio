@@ -1,15 +1,21 @@
-.header {
-     position: relative;
-     background: url("../Img/background.png") #09222e;
-     background-size: cover;
+.home {
+     background: url("../Img/Gloria.jpg"), linear-gradient(#2f3336, #424549);
      background-blend-mode: multiply;
+     background-size: cover;
 }
 
 .header_light{
      position: relative;
-     background: url("../Img/background.png") #f4ddce;
-     background-size: cover;
-     background-blend-mode: multiply;
+     /* background: #f4ddce; */
+}
+
+.card_shadow {
+     box-shadow: inset -10px -10px 15px 0px #14181b, inset 10px 10px 15px #14181b;
+}
+
+.card_shadow_light {
+     box-shadow: inset -10px -10px 15px #da9e9a, inset 10px 10px 15px #df8983;
+     color:#e28f89
 }
 
 .links{
@@ -20,22 +26,10 @@
      content: "";
      width: 50%;
      height: 2px;
-     background-color: #b51f06;
+     background-color: #701b15;
      position: absolute !important;
      bottom: -4px;
      left: 0px;
-}
-
-.project_section{
-     background: url("../Img/background.png") #09222e;
-     background-size: cover;
-     background-blend-mode: multiply;
-}
-
-.project_section_light {
-     background: url("../Img/background.png") #f4ddce;
-     background-size: cover;
-     background-blend-mode: multiply;
 }
 
 .svg_text{
@@ -61,8 +55,6 @@
 }
 
 .header_img2 {
-     width: 100%;
-     height: 80%;
      font-family: "Dancing Script", "sans-serif";
      font-size: 1.1rem;
      font-weight: 700;
@@ -99,13 +91,8 @@
 }
 
 .project_div{
-    position: relative;
-    animation: project 0.5s;
-    animation-timing-function: linear;
-    overflow: hidden;
-    border-left-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to bottom, #37a3a9, #498a9e, #0f3e4a) 1 100%;
+   border-left: 4px solid #701b15;
+   border-radius: 1px;
 }
 
 .project_icon{
@@ -116,11 +103,9 @@
      z-index: -99;
 }
 
-.border_gradient{
-     border-bottom-width: 4px;
-     border-style: solid;
-     border-image-source: linear-gradient(to left, #0f3e4a, #498a9e, #37a3a9);
-     border-image-slice: 1;
+.border_gradient:hover {
+     border-bottom: #701b15 2px solid;
+     color: #701b15 !important;
 }
 
 @keyframes project {
@@ -150,10 +135,10 @@
 ._input_element:not(:placeholder-shown)~._input_text {
      transform: translateX(-15px) translateY(-15px) !important;
      padding: 0 0.8rem;
-     background-color: #012630;
+     background-color: #070b0e;
      transition: 0.7s;
      border-radius: 10px;
-     color: #b51f06;
+     color: #701b15;
      font-size: .7rem;
      font-weight: 700;
 }
@@ -164,15 +149,5 @@
 }
 
 ._input_element:focus~._input_icon{
-     color: #b51f06;
-}
-
-@media screen and (max-height: 600px){
-     .home_page,
-     .technology_page{
-          margin-top: 7rem;
-     }
-     .about_page{
-          margin-top: 10rem;
-     }
+     color: #701b15;
 }

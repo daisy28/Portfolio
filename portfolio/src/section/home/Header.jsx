@@ -5,9 +5,6 @@ import { MdCode } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import Frame from "../../Img/Group 7.svg";
-import Frame2 from "../../Img/Group 7 (2).svg";
-import Img1 from "../../Img/Gloria.jpg";
 import style from "../../styles/style.module.css";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
@@ -40,38 +37,36 @@ const Header = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-    <section className={`pt-[14rem] ${theme ? `${style.header_light}` : `${style.header}`}`} id="Header">
-      <header className={`flex justify-between px-6 md:px-10 xl:px-14`}>
-        <div className={`${style.header_div} w-[50%] h-[300px] mb-8 relative md:h-[400px] md:w-[70%]`}>
-          {theme ? <img src={Frame2} className={``} alt="" /> : <img src={Frame} className={``} alt="" />}
-          <img src={Img1} alt="" className={`${style.header_img} grayscale w-100-h-100 object-cover`} />
+    <section className={`md:w-[70%] relative top-[150px] mx-auto flex flex-col justify-center h-[80vh] ${theme ? `${style.header_light}` : `${style.header}`}`} id="Header">
+      <header className={`flex justify-between items-start relative -bottom-[90px] md:-bottom-[200px] px-6 md:px-10 xl:px-14`}>
+        <div className={`${style.header_div} w-[70%] relative -top-[120px] md:-top-[200px]`}>
           <div
-            className={`${style.header_img2}  text-orange absolute flex justify-center px-4 pt-6 top-[45px] left-[45px] md:top-[52px] md:left-[75px] lg:left-[95px] xl:left-[105px] shadow-md backdrop-blur-[5px] md:items-center md:pt-0 ${theme ? `bg-[rgba(226,240,242,0.05)] shadow-md` : `bg-[rgba(1,51,66,0.44)]`}`}
+            className={`${style.header_img2} text-[#fcfcfc] flex justify-center items-center p-4 md:py-10 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`}
           >
-            <div className={`z-10 md:relative md:-top-[60px]`}>
+            <div className={`z-10 h-[200px] md:h-[340px]`}>
               <TextTransition springConfig={presets.default}>
-                <MdCode className={`md:text-2xl`} />
-                <p className={` font-["Nunito"] font-bold text-base md:text-4xl ${theme ? `text-[#162729] ` : `text-icons`}`}>{TEXTS[index % TEXTS.length]}</p>
-                <MdCodeOff className={`md:text-2xl`} />
+                <MdCode className={`md:text-2xl text-[#701b15]`} />
+                <p className={` font-["Nunito"] font-bold text-base md:text-3xl leading-[30px] md:leading-[60px] ${theme ? `text-[#191c20] ` : `text-[#fcfcfc]`}`}>{TEXTS[index % TEXTS.length]}</p>
+                <MdCodeOff className={`md:text-2xl text-[#701b15]`} />
               </TextTransition>
             </div>
           </div>
         </div>
         <div
-          className={`w-20 h-40 relative flex justify-start items-center flex-col ${theme ? `bg-[#edc9b2] text-[#354f52] shadow-sm` : `bg-icons-bg text-icons`}`}
+          className={`w-20 h-40 relative flex justify-start items-center lg:-top-[100px] -left-[50px] flex-col ${theme ? `bg-[#edc9b2] text-[#191c20] shadow-sm` : `bg-[#070b0e] text-[#fcfcfc]`}`}
         >
-          <a href="https://github.com/daisy28" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
+          <a href="https://github.com/daisy28" className={`hover:text-[#701b15] md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaGithub className={`mb-6 mt-4`} />
           </a>
-          <a href="https://twitter.com/gloriah_CU?s=09" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
+          <a href="https://twitter.com/gloriah_CU?s=09" className={`hover:text-[#701b15] md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaTwitter className={`mb-6`} />
           </a>
-          <a href="https://www.linkedin.com/in/gloria-ubah-a74446156" className={`hover:text-orange md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
+          <a href="https://www.linkedin.com/in/gloria-ubah-a74446156" className={`hover:text-[#701b15] md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaLinkedinIn className={`mb-6`} />
           </a>
           <div className={`${style.cta} relative my-8`}>
             <span
-              className={`${style.cta_text} absolute text-center  uppercase bg-orange p-1 font-bold font-["Nunito"] text-header-background`}
+              className={`${style.cta_text} absolute text-center  uppercase bg-[#701b15] p-1 font-bold font-["Nunito"] text-[#070b0e]`}
             >
               follow &nbsp; me
             </span>
