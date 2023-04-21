@@ -10,7 +10,7 @@ import { BsFillPhoneVibrateFill } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
 import { BiMoon } from "react-icons/bi";
 import { BiSun } from "react-icons/bi";
-import Logo from "../Img/Typography_Initial_Letter_Brand_Logo__2_-removebg-preview.png";
+import Logo from "../Img/Logo2.png";
 import ReactCurvedText from "react-curved-text";
 import style from "../styles/style.module.css";
 import navStyle from "../styles/nav.module.css";
@@ -35,7 +35,7 @@ const Nav = ({toggleTheme}) => {
         <Link to="/"><img src={Logo} alt="" className={`h-full w-full rounded-full `} /></Link>
       </div>
       <div
-        className={`hidden md:flex justify-between items-center md:w-[60%] xl:w-[40%]`}
+        className={`hidden md:flex justify-between items-center md:w-[60%] xl:w-[30%]`}
       >
         <Link to="/" className={`hover:text-[#701b15] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${splitLocation[1] === `` ? `${style.links} text-[#701b15]` : ``}`}>
           Home

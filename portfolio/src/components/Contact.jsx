@@ -102,7 +102,7 @@ const Contact = () => {
 
                   <div className={`${style._input_div} relative mb-6`}>
                   <textarea
-                  className={`${style._input_element} relative w-full border-0 rounded-2xl p-2 pl-10 text-[#fcfcfc] outline-none h-[200px] transition duration-700 ease-in-out ${theme ? `bg-[#edc9b2] shadow-md shadow-[#e28f89] inset` : `bg-[#14181b]`}`}
+                  className={`${style._input_element} relative w-full border-0 rounded-3xl p-2 pl-10 text-[#fcfcfc] outline-none h-[200px] transition duration-700 ease-in-out ${theme ? `bg-[#edc9b2] shadow-md shadow-[#e28f89] inset` : `bg-[#14181b]`}`}
                   name="" 
                   id="message" 
                   placeholder=" "

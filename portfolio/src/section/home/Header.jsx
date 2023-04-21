@@ -53,7 +53,7 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`w-20 h-40 relative flex justify-start items-center lg:-top-[100px] -left-[50px] flex-col ${theme ? `bg-[#edc9b2] text-[#191c20] shadow-sm` : `bg-[#070b0e] text-[#fcfcfc]`}`}
+          className={`w-20 h-40 relative flex justify-start items-center lg:-top-[100px] lg:-left-[50px] flex-col ${theme ? `bg-[#edc9b2] text-[#191c20] shadow-sm` : `bg-[#070b0e] text-[#fcfcfc]`}`}
         >
           <a href="https://github.com/daisy28" className={`hover:text-[#701b15] md:text-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
             <FaGithub className={`mb-6 mt-4`} />
