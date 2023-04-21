@@ -25,7 +25,7 @@ const theme = useContext(ThemeContext)
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-    <section className={`${style.about_section} w-[80%] h-[80vh] overflow-y-auto relative z-20 top-[150px] bottom-[150px] mx-auto p-6 md:px-10 xl:px-14 ${theme ? `bg-[#f4ddce] ${style.card_shadow_light}` : `bg-[#070b0e] ${style.card_shadow}`}`} id="About">
+    <section className={`${style.about_section} w-[80%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto p-6 md:px-10 xl:px-14 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`} id="About">
       <div className={``}>
       <div className={`relative my-8`}>
             <img src={Frame} alt="" className={`w-full h-full `} />
@@ -35,7 +35,7 @@ const theme = useContext(ThemeContext)
           <span className={`font-bold text-5xl md:text-6xl`}>H</span>i, my name is{" "}
           <span className={`font-bold text-xl`}>
             <span
-              className={`${style.name} font-extrabold text-[#701b15] text-7xl md:text-9xl`}
+              className={`${style.name} font-extrabold text-[#af5c3b] text-7xl md:text-9xl`}
             >
               G
             </span>
@@ -86,7 +86,7 @@ const theme = useContext(ThemeContext)
                 <Slide index={2}>
                   <div className={` text-[#54646e] text-base mt-5 text-center md:text-lg`}>
                     <small>
-                      My slogan: While there's <span className={`line-through text-base`}>life</span> <span className={`text-[#701b15] text-base`}>(CODE)</span> there's <span className={`line-through text-base`}>hope</span> <span className={`text-[#701b15] text-base`}>(BUG).</span>
+                      My slogan: While there's <span className={`line-through text-base`}>life</span> <span className={`text-[#af5c3b] text-base`}>(CODE)</span> there's <span className={`line-through text-base`}>hope</span> <span className={`text-[#af5c3b] text-base`}>(BUG).</span>
                     </small>
                   </div>
                 </Slide>
@@ -99,16 +99,16 @@ const theme = useContext(ThemeContext)
                 </Slide>
               </Slider>
               <div
-                className={`w-40 mx-auto flex justify-between items-center text-[#701b15] relative my-4 cursor-pointer`}
+                className={`w-40 mx-auto flex justify-between items-center text-[#af5c3b]  relative my-4 cursor-pointer`}
               >
                 <ButtonNext className={`w-8`}>
                   <BsFillEggFill
-                    className={`${style.arrow} relative w-8 rotate-[90deg]`}
+                    className={`${style.arrow} hover:text-[#a04d2c] relative w-8 rotate-[90deg]`}
                   />
                 </ButtonNext>
                 <ButtonBack className={`w-8`}>
                   <BsFillEggFill
-                    className={`${style.arrow2} relative w-8 -rotate-[90deg]`}
+                    className={`${style.arrow2} hover:text-[#a04d2c] relative w-8 -rotate-[90deg]`}
                   />
                 </ButtonBack>
               </div>

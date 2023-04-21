@@ -5,14 +5,13 @@ import {
   Outlet
 } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import style from "./styles/style.module.css"
+import Slider from "./components/Slider";
 import Home from "./section/home/Home";
 import About from "./section/home/About";
 import Technology from "./section/technology/Technologies"
 import Experience from "./section/technology/Experience";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Project from "./components/Projects";
 export const ThemeContext = createContext(null);
 
@@ -25,7 +24,6 @@ const Layout = () => {
     <ThemeContext.Provider value={lightTheme}>
       <Nav toggleTheme={toggleTheme} />
       <Outlet />
-      <Footer />
     </ThemeContext.Provider>
   )
 }
@@ -67,9 +65,8 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <AnimatePresence mode="wait">
-      <div className={`${style.home} fixed top-0 right-0 left-0 bottom-0`}>
-        <RouterProvider router={router} />
-      </div>
+      <Slider />
+      <RouterProvider router={router} />
     </AnimatePresence>
   );
 }

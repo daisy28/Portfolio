@@ -37,7 +37,7 @@ const Projects = () => {
       transition={{duration: 2}}
     >
     <section
-      className={`p-4 bg-[#070b0e] w-[80%] h-[80vh] overflow-y-auto relative z-20 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
+      className={`${style.projects_section} p-4 bg-[#070b0e] w-[80%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
       id="Projects"
       >
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
@@ -45,11 +45,11 @@ const Projects = () => {
          <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-xl`}>
             <span
-              className={`${style.name} font-extrabold text-[#701b15] text-7xl md:text-9xl`}
+              className={`${style.name} font-extrabold text-[#af5c3b] text-7xl md:text-9xl`}
             >
               P
             </span>
-            RO:JECT.
+            RO:JECTS.
           </span>
         </h1>
       </div>
@@ -66,11 +66,11 @@ const Projects = () => {
                 <h3 className={`font-semibold text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
                   {info.title}
                 </h3>
-                <div className={`relative my-4`}>
+                <div className={`relative my-4 md:w-[300px] md:h-[300px]`}>
                   <img
                     src={info.img}
                     alt=""
-                    className={`w-full h-full`}
+                    className={`w-full h-full object-cover`}
                   />
                 </div>
                 <p
@@ -95,7 +95,7 @@ const Projects = () => {
         <div className={`relative my-10 p-5 md:w-[20%] md:my-0`}>
           <div className={`relative`}>
             <VscChevronLeft
-              className={`${style.project_border} w-[220px] h-[220px] text-[#701b15] rotate-45 ${theme ? `` : `` }`}
+              className={`${style.project_border} w-[220px] h-[220px] text-[#af5c3b] rotate-45 ${theme ? `` : `` }`}
             />
           </div>
           <div className={`flex flex-col items-start p-4`}>
