@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../../App";
-import Frame1 from "../../Img/Group 9.svg";
-import { MdCode } from "react-icons/md";
-import style from "../../styles/style.module.css";
+import { ThemeContext } from "../App";
+import Frame1 from "../Img/Group 9.svg";
+import style from "../styles/style.module.css";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -10,13 +9,13 @@ const Experience = () => {
   return (
      <motion.main
       className="main__container"
-      initial={{ width: 0 }}
+      initial={{ width: "40%" }}
       animate={{ width: "100%" }}
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
     <section
-      className={`${style.experience_section} p-6 w-[80%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`}
+      className={`${style.experience_section} p-6 w-[90%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`}
       id="Experience"
     >
       <div className={`mb-10`}>
@@ -27,16 +26,17 @@ const Experience = () => {
             >
               E
             </span>
-            X:PERIENCE.
+            X:PERIENCE
           </span>
         </h1>
         </div>
-      <div className={``}>
-        <div className={`relative md:w-[50%] mb-10 flex`}>
+      <div className={`lg:w-[870px] mx-auto`}>
+        <div className={`md:flex justify-between items-start md:mb-10`}>
+        <div className={`relative md:w-[45%] mb-10 md:mb-0 flex`}>
           <img src={Frame1} alt="" className={``} />
           <div className={`ml-8`}>
             <h1 className={`font-bold text-lg mb-2 ${theme ? `text-[#071e1e]` : `text-[#fcfcfc]`}`}>
-                Sololearn <span><MdCode className={`inline`}  />2021<MdCode className={`inline`}/></span>
+                Sololearn 2021
             </h1>
             <p className={`text-[#54646e] mb-4`}>
               Completed a course and series of challenges by demonstrating
@@ -53,11 +53,11 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative md:w-[50%] md:ml-auto mb-10 text-right flex flex-row-reverse`}>
+        <div className={`relative flex md:w-[45%] mb-10 md:mb-0 text-right flex-row-reverse md:text-left md:flex-row `}>
           <img src={Frame1} alt="" className={``} />
-          <div className={`mr-8`}>
+          <div className={`mr-8 md:ml-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-[#fcfcfc]`}`}>
-              Women Techsters <span><MdCode className={`inline`}  />2021<MdCode className={`inline`}/></span>
+              Women Techsters 2021
             </h1>
             <p className={`text-[#54646e] mb-4`}>
               Successfully completed a 2-week Bootcamp training in software
@@ -74,11 +74,14 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative md:w-[50%] mb-10 flex`}>
+          </div>
+          
+        <div className={`md:flex justify-between items-start md:mb-10`}>
+        <div className={`relative md:w-[45%] mb-10 flex md:mb-0`}>
           <img src={Frame1} alt="" className={``} />
           <div className={`ml-8`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-[#fcfcfc]`}`}>
-              I4GxZuri <span><MdCode className={`inline`}  />2022<MdCode className={`inline`}/></span>
+              I4GxZuri 2022
             </h1>
             <p className={`text-[#54646e] mb-4`}>
               Participated in an intensive 3 months training in Fullstack development
@@ -95,11 +98,11 @@ const Experience = () => {
             </a>
           </div>
         </div>
-        <div className={`relative md:w-[50%] md:ml-auto mb-10 text-right flex flex-row-reverse`}>
+        <div className={`relative md:w-[45%] md:ml-auto mb-10 text-right md:text-left flex flex-row-reverse md:flex-row`}>
           <img src={Frame1} alt="" className={``} />
-          <div className={`mr-8`}>
+          <div className={`mr-8 md:ml-8 md:mr-0`}>
             <h1 className={`font-bold text-lg mb-2  ${theme ? `text-[#071e1e]` : `text-[#fcfcfc]`}`}>
-              HNG Internship  <span><MdCode className={`inline`}  />2022<MdCode className={`inline`}/></span>
+              HNG Internship 2022
             </h1>
             <p className={`text-[#54646e] mb-4`}>
               Enrolled and successfully completed the HNG Internship program. A remote, large scale, fast-paced virtual internship that improves skills by working on a real world project.
@@ -113,6 +116,7 @@ const Experience = () => {
               Access Certificate
             </a>
           </div>
+        </div>
         </div>
         </div>
     </section>

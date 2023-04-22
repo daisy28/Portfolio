@@ -1,7 +1,7 @@
-import Img1 from "../Img/Hero Image.svg";
-import Img2 from "../Img/tempkit.png";
-import Img3 from "../Img/speakbetter.png";
-import Img4 from "../Img/agrolearn.png";
+import Img1 from "../Img/Hero Image.webp";
+import Img2 from "../Img/tempkit.webp";
+import Img3 from "../Img/speakbetter.webp";
+import Img4 from "../Img/agrolearn.webp";
 
 
 const Projects = [

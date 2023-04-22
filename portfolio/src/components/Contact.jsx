@@ -18,12 +18,12 @@ const Contact = () => {
   return (
         <motion.main
       className="main__container"
-      initial={{ width: 0 }}
+      initial={{ width: "40%" }}
       animate={{ width: "100%" }}
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`${style.contact_section} w-[80%] h-[80vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
+          <section className={`${style.contact_section} w-[90%] h-[80vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
             <div className={``}>
                <div className={``}>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
@@ -35,35 +35,37 @@ const Contact = () => {
             >
               C
             </span>
-            ON:TACT.
+            ON:TACT
           </span>
         </h1>
                     </div>
 
                    
                     
-                         <div className={`my-[2rem] md:w-[400px] mx-auto`}>
-                               <div className={``}>
+                         <div className={`my-[2rem] md:flex justify-between items-start mx-auto max-w-[850px]`}>
+                               <div className={`md:w-[40%]`}>
                <div className={`mb-2`}>
                          <h1 className={`text-3xl mb-4 font-bold ${theme ? `text-[#24272a]` : `text-[#969a9d]`}`}>Love to hear from you, Get in touch 👋</h1>
                     </div>
               <div className={`mx-auto flex justify-between items-start text-[#AF5C3B] font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
-               <div className={`bg-[#fcfcfc] p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl transition duration-700 ease-in-out ${theme ? `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]` : `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]`}`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
-                    <BiCurrentLocation className={`md:mb-0 hover:text-[#fcfcfc] ${displayLocation ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold text-[#AF5C3B] md:block md:ml-4 hover:text-[#fcfcfc] ${displayLocation ? `block hover:text-[#fcfcfc] text-[#fcfcfc]` : `hidden`}`}>Lagos, Nigeria</p>
+               
+               
+               <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
+                    <BiMailSend className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayEmail ? `mb-4` : `mb-0`}`} />
+                    <p className={`text-base font-semibold md:block md:ml-4 ${displayEmail ? `block ` : `hidden`}  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>ubahgloria16@gmail.com</p>
+                    </div>
+                    <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
+                    <BsFillPhoneVibrateFill className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayPhone ? `mb-4` : `mb-0`}`} />
+                    <p className={`text-base font-semibold md:block md:ml-4 ${displayPhone ? `block` : `hidden`} ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>+2349026115866</p>
                </div>
-               <div className={`bg-[#fcfcfc] p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl transition duration-700 ease-in-out ${theme ? `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]` : `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]`}`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
-                    <BsFillPhoneVibrateFill className={`md:mb-0 ${displayPhone ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold text-[#AF5C3B] hover:text-[#fcfcfc] md:block md:ml-4 ${displayPhone ? `block hover:text-[#fcfcfc] text-[#fcfcfc]` : `hidden`}`}>+2349026115866</p>
-               </div>
-               <div className={`bg-[#fcfcfc] p-4 flex justify-center items-center flex-col rounded-full md:mb-4 md:flex-row cursor-pointer hover:rounded-xl transition duration-700 ease-in-out ${theme ? `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]` : `hover:bg-[#AF5C3B] hover:text-[#fcfcfc]`}`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
-                    <BiMailSend className={`md:mb-0 ${displayEmail ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold text-[#AF5C3B] hover:text-[#fcfcfc] md:block md:ml-4 ${displayEmail ? `block hover:text-[#fcfcfc] text-[#fcfcfc]` : `hidden`}`}>ubahgloria16@gmail.com</p>
+                    <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
+                    <BiCurrentLocation className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayLocation ? `mb-4` : `mb-0`}`} />
+                    <p className={`text-base font-semibold md:block md:ml-4 ${displayLocation ? `block` : `hidden`} ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>Lagos, Nigeria</p>
                </div>
                     </div>
                     
                     </div>
-                         <form className={`mb-4 md:mb-0 `} action="">
+                         <form className={`mb-4 md:mb-0 md:w-[50%]`} action="">
                 <div className={`mb-4`}>
                   <div className={`${style._input_div} relative mt-3 mb-6`}>
                   <input
@@ -123,7 +125,7 @@ const Contact = () => {
                 </div>
                 <div className={`${style._btn_div} relative mb-5 mt-4`}>
                   <button
-                    className={`bg-[#fcfcfc] py-2 border-0 px-6 text-[#AF5C3B] font-bold rounded animate-bounce md:py-3 md:px-8 md:text-xl transition duration-700 ease-in-out hover:bg-[#AF5C3B] hover:text-[#fcfcfc]`}
+                    className={`w-full bg-[#fcfcfc] py-2 border-0 rounded-2xl px-6 font-[600] md:py-3 md:px-8 md:text-xl transition duration-700 ease-in-out hover:bg-[#AF5C3B] hover:text-[#fcfcfc] ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}
                   >Send
                   </button>
                 </div>

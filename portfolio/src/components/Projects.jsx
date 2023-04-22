@@ -1,9 +1,20 @@
 import React, { useState, useContext } from "react";
 import { ThemeContext } from "../App";
-import { VscChevronLeft } from "react-icons/vsc";
 import style from "../styles/style.module.css";
 import Data from "../data/project";
 import Frame1 from "../Img/Group 7 (1).svg";
+import Html from "../Img/html5.c1bb84e0.svg";
+import Css from "../Img/css3.3ec32022.svg";
+import Bootstrap from "../Img/bootstrap-logo-shadow.png";
+import Git from "../Img/git.43d387b7.svg";
+import Javascript from "../Img/javascript.081325c6.svg";
+import ReactImg from "../Img/react.e7574af2.svg";
+import Slack from "../Img/Slack_icon_2019.svg.png";
+import Tailwind from "../Img/images-removebg-preview.png";
+import Ts from "../Img/images__2_-removebg-preview.png";
+import Next from "../Img/images__1_-removebg-preview.png";
+import Figma from "../Img/5968705.png";
+import Wordpress from "../Img/174881.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -26,22 +37,24 @@ const Projects = () => {
     setIndex((fourthIndex) => (fourthIndex = 3));
   };
 
+  const [displayLink, setDisplayLink] = useState(false);
+
   const theme = useContext(ThemeContext);
 
   return (
     <motion.main
       className="main__container"
-      initial={{ width: 0 }}
+      initial={{ width: "40%" }}
       animate={{ width: "100%" }}
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
     <section
-      className={`${style.projects_section} p-4 bg-[#070b0e] w-[80%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
+      className={`${style.projects_section} p-4 bg-[#070b0e] w-[90%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
       id="Projects"
       >
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
-      <div className={`absolute top-[60px] left-[60px] md:top-[0] md:left-[0]  md:pt-[4rem] md:pl-[4rem]`}>
+      <div className={`pt-[2rem] pl-[2rem]`}>
          <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-xl`}>
             <span
@@ -49,56 +62,13 @@ const Projects = () => {
             >
               P
             </span>
-            RO:JECTS.
+            RO:JECTS
           </span>
         </h1>
       </div>
-      <div
-        className={`p-[1rem] md:pt-[12rem] pt-[6rem] my-[4rem] md:flex justify-between items-center md:px-[4rem] xl:w-[1000px] xl:mx-auto`}
-      >
-        <div className={`relative z-10 md:w-[70%] xl:w-[650px]`}>
-          {data.map((info) => {
-            return (
-              <div
-                className={`${style.project_div} my-8 px-4 md:px-8 md:my-0`}
-                key={info.id}
-              >
-                <h3 className={`font-semibold text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
-                  {info.title}
-                </h3>
-                <div className={`relative my-4 md:w-[300px] md:h-[300px]`}>
-                  <img
-                    src={info.img}
-                    alt=""
-                    className={`w-full h-full object-cover`}
-                  />
-                </div>
-                <p
-                  className={`text-[#54646e] leading-[30px] md:leading-[38px] text-base font-semibold font-["Nunito"] text-left py-4 md:text-xl`}
-                >
-                  {info.description}
-                </p>
-                <div className={`flex justify-start items-center`}>
-                  <a
-                    href={info.url}
-                    className={`${style.border_gradient} font-semibold pb-2 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
-                  >
-                    Visit Site
-                  </a>
-                  <a href={info.github} className={`${style.border_gradient} font-semibold pb-2 ml-8 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>Github</a>  
-                </div>
-              </div>
-            );
-          })}
-        </div>
 
-        <div className={`relative my-10 p-5 md:w-[20%] md:my-0`}>
-          <div className={`relative`}>
-            <VscChevronLeft
-              className={`${style.project_border} w-[220px] h-[220px] text-[#af5c3b] rotate-45 ${theme ? `` : `` }`}
-            />
-          </div>
-          <div className={`flex flex-col items-start p-4`}>
+      <div className={`relative p-5 mt-4 mr-auto max-w-[800px] mx-auto`}>
+          <div className={`flex justify-between items-enter p-4 flex-wrap`}>
             <button
               className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
               onClick={firstProject}
@@ -123,6 +93,109 @@ const Projects = () => {
             >
               AgroLearn
             </button>
+            <button
+              className={`${style.border_gradient} z-10 text-[#af5c3b] font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `` : ``}`}
+              onClick={fourthProject}
+            >
+              See more &gt;&gt;&gt;
+            </button>
+          </div>
+        </div>
+
+      <div
+        className={`p-[1rem] md:px-[2rem] max-w-[800px] mx-auto`}
+      >
+        <div className={`relative z-10`}>
+          {data.map((info) => {
+            return (
+              <div
+                className={`${style.project_div} md:flex justify-between items-start pl-4 md:pl-8`}
+                key={info.id}
+              >
+                <div className={`md:w-[45%]`}>
+                  <h3 className={`font-semibold text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
+                    {info.title}
+                  </h3>
+                  {<div className={`relative my-4 md:w-[260px] md:h-[260px]`}  onMouseOver={() => setDisplayLink(true)} onMouseLeave={() => setDisplayLink(false)}>
+                    <img
+                      src={info.img}
+                      alt=""
+                      className={`w-full h-full object-cover`}
+                    />
+                    <div className={`flex justify-between items-center absolute w-full top-0 right-0 left-0 bottom-0 ${displayLink ? `bg-[#af5c3ba9]` : `hidden`}`}>
+                  <a
+                    href={info.url}
+                    className={`${style.border_gradient} font-semibold pb-2 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+                  >
+                    Visit Site
+                  </a>
+                  <a href={info.github} className={`${style.border_gradient} font-semibold pb-2 ml-8 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>Github</a>  
+                </div>
+                  </div>}
+                </div>
+
+                <div className={`md:w-[50%]`}>
+                  <p
+                  className={`text-[#54646e] leading-[30px] md:leading-[38px] text-base font-semibold font-["Nunito"] text-left py-4 md:py-0 md:text-xl`}
+                >
+                  {info.description}
+                </p>
+                </div>
+                
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={`my-6 p-[1rem] max-w-[800px] mx-auto md:p-[2rem]`}>
+        <h1 className={`font-base mb-6 text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
+          <span className={`font-bold text-xl`}>
+            <span
+              className={`${style.name} font-extrabold text-[#af5c3b] text-4xl md:text-6xl`}
+            >
+              T
+            </span>
+            ECH:NOLOGY STACK
+          </span>
+        </h1>
+        <p className={`mb-4 text-lg ${theme ? `text-[#14181b]` : `text-[#cfcccc]`}`}>Tools and Technology</p>
+        <div className={`grid grid-cols-4 gap-4 md:grid-cols-6 md:gap-8`}>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={ReactImg} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Javascript} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Ts} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Next} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Git} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Html} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Css} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Tailwind} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Bootstrap} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Figma} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Slack} alt="" />
+          </div>
+          <div className={`p-4 rounded-md flex justify-center items-center ${theme ? `bg-[#edc9b2]` : `bg-[#14181b]`}`}>
+            <img src={Wordpress} alt="" />
           </div>
         </div>
       </div>

@@ -1,20 +1,14 @@
 import React, { useState, createContext } from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Slider from "./components/Slider";
-import Home from "./section/home/Home";
-import About from "./section/home/About";
-import Technology from "./section/technology/Technologies"
-import Experience from "./section/technology/Experience";
-import Nav from "./components/Nav";
-import Contact from "./components/Contact";
+import Home from "./components/Home";
 import Project from "./components/Projects";
-export const ThemeContext = createContext(null);
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Nav from "./components/Nav";
+import style from "./styles/style.module.css";
 
+export const ThemeContext = createContext(null);
 const Layout = () => {
   const [lightTheme, setLightTheme] = useState(false);
   const toggleTheme = () => {
@@ -38,14 +32,6 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/about",
-        element: <About />
-      },
-      {
-        path: "/technology",
-        element: <Technology />
-      },
-      {
         path: "/projects",
         element: <Project />
       },
@@ -65,8 +51,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <AnimatePresence mode="wait">
-      <Slider />
-      <RouterProvider router={router} />
+      <div className={`${style.home}`}>
+        <RouterProvider router={router} />
+      </div>
     </AnimatePresence>
   );
 }

@@ -1,4 +1,14 @@
-.header_light,
+.home {
+     background: url("../Img/IMG-20230416-WA0003.jpg") #141415;
+     background-blend-mode: multiply;
+     background-size: cover;
+     position: fixed;
+     background-position: top;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
 .links{
      position: relative;
 }
@@ -6,10 +16,11 @@
 .links::after {
      content: "";
      width: 50%;
-     height: 2px;
+     height: 3px;
      background-color: #af5c3b;
      position: absolute !important;
      bottom: -4px;
+     border-radius: 2px;
      left: 0px;
 }
 
@@ -27,8 +38,8 @@
 .experience_section::-webkit-scrollbar,
 .contact_section::-webkit-scrollbar
 {
-     width: 10px;
-     border-radius: 5px;
+     width: 6px;
+     border-radius: 3px;
 }
 
 .about_section::-webkit-scrollbar-track,
@@ -47,7 +58,7 @@
 .experience_section::-webkit-scrollbar-thumb,
 .contact_section::-webkit-scrollbar-thumb {
      background-color: #af5c3b;
-     border-radius: 5px;
+     border-radius: 3px;
 }
 
 .header_icon{
