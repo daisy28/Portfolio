@@ -141,7 +141,7 @@ const theme = useContext(ThemeContext)
             </CarouselProvider>
           </div>
       <section className={`my-10 relative mx-auto flex flex-col justify-center md:w-[50%] lg:w-[50%] md:my-0 lg:ml-auto md:flex-row md:justify-between md:items-start`} >
-      <header className={`flex justify-between items-start relative w-[100%]`}>
+      <header className={`flex justify-between items-start relative w-[100%] mt-[2rem]`}>
         <div className={`w-[60%] md:w-[200px]`}>
           <p className={`text-[#54646e] text-left`}><span className={`text-[#af5c3b]`}><Link to="/contact">Drop me a line with any </Link></span>project ideas you have or to just say hello!</p>
         </div>

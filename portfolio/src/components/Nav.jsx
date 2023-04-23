@@ -45,7 +45,7 @@ const Nav = ({toggleTheme}) => {
           Experience
         </Link>
       </div>
-      <div className={`w-[20px] h-[20px] absolute right-[100px] bottom-[30px] md:top-[60px] md:right-[150px]`}>
+      <div className={`w-[20px] h-[20px] absolute right-[100px] md:right-[150px]`}>
         <button onClick={toggleTheme} className={`outline-none text-lg`}>
             { theme ? <BiMoon className={`${theme ? `text-[#f4ddce]` : `text-icons`}`} /> : <BiSun className={`${theme ? `text-[#f4ddce]` : `text-icons`}`} />}
         </button>

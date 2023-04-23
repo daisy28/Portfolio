@@ -1,7 +1,6 @@
 .navigation {
     position: fixed;
     right: 30px;
-    top: 60px;
     z-index: 99;
     display: flex;
     justify-content: center;
@@ -67,10 +66,10 @@
      font-size: .9rem;
 }
 
-.navigation_active span:hover svg {
+/* .navigation_active span:hover svg {
      color: #4d1b07;
      filter: drop-shadow(0 0 2px #4d1b07) drop-shadow(0 0 6px #4d1b07) drop-shadow(0 0 18px #4d1b07);
-}
+} */
 
 .mobile_links{
      position: relative;

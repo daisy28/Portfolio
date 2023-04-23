@@ -43,16 +43,16 @@ const Contact = () => {
                <div className={`mb-2`}>
                          <h1 className={`text-3xl mb-4 font-bold ${theme ? `text-[#24272a]` : `text-[#969a9d]`}`}>Love to hear from you, Get in touch 👋</h1>
                     </div>
-              <div className={`mx-auto flex justify-between flex-col gap-4 items-start text-[#AF5C3B] font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
-               <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+              <div className={`mx-auto flex justify-between flex-col gap-2 items-start text-[#AF5C3B] font-bold text-3xl py-4`}>
+               <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
                     <BiMailSend className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} `} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>ubahgloria16@gmail.com</p>
                     </div>
-                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
                     <BsFillPhoneVibrateFill className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>+2349026115866</p>
                </div>
-                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
                     <BiCurrentLocation className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>Lagos, Nigeria</p>
                </div>
