@@ -148,7 +148,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className={`my-6 p-[1rem] max-w-[800px] mx-auto md:p-[2rem]`}>
+      <div className={`my-6 p-[1rem] pb-[4rem] md:pb-[4rem] max-w-[800px] mx-auto md:p-[2rem]`}>
         <h1 className={`font-base mb-6 text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-xl`}>
             <span

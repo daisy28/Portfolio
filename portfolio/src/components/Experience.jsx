@@ -15,7 +15,7 @@ const Experience = () => {
       transition={{duration: 2}}
     >
     <section
-      className={`${style.experience_section} p-6 w-[90%] h-[70vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`}
+      className={`${style.experience_section} p-6 pb-[8rem] w-[90%] h-[70vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`}
       id="Experience"
     >
       <div className={`mb-10`}>
@@ -76,7 +76,7 @@ const Experience = () => {
         </div>
           </div>
           
-        <div className={`md:flex justify-between items-start md:mb-10`}>
+        <div className={`md:flex justify-between items-start md:mb-10 pb-4`}>
         <div className={`relative md:w-[45%] mb-10 flex md:mb-0`}>
           <img src={Frame1} alt="" className={``} />
           <div className={`ml-8`}>

@@ -19,7 +19,7 @@ const Contact = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`${style.contact_section} w-[90%] h-[70vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[250px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
+          <section className={`${style.contact_section} w-[90%] h-[70vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[250px] pb-[6rem] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
             <div className={``}>
                <div className={``}>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
@@ -117,7 +117,7 @@ const Contact = () => {
                   </div>
                   
                 </div>
-                <div className={`${style._btn_div} relative mb-5 mt-4`}>
+                <div className={`${style._btn_div} relative mb-5 mt-4 pb-4`}>
                   <button
                     className={`w-full bg-[#fcfcfc] py-2 border-0 rounded-2xl px-6 font-[600] md:py-3 md:px-8 md:text-xl transition duration-700 ease-in-out hover:bg-[#AF5C3B] hover:text-[#fcfcfc] ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}
                   >Send

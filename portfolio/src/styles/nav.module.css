@@ -1,6 +1,7 @@
 .navigation {
     position: fixed;
     right: 30px;
+    top: 60px;
     z-index: 99;
     display: flex;
     justify-content: center;
