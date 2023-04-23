@@ -122,14 +122,14 @@ const Projects = () => {
                       alt=""
                       className={`w-full h-full object-cover`}
                     />
-                    <div className={`flex justify-between items-center absolute w-full top-0 right-0 left-0 bottom-0 ${displayLink ? `bg-[#af5c3ba9]` : `hidden`}`}>
+                    <div className={`flex justify-between items-center absolute w-full top-0 right-0 left-0 bottom-0 p-4 ${displayLink ? `bg-[#af5c3bea]` : `hidden`}`}>
                   <a
                     href={info.url}
-                    className={`${style.border_gradient} font-semibold pb-2 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+                    className={`text-[#fcfcfc] font-semibold pb-2 ${theme ? `` : ``}`}
                   >
                     Visit Site
                   </a>
-                  <a href={info.github} className={`${style.border_gradient} font-semibold pb-2 ml-8 animate-pulse ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>Github</a>  
+                  <a href={info.github} className={`text-[#fcfcfc] font-semibold pb-2 ml-8 ${theme ? `` : ``}`}>Github</a>  
                 </div>
                   </div>}
                 </div>
