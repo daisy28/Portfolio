@@ -74,10 +74,10 @@ const theme = useContext(ThemeContext)
               naturalSlideWidth={60}
               totalSlides={6}
               touchEnabled={true}
-              infinite={true}
+              // infinite={true}
               isIntrinsicHeight={true}
               interval={3000}
-              isPlaying={true}
+              // isPlaying={true}
               lockOnWindowScroll={true}
             >
               <Slider>
