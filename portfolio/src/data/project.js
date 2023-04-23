@@ -1,7 +1,7 @@
-import Img1 from "../Img/Hero Image.webp";
-import Img2 from "../Img/tempkit.webp";
-import Img3 from "../Img/speakbetter.webp";
-import Img4 from "../Img/agrolearn.webp";
+import Img1 from "../Img/Screenshot_20230423-103100_Brave.webp";
+import Img2 from "../Img/Screenshot_20230423-102849_Brave.webp";
+import Img3 from "../Img/Screenshot_20230423-102834_Brave.webp";
+import Img4 from "../Img/Screenshot_20230423-102801_Brave.webp";
 
 
 const Projects = [

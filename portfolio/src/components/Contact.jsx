@@ -25,13 +25,13 @@ const Contact = () => {
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
                     <div className={``}>
                     <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
-          <span className={`font-bold text-xl`}>
+          <span className={`${style.name} text-[#af5c3b] font-bold text-[45px]`}>
             <span
               className={`${style.name} font-extrabold text-[#AF5C3B] text-7xl md:text-9xl`}
             >
               C
             </span>
-            ON:TACT
+            ONTACT
           </span>
         </h1>
                     </div>

@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { ThemeContext } from "../App";
 import style from "../styles/style.module.css";
 import Data from "../data/project";
+import Data2 from "../data/project2";
 import Frame1 from "../Img/Group 7 (1).svg";
 import Html from "../Img/html5.c1bb84e0.svg";
 import Css from "../Img/css3.3ec32022.svg";
@@ -19,13 +20,18 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const [displayData, setDisplayData] = useState(Data);
+  const [displayMoreData, setDisplayMoreData] = useState(Data2);
+  const [seeMore, setSeeMore] = useState(false);
   const [index, setIndex] = useState(0);
+
   const data = displayData.filter((info) => {
     return info.id === index ? info : null;
   });
+  const data2 = displayMoreData.filter((info) => {
+    return info.id === index ? info : null;
+  });
   const firstProject = () => {
-       console.log(setDisplayData);
-    setIndex((firstIndex) => (firstIndex = 0));
+    return setIndex(firstIndex => (firstIndex = 0))
   };
   const secondProject = () => {
     setIndex((secondIndex) => (secondIndex = 1));
@@ -37,8 +43,14 @@ const Projects = () => {
     setIndex((fourthIndex) => (fourthIndex = 3));
   };
 
-  const [displayLink, setDisplayLink] = useState(false);
+  const firstData = data.map(info => {
+    return info;
+  })
+  const secondData = data2.map(info => {
+    return info;
+  })
 
+  const [displayLink, setDisplayLink] = useState(false);
   const theme = useContext(ThemeContext);
 
   return (
@@ -56,13 +68,13 @@ const Projects = () => {
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
       <div className={`pt-[2rem] pl-[2rem]`}>
          <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
-          <span className={`font-bold text-xl`}>
+          <span className={`${style.name} text-[#af5c3b] font-bold text-[45px]`}>
             <span
               className={`${style.name} font-extrabold text-[#af5c3b] text-7xl md:text-9xl`}
             >
               P
             </span>
-            RO:JECTS
+            ROJECTS
           </span>
         </h1>
       </div>
@@ -73,29 +85,29 @@ const Projects = () => {
               className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
               onClick={firstProject}
             >
-              T&Cs Generator
+              { seeMore? `Modelling Agency ` : `T&Cs Generator`}
             </button>
             <button
               className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
               onClick={secondProject}
             >
-              TempKit
+              {seeMore? `Metabnb` : `TempKit`}
             </button>
             <button
               className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
               onClick={thirdProject}
             >
-              Speak Better
+              {seeMore? `Mavin` : `Speak Better`}
             </button>
             <button
               className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
               onClick={fourthProject}
             >
-              AgroLearn
+              {seeMore? `Art Agency` : `AgroLearn`}
             </button>
             <button
               className={`${style.border_gradient} z-10 text-[#af5c3b] font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `` : ``}`}
-              onClick={fourthProject}
+              onClick={() => setSeeMore(prevState => !prevState)}
             >
               See more &gt;&gt;&gt;
             </button>
@@ -106,57 +118,55 @@ const Projects = () => {
         className={`p-[1rem] md:px-[2rem] max-w-[800px] mx-auto`}
       >
         <div className={`relative z-10`}>
-          {data.map((info) => {
-            return (
+              <div>
+              <h3 className={`font-semibold text-2xl mb-4 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
+                    {seeMore ? secondData[0].title : firstData[0].title}
+                  </h3>
               <div
                 className={`${style.project_div} md:grid grid-cols-2 gap-6 pl-4 md:pl-8`}
-                key={info.id}
+                key={ seeMore ? secondData[0].id : firstData[0].id}
               >
                 <div className={``}>
-                  <h3 className={`font-semibold text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
-                    {info.title}
-                  </h3>
-                  {<div className={`relative my-4 w-[100%] h-[100%]`}  onMouseOver={() => setDisplayLink(true)} onMouseLeave={() => setDisplayLink(false)}>
+                  
+                  {<div className={`relative my-4 w-[100%] h-[400px]`}  onMouseOver={() => setDisplayLink(true)} onMouseLeave={() => setDisplayLink(false)}>
                     <img
-                      src={info.img}
+                      src={seeMore ? secondData[0].img : firstData[0].img}
                       alt=""
-                      className={`w-full h-full object-cover`}
+                      className={`w-full h-full object-cover object-top`}
                     />
                     <div className={`flex justify-between items-center absolute w-full top-0 right-0 left-0 bottom-0 p-4 ${displayLink ? `bg-[#af5c3bea]` : `hidden`}`}>
                   <a
-                    href={info.url}
+                    href={seeMore ? secondData[0].url : firstData[0].url}
                     className={`text-[#fcfcfc] font-semibold pb-2 ${theme ? `` : ``}`}
                   >
                     Visit Site
                   </a>
-                  <a href={info.github} className={`text-[#fcfcfc] font-semibold pb-2 ml-8 ${theme ? `` : ``}`}>Github</a>  
+                  <a href={seeMore ? secondData[0].github : firstData[0].github} className={`text-[#fcfcfc] font-semibold pb-2 ml-8 ${theme ? `` : ``}`}>Github</a>  
                 </div>
                   </div>}
                 </div>
 
                 <div className={``}>
                   <p
-                  className={`text-[#54646e] leading-[30px] md:leading-[38px] text-base font-semibold font-["Nunito"] text-left py-4 md:py-0 md:text-xl`}
+                  className={`text-[#54646e] leading-[30px] md:leading-[38px] text-[18px] font-semibold font-["Nunito"] text-left py-4 md:py-0`}
                 >
-                  {info.description}
+                  {seeMore ? secondData[0].description : firstData[0].description}
                 </p>
                 </div>
-                
+                </div>
               </div>
-            );
-          })}
         </div>
       </div>
 
       <div className={`my-6 p-[1rem] pb-[4rem] md:pb-[4rem] max-w-[800px] mx-auto md:p-[2rem]`}>
         <h1 className={`font-base mb-6 text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
-          <span className={`font-bold text-xl`}>
+          <span className={`text-[#af5c3b] font-bold text-xl`}>
             <span
               className={`${style.name} font-extrabold text-[#af5c3b] text-4xl md:text-6xl`}
             >
               T
             </span>
-            ECH:NOLOGY STACK
+            ECHNOLOGY STACK
           </span>
         </h1>
         <p className={`mb-4 text-lg ${theme ? `text-[#14181b]` : `text-[#cfcccc]`}`}>Tools and Technology</p>
@@ -199,11 +209,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-        {/* <img
-        src={Frame1}
-        alt=""
-        className={`absolute bottom-0 right-0 rotate-180`}
-      /> */}
     </section>
     </motion.main>
   );

@@ -37,25 +37,25 @@ const theme = useContext(ThemeContext)
       <div className={`my-8 md:w-[50%]`}>
         <h1 className={`font-base text-2xl mb-4 md:text-3xl text-center md:text-left mt-4 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-5xl md:text-6xl`}>H</span>i, my name is{" "}
-          <span className={`font-bold text-xl`}>
+          <span className={`${style.name} text-[#af5c3b] font-bold text-[45px]`}>
             <span
               className={`${style.name} font-extrabold text-[#af5c3b] text-5xl md:text-7xl`}
             >
               G
             </span>
-            LO:RIA
+            LORIA
           </span>
         </h1>
         <div>
           <p
-            className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left mb-3`}
+            className={`text-[#54646e] leading-[30px] text-[18px] font-["Nunito"] text-center md:text-left mb-3`}
                 >
                 As a seasoned Frontend Developer, I possess a deep passion for crafting visually stunning and highly engaging web applications that leave a lasting impression on users.
               </p>
-              <p className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left mb-3`}>
+              <p className={`text-[#54646e] leading-[30px] text-[18px] font-["Nunito"] text-center md:text-left mb-3`}>
                 With my extensive programming experience, I am able to seamlessly merge form and function to create truly remarkable digital experiences. 
               </p>
-              <p className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left`}>
+              <p className={`text-[#54646e] leading-[30px] text-[18px] font-["Nunito"] text-center md:text-left`}>
                 My keen eyes for design and knack for solving complex problems make me a valuable asset to any Development Team. 
               </p>
         </div>

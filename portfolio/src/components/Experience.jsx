@@ -20,13 +20,13 @@ const Experience = () => {
     >
       <div className={`mb-10`}>
            <h1 className={`font-base text-2xl md:text-3xl ${theme ? `text-[#071e1e]` : `text-[#fcfcfc] `}`}>
-          <span className={`font-bold text-xl`}>
+          <span className={`${style.name} text-[#af5c3b] font-bold text-[45px]`}>
             <span
               className={`${style.name} font-extrabold text-[#af5c3b] text-7xl md:text-9xl`}
             >
               E
             </span>
-            X:PERIENCE
+            XPERIENCE
           </span>
         </h1>
         </div>
