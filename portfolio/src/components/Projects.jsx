@@ -50,7 +50,7 @@ const Projects = () => {
       transition={{duration: 2}}
     >
     <section
-      className={`${style.projects_section} p-4 bg-[#070b0e] w-[90%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
+      className={`${style.projects_section} p-4 bg-[#070b0e] w-[90%] h-[70vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`}
       id="Projects"
       >
       <img src={Frame1} alt="" className={`absolute top-0 left-0`} />
@@ -109,14 +109,14 @@ const Projects = () => {
           {data.map((info) => {
             return (
               <div
-                className={`${style.project_div} md:flex justify-between items-start pl-4 md:pl-8`}
+                className={`${style.project_div} md:grid grid-cols-2 gap-6 pl-4 md:pl-8`}
                 key={info.id}
               >
-                <div className={`md:w-[45%]`}>
+                <div className={``}>
                   <h3 className={`font-semibold text-2xl ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
                     {info.title}
                   </h3>
-                  {<div className={`relative my-4 md:w-[260px] md:h-[260px]`}  onMouseOver={() => setDisplayLink(true)} onMouseLeave={() => setDisplayLink(false)}>
+                  {<div className={`relative my-4 w-[100%] h-[100%]`}  onMouseOver={() => setDisplayLink(true)} onMouseLeave={() => setDisplayLink(false)}>
                     <img
                       src={info.img}
                       alt=""
@@ -134,7 +134,7 @@ const Projects = () => {
                   </div>}
                 </div>
 
-                <div className={`md:w-[50%]`}>
+                <div className={``}>
                   <p
                   className={`text-[#54646e] leading-[30px] md:leading-[38px] text-base font-semibold font-["Nunito"] text-left py-4 md:py-0 md:text-xl`}
                 >

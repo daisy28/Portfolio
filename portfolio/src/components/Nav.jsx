@@ -51,32 +51,32 @@ const Nav = ({toggleTheme}) => {
         </button>
       </div>
       {
-            <nav className={`md:hidden hover:bg-[#81442cf2] z-100 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${toggle ? `${navStyle.navigation_active}` : `${navStyle.navigation}`} ${theme ? `` : `` }`} onClick={handleToggle}>
+            <nav className={`md:hidden hover:bg-[#81442c] z-100 ${toggle ? `${navStyle.navigation_active}` : `${navStyle.navigation}`} ${theme ? `` : `` }`} onClick={handleToggle}>
               <span 
                 className={`${toggle ? `${navStyle.nav_span_active} bg-[#f7103109] rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span} bg-[#af5c3b]`}`}
                 style={{"--i":"0","--x":"-1","--y":"-1"}}>
                   <HiHome className={`${splitLocation[1] === "" ? `text-[#4d1b07]` : ``}`} />
-                  <Link to="/" className={`hover:text-[#4d1b07]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
+                  <Link to="/" className={`hover:text-[#4d1b07] ${splitLocation[1] === "" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
           Home
         </Link></span>
         <span
                 className={`${toggle ? `${navStyle.nav_span_active} bg-[#f7103109] rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span} bg-[#af5c3b]`}`} 
               style={{ "--i": "1", "--x": "-1", "--y": "0" }}>
               <HiInformationCircle className={`${splitLocation[1] === "experience" ? `text-[#4d1b07]` : ``}`} />
-              <Link to="/experience" className={`hover:text-[#4d1b07]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "experience" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
+              <Link to="/experience" className={`hover:text-[#4d1b07] ${splitLocation[1] === "experience" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
           Experience
         </Link></span>
               <span
               className={`${toggle ? `${navStyle.nav_span_active} bg-[#f7103109] rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span} bg-[#af5c3b]`}`} style={{ "--i": "3", "--x": "1", "--y": "-1" }}>
               <RiMiniProgramFill className={`${splitLocation[1] === "projects" ? `text-[#4d1b07]` : ``}`} />
-              <Link to="/projects" className={`hover:text-[#4d1b07]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "projects" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
+              <Link to="/projects" className={`hover:text-[#4d1b07] ${splitLocation[1] === "projects" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
           Projects
         </Link></span>
               <span 
                 className={`${toggle ? `${navStyle.nav_span_active} bg-[#f7103109] rounded-full block w-[100px] h-[100px]` : `${navStyle.nav_span} bg-[#af5c3b]`}`}
                 style={{ "--i": "5", "--x": "1", "--y": "0" }}>
                   <BsFillPhoneVibrateFill className={`${splitLocation[1] === "contact" ? `text-[#4d1b07]` : ``}`} />
-                  <Link to="/contact" className={`hover:text-[#4d1b07]  transition ease-in-out delay-150 duration-300  ${splitLocation[1] === "contact" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
+                  <Link to="/contact" className={`hover:text-[#4d1b07] ${splitLocation[1] === "contact" ? `${navStyle.mobile_links} text-[#4d1b07]` : ``}`}>
           Contact
         </Link></span>
             </nav>

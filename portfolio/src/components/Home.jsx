@@ -29,13 +29,13 @@ const theme = useContext(ThemeContext)
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-    <main className={`${style.about_section} w-[90%] h-[80vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto p-6 md:px-6 xl:px-14 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`} id="About">
+    <main className={`${style.about_section} w-[90%] h-[70vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto p-6 md:px-6 xl:px-14 pb-10 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`} id="About">
       <div className={`md:flex justify-between items-center lg:w-[867px] mx-auto`}>
       <div className={`relative my-8`}>
         <img src={Frame} alt="" className={`w-full h-full `} />
       </div>
       <div className={`my-8 md:w-[50%]`}>
-        <h1 className={`font-base text-2xl mb-2 md:text-3xl text-center md:text-left mt-4 md:mb-4 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
+        <h1 className={`font-base text-2xl mb-4 md:text-3xl text-center md:text-left mt-4 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-5xl md:text-6xl`}>H</span>i, my name is{" "}
           <span className={`font-bold text-xl`}>
             <span
@@ -48,20 +48,23 @@ const theme = useContext(ThemeContext)
         </h1>
         <div>
           <p
-            className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left`}
+            className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left mb-3`}
                 >
-            I'm a Frontend Developer with 2+ years of experience. I build on-demand, scalable, fully responsive and 
-            custom designed web applications. I have a diverse set of skills
-            acquired overtime to stand out from the ordinary. I've an extensive
-            programming experience especially on the frontend. I'm sensitive and pay attention to the littlest details which makes it easy for me to build & implement functional web applications.{" "}
-          </p>
+                As a seasoned Frontend Developer, I possess a deep passion for crafting visually stunning and highly engaging web applications that leave a lasting impression on users.
+              </p>
+              <p className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left mb-3`}>
+                With my extensive programming experience, I am able to seamlessly merge form and function to create truly remarkable digital experiences. 
+              </p>
+              <p className={`text-[#54646e] leading-[30px] text-xl font-["Nunito"] md:text-2xl text-center md:text-left`}>
+                My keen eyes for design and knack for solving complex problems make me a valuable asset to any Development Team. 
+              </p>
         </div>
       </div>
       </div>
 
-      <div className={`md:flex justify-between items-start mx-auto md:my-10 lg:w-[867px]`}>
+      <div className={`md:flex my-6 justify-between items-start mx-auto md:my-10 lg:w-[867px] pb-[4rem]`}>
       <div
-            className={`font-semibold text-xl mt-5 md:font-bold w-[250px] mx-auto md:px-[2rem] md:mt-0 md:w-[50%] max-w-[433px] ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+            className={`font-semibold text-xl mt-5 mb-4 md:font-bold w-[250px] mx-auto md:px-[2rem] md:mt-0 md:w-[50%] max-w-[433px] lg:pr-[4rem] ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
           >
             <h2 className={`flex justify-center items-center md:text-2xl`}>
               What I do &nbsp;
@@ -140,10 +143,7 @@ const theme = useContext(ThemeContext)
       <section className={`my-10 relative mx-auto flex flex-col justify-center md:w-[50%] lg:w-[50%] md:my-0 lg:ml-auto md:flex-row md:justify-between md:items-start`} >
       <header className={`flex justify-between items-start relative w-[100%]`}>
         <div className={`w-[60%] md:w-[200px]`}>
-          <p className={`text-[#54646e] text-left`}>I'm excited you're here. Feel free to <span className={`text-[#af5c3b]`}><a href="https://twitter.com/gloriah_CU?s=09"> reach out to me</a></span> with any project ideas you have or to just say hello!</p>
-          <div className={`mt-6 rounded relative cursor-pointer font-[600] p-2 flex items-center justify-center hover:text-[#af5c3b] ${theme ? `bg-[#edc9b2] text-[#191c20]` : `bg-[#14181b] text-[#fcfcfc]`}`}>
-        <Link to="/contact" className={``}>Contact me</Link>
-      </div>
+          <p className={`text-[#54646e] text-left`}><span className={`text-[#af5c3b]`}><Link to="/contact">Drop me a line with any </Link></span>project ideas you have or to just say hello!</p>
         </div>
 
         <div

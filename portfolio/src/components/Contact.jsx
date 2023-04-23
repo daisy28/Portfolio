@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 import style from "../styles/style.module.css";
 import { BsFillPhoneVibrateFill } from "react-icons/bs";
@@ -9,10 +9,6 @@ import { FiEdit3 } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-     const [displayLocation, setDisplayLocation] = useState(false);
-     const [displayEmail, setDisplayEmail] = useState(false);
-  const [displayPhone, setDisplayPhone] = useState(false);
-  
   const theme = useContext(ThemeContext);
 
   return (
@@ -23,7 +19,7 @@ const Contact = () => {
       exit={{ x: "100%", opacity: "0" }}
       transition={{duration: 2}}
     >
-          <section className={`${style.contact_section} w-[90%] h-[80vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[150px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
+          <section className={`${style.contact_section} w-[90%] h-[70vh] overflow-y-scroll relative backdrop-blur-[10px] z-10 top-[150px] bottom-[250px] mx-auto ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e]`}`} id="Contact">
             <div className={``}>
                <div className={``}>
                     <div className={`py-8 p-6 md:p-10 xl:px-14`}>
@@ -47,20 +43,18 @@ const Contact = () => {
                <div className={`mb-2`}>
                          <h1 className={`text-3xl mb-4 font-bold ${theme ? `text-[#24272a]` : `text-[#969a9d]`}`}>Love to hear from you, Get in touch 👋</h1>
                     </div>
-              <div className={`mx-auto flex justify-between items-start text-[#AF5C3B] font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
-               
-               
-               <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayEmail(true)} onMouseLeave={() => setDisplayEmail(false)}>
-                    <BiMailSend className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayEmail ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold md:block md:ml-4 ${displayEmail ? `block ` : `hidden`}  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>ubahgloria16@gmail.com</p>
+              <div className={`mx-auto flex justify-between flex-col gap-4 items-start text-[#AF5C3B] font-bold text-3xl py-4 md:w-[100%] md:flex-col`}>
+               <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+                    <BiMailSend className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} `} />
+                    <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>ubahgloria16@gmail.com</p>
                     </div>
-                    <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayPhone(true)} onMouseLeave={() => setDisplayPhone(false)}>
-                    <BsFillPhoneVibrateFill className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayPhone ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold md:block md:ml-4 ${displayPhone ? `block` : `hidden`} ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>+2349026115866</p>
+                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+                    <BsFillPhoneVibrateFill className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
+                    <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>+2349026115866</p>
                </div>
-                    <div className={`bg-[#fcfcfc] p-4 flex justify-start items-center flex-col rounded-md md:mb-4 md:flex-row cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`} onMouseOver={() => setDisplayLocation(true)} onMouseLeave={() => setDisplayLocation(false)}>
-                    <BiCurrentLocation className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} ${displayLocation ? `mb-4` : `mb-0`}`} />
-                    <p className={`text-base font-semibold md:block md:ml-4 ${displayLocation ? `block` : `hidden`} ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>Lagos, Nigeria</p>
+                    <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md md:mb-4 cursor-pointer transition duration-700 ease-in-out ${theme ? `` : ``}`}>
+                    <BiCurrentLocation className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
+                    <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>Lagos, Nigeria</p>
                </div>
                     </div>
                     
