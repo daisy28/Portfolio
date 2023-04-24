@@ -21,7 +21,6 @@ const Nav = ({toggleTheme}) => {
   const handleToggle = () => {
     setToggle(prevState => !prevState);
   }
-
   const theme = useContext(ThemeContext);
 
   return (

@@ -31,6 +31,7 @@ const Projects = () => {
     return info.id === index ? info : null;
   });
   const firstProject = () => {
+    // setActiveTab(true)
     return setIndex(firstIndex => (firstIndex = 0))
   };
   const secondProject = () => {
