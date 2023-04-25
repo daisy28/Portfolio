@@ -128,7 +128,7 @@
      z-index: -99;
 }
 
-.border_gradient:hover {
+.border_gradient{
      border-bottom: #af5c3b 2px solid;
      color: #af5c3b !important;
 }

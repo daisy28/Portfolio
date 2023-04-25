@@ -3,7 +3,7 @@ import { ThemeContext } from "../App";
 import style from "../styles/style.module.css";
 import { BsFillEggFill } from "react-icons/bs";
 import { MdHotelClass } from "react-icons/md";
-import Frame from "../Img/Group 8 (1).webp"
+import Frame from "../Img/20220814_151142~3.jpg"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -30,12 +30,12 @@ const theme = useContext(ThemeContext)
       transition={{duration: 2}}
     >
     <main className={`${style.about_section} w-[90%] h-[70vh] overflow-y-auto relative z-10 top-[150px] bottom-[150px] mx-auto p-6 md:px-6 xl:px-14 pb-10 ${theme ? `bg-[#f4ddce]` : `bg-[#070b0e] `}`} id="About">
-      <div className={`md:flex justify-between items-center lg:w-[867px] mx-auto`}>
-      <div className={`relative my-8`}>
-        <img src={Frame} alt="" className={`w-full h-full `} />
+      <div className={`md:flex justify-between items-center lg:w-[867px] mx-auto md:mt-10`}>
+      <div className={`relative my-8 h-[100%] w-[100%] md:w-[45%] md:my-0`}>
+        <img src={Frame} alt="" className={`w-full h-full`} />
       </div>
-      <div className={`my-8 md:w-[50%]`}>
-        <h1 className={`font-base text-2xl mb-4 md:text-3xl text-center md:text-left mt-4 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
+      <div className={`my-8 md:w-[50%] md:my-0`}>
+        <h1 className={`font-base text-2xl mb-4 md:text-3xl text-center md:text-left mt-4 md:mt-0 ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}>
           <span className={`font-bold text-5xl md:text-6xl`}>H</span>i, my name is{" "}
           <span className={`${style.name} text-[#af5c3b] font-bold text-[45px]`}>
             <span
@@ -50,7 +50,7 @@ const theme = useContext(ThemeContext)
           <p
             className={`text-[#54646e] leading-[30px] text-[18px] font-["Nunito"] text-center md:text-left mb-3`}
                 >
-                As a seasoned Frontend Developer, I possess a deep passion for crafting visually stunning and highly engaging web applications that leave a lasting impression on users.
+                A Frontend Developer with a deep passion for crafting visually stunning and highly engaging web applications that leave a lasting impression on users.
               </p>
               <p className={`text-[#54646e] leading-[30px] text-[18px] font-["Nunito"] text-center md:text-left mb-3`}>
                 With my extensive programming experience, I am able to seamlessly merge form and function to create truly remarkable digital experiences. 
@@ -62,7 +62,7 @@ const theme = useContext(ThemeContext)
       </div>
       </div>
 
-      <div className={`md:flex my-6 justify-between items-start mx-auto md:my-10 lg:w-[867px] pb-[4rem]`}>
+      <div className={`md:flex my-6 justify-between items-start mx-auto md:my-10 md:mt-12 lg:w-[867px] pb-[4rem]`}>
       <div
             className={`font-semibold text-xl mt-5 mb-4 md:font-bold w-[250px] mx-auto md:px-[2rem] md:mt-0 md:w-[50%] max-w-[433px] lg:pr-[4rem] ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
           >
@@ -143,7 +143,7 @@ const theme = useContext(ThemeContext)
       <section className={`my-10 relative mx-auto flex flex-col justify-center md:w-[50%] lg:w-[50%] md:my-0 lg:ml-auto md:flex-row md:justify-between md:items-start`} >
       <header className={`flex justify-between items-start relative w-[100%] mt-[2rem] md:mt-0`}>
         <div className={`w-[60%] md:w-[200px]`}>
-          <p className={`text-[#54646e] text-left`}><span className={`text-[#af5c3b]`}><Link to="/contact">Drop me a line with any </Link></span>project ideas you have or to just say hello!</p>
+          <p className={`text-[#54646e] text-left`}>Excited to see you! Feel free to <span className={`text-[#af5c3b]`}><Link to="/contact">reach out to me with any </Link></span>project ideas you have or to just say hello!</p>
         </div>
 
         <div

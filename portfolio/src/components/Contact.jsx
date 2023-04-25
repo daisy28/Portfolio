@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 import style from "../styles/style.module.css";
-import { BsFillPhoneVibrateFill } from "react-icons/bs";
-import { BiMailSend } from "react-icons/bi";
-import { BiCurrentLocation } from "react-icons/bi";
+import { IoIosPhonePortrait } from "react-icons/io";
+import { FiMail } from "react-icons/fi";
+import { MdLocationOn } from "react-icons/md";
 import { RxPerson } from "react-icons/rx";
 import { FiEdit3 } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -45,15 +45,15 @@ const Contact = () => {
                     </div>
               <div className={`mx-auto flex justify-between flex-col gap-2 items-start text-[#AF5C3B] font-bold text-3xl py-4`}>
                <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
-                    <BiMailSend className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} `} />
+                    <FiMail className={`md:mb-0 text-[1rem]  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`} `} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>ubahgloria16@gmail.com</p>
                     </div>
                     <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
-                    <BsFillPhoneVibrateFill className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
+                    <IoIosPhonePortrait className={`md:mb-0 text-[1rem]  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>+2349026115866</p>
                </div>
                     <div className={`bg-[#fcfcfc] py-4 px-2 flex justify-start items-center rounded-md cursor-pointer transition duration-700 ease-in-out w-[218px] ${theme ? `` : ``}`}>
-                    <BiCurrentLocation className={`md:mb-0  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
+                    <MdLocationOn className={`md:mb-0 text-[1rem]  ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`} />
                     <p className={`text-sm font-semibold md:block ml-2 ${theme ? `text-[#AF5C3B]` : `text-[#070b0e]`}`}>Lagos, Nigeria</p>
                </div>
                     </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                     id="email"
                     placeholder=" "
                   />
-                    <BiMailSend
+                    <FiMail
                       className={`${style._input_icon} absolute text-[#fcfcfc]`}
                     />
                          <label

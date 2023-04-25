@@ -83,31 +83,31 @@ const Projects = () => {
       <div className={`relative p-5 mt-4 mr-auto max-w-[800px] mx-auto`}>
           <div className={`flex justify-between items-enter p-4 flex-wrap`}>
             <button
-              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+              className={`z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`} ${index === 0 ? `${style.border_gradient}` : ``}`}
               onClick={firstProject}
             >
-              { seeMore? `Modelling Agency ` : `T&Cs Generator`}
+              { seeMore ? `Modelling Agency ` : `T&Cs Generator`}
             </button>
             <button
-              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+              className={`z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`} ${index === 1 ? `${style.border_gradient}` : ``}`}
               onClick={secondProject}
             >
-              {seeMore? `Metabnb` : `TempKit`}
+              {seeMore ? `Metabnb` : `TempKit`}
             </button>
             <button
-              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+              className={`z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`} ${index === 2 ? `${style.border_gradient}` : ``}`}
               onClick={thirdProject}
             >
-              {seeMore? `Mavin` : `Speak Better`}
+              {seeMore ? `Mavin` : `Speak Better`}
             </button>
             <button
-              className={`${style.border_gradient} z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`}`}
+              className={`z-10 font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `text-[#191c20]` : `text-[#fcfcfc]`} ${index === 3 ? `${style.border_gradient}` : ``}`}
               onClick={fourthProject}
             >
-              {seeMore? `Art Agency` : `AgroLearn`}
+              {seeMore ? `Art Agency` : `AgroLearn`}
             </button>
             <button
-              className={`${style.border_gradient} z-10 text-[#af5c3b] font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `` : ``}`}
+              className={`z-10 text-[#af5c3b] font-semibold pb-1 mb-4 transition duration-700 ease-in-out outline-none ${theme ? `` : ``}`}
               onClick={() => setSeeMore(prevState => !prevState)}
             >
               See more &gt;&gt;&gt;
