@@ -3,7 +3,7 @@ import { ThemeContext } from "../App";
 import style from "../styles/style.module.css";
 import { BsFillEggFill } from "react-icons/bs";
 import { MdHotelClass } from "react-icons/md";
-import Frame from "../Img/20220814_151142~3.jpg"
+import Frame from "../Img/IMG-20210705-WA0039~2.jpg"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -77,7 +77,7 @@ const theme = useContext(ThemeContext)
               // infinite={true}
               isIntrinsicHeight={true}
               interval={3000}
-              // isPlaying={true}
+              isPlaying={true}
               lockOnWindowScroll={true}
             >
               <Slider>
@@ -143,7 +143,7 @@ const theme = useContext(ThemeContext)
       <section className={`my-10 relative mx-auto flex flex-col justify-center md:w-[50%] lg:w-[50%] md:my-0 lg:ml-auto md:flex-row md:justify-between md:items-start`} >
       <header className={`flex justify-between items-start relative w-[100%] mt-[2rem] md:mt-0`}>
         <div className={`w-[60%] md:w-[200px]`}>
-          <p className={`text-[#54646e] text-left`}>Excited to see you! Feel free to <span className={`text-[#af5c3b]`}><Link to="/contact">reach out to me with any </Link></span>project ideas you have or to just say hello!</p>
+          <p className={`text-[#54646e] text-left`}>Excited to see you! Feel free to <span className={`text-[#af5c3b]`}><Link to="/contact">reach out to me</Link></span> with any project ideas you have or to just say hello!</p>
         </div>
 
         <div

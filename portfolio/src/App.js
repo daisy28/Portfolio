@@ -1,5 +1,5 @@
 import React, { useState, createContext } from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Home from "./components/Home";
 import Project from "./components/Projects";
@@ -22,7 +22,7 @@ const Layout = () => {
   )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
